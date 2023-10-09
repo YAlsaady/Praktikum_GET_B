@@ -1,0 +1,68 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[ a4paper,left = 22mm, right=22mm,
+             top=1.3cm, bottom=2cm,
+             includehead, includefoot,
+             headheight=2 cm]{geometry}
+
+\usepackage[ngermanb]{babel} 
+\usepackage[T1]{fontenc}    
+\usepackage[utf8]{inputenc}	
+\usepackage{lmodern}		
+\usepackage[dvips]{graphicx}
+\usepackage{makeidx}        
+\usepackage{xcolor}         
+\usepackage{amssymb}        
+\usepackage{amsmath}        
+\usepackage{hyperref}		
+\usepackage{subcaption}		
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{floatrow}
+\usepackage{multirow}
+\usepackage{upgreek}
+
+\usepackage{sectsty}
+\allsectionsfont{\sffamily}
+
+\usepackage{eso-pic}
+\newcommand\BackgroundWave{%
+	\put(0,0){%
+		\parbox[b][\paperheight]{\paperwidth}{%
+			\vfill
+			\centering
+			\vspace{12.0cm}
+			\includegraphics[width=\paperwidth]{logo/hsel-welle-grey}%
+			\vfill
+}}}
+\begin{document}
+\AddToShipoutPicture{\BackgroundWave}
+\pagestyle{fancy}
+\fancyhead[L]{\includegraphics[width = 6.0cm]{img/GELogo.png}}
+\fancyhead[R]{
+  \Large{{
+      \textbf{Versuch B-1}\\
+      Nichtlineare Zweipole und Transistoren}}}
+\fancyfoot[L]{Yaman Alsaady}
+\fancyfoot[C]{\thepage}
+\fancyfoot[R]{Oliver Schmidt}
+
+\pagenumbering{Roman}
+
+\tableofcontents
+\listoffigures 
+	\addcontentsline{toc}{section}{Abbildungsverzeichnis}
+\listoftables
+	\addcontentsline{toc}{section}{Tabellenverzeichnis}
+\newpage
+\ClearShipoutPicture
+\pagenumbering{arabic}
+\setcounter{section}{+1}
+\include{Inhalt/02Vorbereitung}
+\newpage
+\include{Inhalt/03Messung}
+\newpage
+\include{Inhalt/04Auswertung}
+\newpage
+
+\end{document}
