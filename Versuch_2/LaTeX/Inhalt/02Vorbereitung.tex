@@ -23,6 +23,33 @@ Ohne testierte Vorbereitung können Sie den Versuch nicht durchführen.}\\
 		\end{subfigure}
 	\caption{FI-Schutzschalter und FI-Tester}\label{img2.2.1}
 	\end{figure}
+	
+	\begin{figure}[h!]
+		\begin{center}
+			\includegraphics[width=0.5\textwidth]{img/img2.2.3.png}
+		\end{center}
+		\caption{Fehlerstrommessung am FI-Schutzschalter mit FI-Tester und Multimetern}\label{img2.2.3}
+	\end{figure}
+	
+	Der FI-Tester wird an einen Außenleiter und den Neutralleiter angeschlossen. Im Tester sind drei Widerstände in Reihe geschaltet: $R_{1}=1k\textohm$ , $R_{var}=0\textohm - 15k\textohm$ und ein weiterer Widerstand von $R_{2}=5k\textohm$. Der $5k\textohm$-Widerstand wird nicht für den Versuch verwendet.
+	\newpage
+	{
+	\renewcommand{\abstractname}{Herleitung zum FI-Tester}
+	\begin{abstract}
+		\fcolorbox{black}{lightgray}{\parbox{\linewidth}{
+			\centering Größe des Einstellbaren Widerstandes
+				\begin{align}			
+					U &= RI\\
+					\Longrightarrow R &= \frac{U}{I}\\
+					\Longrightarrow R_{var} &= \frac{U}{I}-R_{1}\\
+					R_{var} &= \frac{230V}{30mA}-1k\textohm\\
+					R_{var} &= 6,67k\textohm
+				\end{align}
+			}}
+	\end{abstract}
+	}
+	
+	Die Zielsetzung besteht darin, den FI-Schutzschalter auszulösen, sobald ein Differenzstrom von mehr als 30 mA auftritt. Daher müssen wir den variablen Widerstand von 0 Ohm solange verkleinern, bis der FI-Schalter auslöst.
 
   \item An einem Vierleiter-Drehstromnetz ist eine symmetrische ohmsch-induktive Last (Reihenschaltung von Induktivität und Widerstand) in Sternschaltung angeschlossen. Bestimmen Sie formelmäßig die nötige Kapazität in Parallelschaltung (Sternschaltung), um eine vollständige Kompensation ($\cos \varphi = 1$) zu erreichen. 
 
