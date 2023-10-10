@@ -31,19 +31,20 @@ Ohne testierte Vorbereitung können Sie den Versuch nicht durchführen.}\\
 		\caption{Fehlerstrommessung am FI-Schutzschalter mit FI-Tester und Multimetern}\label{img2.2.3}
 	\end{figure}
 	
-	Der FI-Tester wird an einen Außenleiter und den Neutralleiter angeschlossen. Im Tester sind drei Widerstände in Reihe geschaltet: $R_{1}=1k\textohm$ , $R_{var}=0\textohm - 15k\textohm$ und ein weiterer Widerstand von $R_{2}=5k\textohm$. Der $5k\textohm$-Widerstand wird nicht für den Versuch verwendet.
+	Der FI-Tester wird an einen Außenleiter und den Neutralleiter angeschlossen. Im Tester sind drei Widerstände in Reihe geschaltet: $R_{1}=1k\Omega$ , $R_{var}=0\textohm - 15k\Omega$ und ein weiterer Widerstand von $R_{2}=5k\Omega$. Der $5k\Omega$-Widerstand wird nicht für den Versuch verwendet.
 	\newpage
 	{
+		
 	\renewcommand{\abstractname}{Herleitung zum FI-Tester}
 	\begin{abstract}
 		\fcolorbox{black}{lightgray}{\parbox{\linewidth}{
-			\centering Größe des Einstellbaren Widerstandes
+			\centering Größe des einstellbaren Widerstandes
 				\begin{align}			
 					U &= RI\\
 					\Longrightarrow R &= \frac{U}{I}\\
 					\Longrightarrow R_{var} &= \frac{U}{I}-R_{1}\\
-					R_{var} &= \frac{230V}{30mA}-1k\textohm\\
-					R_{var} &= 6,67k\textohm
+					R_{var} &= \left(\frac{230V}{30mA}\right)-1k\Omega\\
+					R_{var} &= 6,67k\Omega
 				\end{align}
 			}}
 	\end{abstract}
