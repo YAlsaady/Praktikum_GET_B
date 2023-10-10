@@ -57,13 +57,28 @@ Ohne testierte Vorbereitung können Sie den Versuch nicht durchführen.}\\
 	% }
 	
 	Die Zielsetzung besteht darin, den FI-Schutzschalter auszulösen, sobald ein Differenzstrom von mehr als 30 mA auftritt. Daher müssen wir den variablen Widerstand von 0 Ohm solange verkleinern, bis der FI-Schalter auslöst.
-\begin{align*}
-  
-\end{align*}
   \item An einem Vierleiter-Drehstromnetz ist eine symmetrische ohmsch-induktive Last (Reihenschaltung von Induktivität und Widerstand) in Sternschaltung angeschlossen. Bestimmen Sie formelmäßig die nötige Kapazität in Parallelschaltung (Sternschaltung), um eine vollständige Kompensation ($\cos \varphi = 1$) zu erreichen. 
-
+\begin{align*}
+  \underline Y &=\frac{1}{(R+j\omega L)}+ {j\omega C}\\
+  \underline Y &=\frac{1+ j\omega C(R+j\omega L)}{R+j\omega L}\\
+  \underline Y &=\frac{1-\omega^2 LC+ j\omega CR}{R+j\omega L}\\
+  \underline Y &=\frac{(1-\omega^2 LC+ j\omega CR) \cdot(R+j\omega L)}{R^2+(\omega L)^2}\\
+  \underline Y &=\frac{R-\omega^2 RLC - \omega^3 RLC}{R^2+(\omega L)^2} 
+  + j \frac{\omega L - \omega^3CL^2+\omega CR^2}{R^2+(\omega L)^2}\\
+  \underline Y_{komp} &=Re\{\underline Y\}=\frac{R-\omega^2 RLC - \omega^3 RLC}{R^2+(\omega L)^2} \\
+  \Rightarrow Im\{\underline Y\}&=0\\
+  \omega L - \omega^3CL^2+\omega CR^2 &= 0\\
+  C\cdot(\omega^3L^2+\omega R^2) - \omega L  &= 0\\
+  C &=\frac{\omega L}{\omega^3 L^2+\omega R^2}\\
+  C_{Y} &=\frac{L}{\omega^2 L^2+R^2}
+\end{align*}
 
   \item Bestimmen Sie formelmäßig die nötige Kapazität, wenn die Kondensatoren in Dreieck verschaltet sind.
+    \begin{align*}
+      C_{Y} &=\frac{L}{\omega^2 L^2+R^2}\\
+      C_{\Delta} &= \frac{1}{3}\cdot C_{Y}\\
+      C_{\Delta} &= \frac{1}{3}\cdot \frac{L}{\omega^2 L^2+R^2}\\
+    \end{align*}
 
   \item An einem Vierleiter-Drehstromnetz mit der konstanten Außenleiterspannung $U = 380\ V$ sind nach Abbildung \ref{img2.6.1} unsymmetrische Lasten angeschlossen. Bestimmen Sie rechnerisch und graphisch den Strom im Nullleiter, legen Sie dazu $\underline{U_1}$ in die reelle Achse, $f = 50\ Hz$!
 
