@@ -10,25 +10,34 @@ Ohne testierte Vorbereitung können Sie den Versuch nicht durchführen.}\\
       \caption{Netzmodell am Versuchstisch }\label{img2.1.1}
     \end{figure}
     
+    	\begin{figure}[h!]
+    	\centering
+    	\begin{subfigure}[b]{0.75\textwidth}
+    		\includegraphics
+    		[width=\textwidth]{img/img2.1.2.png}
+    	\end{subfigure}
+    	\caption{Skizze Messung, um Netzform zuermitteln}\label{img2.1.2}
+    \end{figure}
+    
   \item Skizzieren Sie eine Schaltung zur Bestimmung des Fehlerstromes des FI-Schutzschalters mit Hilfe des FI-Testers aus Abbildung \ref{img2.2.1} und Multimetern zur Strom- bzw. Spannungsmessung. 
 	\begin{figure}[h!]
 		\centering
-		\begin{subfigure}[b]{0.41\textwidth}
+		\begin{subfigure}[b]{0.5\textwidth}
 			\includegraphics
 			[width=\textwidth]{img/img2.2.1.png}
 		\end{subfigure}\hfil
-		\begin{subfigure}[b]{0.49\textwidth}
+		\begin{subfigure}[b]{0.5\textwidth}
 		\includegraphics
 		[width=\textwidth]{img/img2.2.2.png}
 		\end{subfigure}
 	\caption{FI-Schutzschalter und FI-Tester}\label{img2.2.1}
 	\end{figure}
 	
-	Der FI-Tester wird an einen Außenleiter und den Neutralleiter angeschlossen. Im Tester sind drei Widerstände in Reihe geschaltet: $R_{1}=1k\Omega$ , $R_{var}=0\textohm - 15k\Omega$ und ein weiterer Widerstand von $R_{2}=5k\Omega$. Der $5k\Omega$-Widerstand wird nicht für den Versuch verwendet.\\
+	Der FI-Tester wird an einen Außenleiter, den Neutralleiter und die Erde angeschlossen. Im Tester sind drei Widerstände in Reihe geschaltet, die über drei Anschlusspunkte verfügen. Der Lastwiderstand und der variable Widerstand werden zwischen dem Neutralleiter und L1 angeschlossen, während der Fehler-Widerstand parallel dazu geschaltet ist.\\
 
 	\begin{figure}[h!]
 		\begin{center}
-			\includegraphics[width=0.5\textwidth]{img/img2.2.3.png}
+			\includegraphics[width=0.75\textwidth]{img/img2.2.3.png}
 		\end{center}
 		\caption{Fehlerstrommessung am FI-Schutzschalter mit FI-Tester und Multimetern}\label{img2.2.3}
 	\end{figure}
@@ -56,10 +65,8 @@ Ohne testierte Vorbereitung können Sie den Versuch nicht durchführen.}\\
 	% % \end{abstract}
 	% }
 	
-	Die Zielsetzung besteht darin, den FI-Schutzschalter auszulösen, sobald ein Differenzstrom von mehr als 30 mA auftritt. Daher müssen wir den variablen Widerstand von 0 Ohm solange verkleinern, bis der FI-Schalter auslöst.
-\begin{align*}
-  
-\end{align*}
+	Das Hauptziel besteht darin, den FI-Schutzschalter auszulösen, sobald ein Differenzstrom von mehr als 30 mA auftritt. Aus diesem Grund muss der Wert des variablen Widerstands, der anfänglich bei 15k Ohm liegt, schrittweise verringert werden, bis der 		FI-Schalter auslöst.
+
   \item An einem Vierleiter-Drehstromnetz ist eine symmetrische ohmsch-induktive Last (Reihenschaltung von Induktivität und Widerstand) in Sternschaltung angeschlossen. Bestimmen Sie formelmäßig die nötige Kapazität in Parallelschaltung (Sternschaltung), um eine vollständige Kompensation ($\cos \varphi = 1$) zu erreichen. 
 
 
