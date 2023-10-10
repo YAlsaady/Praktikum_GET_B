@@ -91,7 +91,35 @@ Ohne testierte Vorbereitung können Sie den Versuch nicht durchführen.}\\
     \end{align*}
 
   \item An einem Vierleiter-Drehstromnetz mit der konstanten Außenleiterspannung $U = 380\ V$ sind nach Abbildung \ref{img2.6.1} unsymmetrische Lasten angeschlossen. Bestimmen Sie rechnerisch und graphisch den Strom im Nullleiter, legen Sie dazu $\underline{U_1}$ in die reelle Achse, $f = 50\ Hz$!
-
+	\\ \ \\
+	In einer Sternschaltung müssen wir die Außenleiterspannung in die Strangspannung umrechnen, da die Spannung über die Widerstände aufgeteilt wird und zudem eine Phasenverschiebung von 120 Grad zwischen den jeweiligen Spannungen besteht.\\
+	\begin{align*}
+		U_{Str} &= \frac{U}{\sqrt{3}} \\
+		U_{Str} &= \frac{380\ V}{\sqrt{3}}\\
+		U_{Str} &= 219,39\ V\\ \ \\
+		U_{12}=220\ Ve^{j0^\circ} \hspace{1cm}
+		U_{23}&=220\ Ve^{j120^\circ} \hspace{1cm}
+		U_{31}=220\ Ve^{-j120^\circ}\\
+	\end{align*}
+		
+	Die einzelnen komplexen Widerstände werden berechnet, um die Strangstromstärken zu ermitteln.
+	
+	\begin{align*}
+		\underline{z}_{1} &= R_{1} + j\omega L_{1} = 1,47\ k\Omega + j2\pi\cdot 50\ Hz\cdot1,5\ H = 1,54\ k\Omega e^{j17,77^\circ}\\
+		\underline{z}_{2} &= R_{2} = 2\ k\Omega = 2\ k\Omega e^{j0^\circ}\\
+		\underline{z}_{3} &= R_{3} + \frac{1}{j\omega C_{3}} = 2,18\ k\Omega + \frac{1}{j2\pi\cdot 50\ Hz\cdot2\ \mu F} = 2,67\ k\Omega e^{-j36,13^\circ}\\
+	\end{align*}
+	
+	Die zuvor ermittelten Werte werden jetzt genutzt, um die Strangströme zu berechnen.
+	
+	\begin{align*}
+		\underline{I}_{1} &= \frac{\underline{U}_{12}}{\underline{z}_{1}} = \frac{219,4\ Ve^{j0^\circ}}{1,54\ k\Omega e^{j17,77^\circ}=}0,14\ Ae^{-j17,77^\circ}\\		\underline{I}_{1} &= \frac{\underline{U}_{23}}{\underline{z}_{2}} = \frac{219,4\ Ve^{j120^\circ}}{4\ k\Omega e^{j0^\circ}=}0,109\ Ae^{j120^\circ}\\		\underline{I}_{1} &= \frac{\underline{U}_{31}}{\underline{z}_{3}} = \frac{219,4\ Ve^{-j120^\circ}}{2,67\ k\Omega e^{-j36,13^\circ}=}0,081\ Ae^{-j87,8^\circ}\\
+		\sum I &= \underline{I_1}+\underline{I_2}+\underline{I_3}+\underline{I_N}=0\\
+		\Rightarrow \underline{I_N}&=-(\underline{I_1}+\underline{I_2}+\underline{I_3})
+	\end{align*}
+	
+	
+	
 \item Bestimmen Sie nun für dieselbe Last alle Ströme und Spannungen ohne angeschlossenen Neutralleiter. Zeichnen Sie das Zeigerdiagramm der Spannungen $\underline{U_{1K}},\ \underline{U_{2K}} \text{ und } \underline{U_{3K}}$. 
   \begin{figure}[h!]
     \begin{center}
