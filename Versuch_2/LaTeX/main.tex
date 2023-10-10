@@ -35,7 +35,19 @@
 			\includegraphics[width=\paperwidth]{logo/hsel-welle-grey}%
 			\vfill
 }}}
+\newcommand\Title{%
+	\put(0,0){%
+		\parbox[b][\paperheight]{\paperwidth}{%
+			\vfill
+			\centering
+			\includegraphics[width=0.8\paperwidth]{img/Titelpage.png}%
+			\vfill
+}}}
 \begin{document}
+\thispagestyle{empty}\ 
+\AddToShipoutPicture{\Title}
+\newpage
+\ClearShipoutPicture
 \AddToShipoutPicture{\BackgroundWave}
 \pagestyle{fancy}
 \fancyhead[L]{\includegraphics[width = 9.0cm]{img/GELogo.png}}
