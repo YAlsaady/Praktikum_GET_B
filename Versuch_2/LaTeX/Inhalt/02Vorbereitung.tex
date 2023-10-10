@@ -24,36 +24,37 @@ Ohne testierte Vorbereitung können Sie den Versuch nicht durchführen.}\\
 	\caption{FI-Schutzschalter und FI-Tester}\label{img2.2.1}
 	\end{figure}
 	
+	Der FI-Tester wird an einen Außenleiter und den Neutralleiter angeschlossen. Im Tester sind drei Widerstände in Reihe geschaltet: $R_{1}=1k\Omega$ , $R_{var}=0\textohm - 15k\Omega$ und ein weiterer Widerstand von $R_{2}=5k\Omega$. Der $5k\Omega$-Widerstand wird nicht für den Versuch verwendet.\\
+
 	\begin{figure}[h!]
 		\begin{center}
 			\includegraphics[width=0.5\textwidth]{img/img2.2.3.png}
 		\end{center}
 		\caption{Fehlerstrommessung am FI-Schutzschalter mit FI-Tester und Multimetern}\label{img2.2.3}
 	\end{figure}
+  \pagebreak
 	
-	Der FI-Tester wird an einen Außenleiter und den Neutralleiter angeschlossen. Im Tester sind drei Widerstände in Reihe geschaltet: $R_{1}=1k\Omega$ , $R_{var}=0\textohm - 15k\Omega$ und ein weiterer Widerstand von $R_{2}=5k\Omega$. Der $5k\Omega$-Widerstand wird nicht für den Versuch verwendet.
-	\newpage
 
-	{
-	% \renewcommand{\abstractname}{Herleitung zum FI-Tester}
-  \centering{Herleitung zum FI-Tester}\\\ \\
-	% % \begin{abstract}
-		\fcolorbox{black}{lightgray}{\parbox{\linewidth}{
-				\begin{align*}			
-          I_{fehler}&=I_{ges}\cdot \frac{R_v+R_{var}}{R_{fehler}}\\ 
-          I_{ges} &=\frac{U}{R_{ges}}\\ 
-          I_{ges} &=\frac{U}{\frac{R_{fehler}\cdot(R_v+R_{var)}}{R_{fehler}+(R_v+R_{var})}}\\
-          I_{ges} &={U}\cdot{\frac{R_{fehler}+R_v+R_{var}}{R_{fehler}\cdot(R_v+R_{var})}}\\
-          I_{fehler}&={U}\cdot{\frac{R_{fehler}+R_v+R_{var}}{R_{fehler}\cdot(R_v+R_{var})}}\cdot \frac{R_v+R_{var}}{R_{fehler}}\\ 
-          I_{fehler}&={U}\cdot{\frac{R_{fehler}+R_v+R_{var}}{(R_{fehler})^2}}\\
-          I_{fehler}&={230\ V}\cdot{\frac{5\ k\Omega+1\ k\Omega+R_{var}}{(5\ k\Omega)^2}}\\
-          I_{fehler}&={230\ V}\cdot{\frac{6\ k\Omega+R_{var}}{25\ (k\Omega)^2}}\\
-          R_{var}&=\frac{I_{fehler}\cdot{25\ (k\Omega)^2}}{230\ V}-6\ k\Omega\\
-          R_{var}&=\frac{15\ mA\cdot{25\ (k\Omega)^2}}{230\ V}-6\ k\Omega\\
-				\end{align*}
-			}}
-	% \end{abstract}
-	}
+	% {
+	% % \renewcommand{\abstractname}{Herleitung zum FI-Tester}
+ %  \centering{Herleitung zum FI-Tester}\\\ \\
+	% % % \begin{abstract}
+	% 	\fcolorbox{black}{lightgray}{\parbox{\linewidth}{
+	% 			\begin{align*}			
+ %          I_{fehler}&=I_{ges}\cdot \frac{R_v+R_{var}}{R_{fehler}}\\ 
+ %          I_{ges} &=\frac{U}{R_{ges}}\\ 
+ %          I_{ges} &=\frac{U}{\frac{R_{fehler}\cdot(R_v+R_{var)}}{R_{fehler}+(R_v+R_{var})}}\\
+ %          I_{ges} &={U}\cdot{\frac{R_{fehler}+R_v+R_{var}}{R_{fehler}\cdot(R_v+R_{var})}}\\
+ %          I_{fehler}&={U}\cdot{\frac{R_{fehler}+R_v+R_{var}}{R_{fehler}\cdot(R_v+R_{var})}}\cdot \frac{R_v+R_{var}}{R_{fehler}}\\ 
+ %          I_{fehler}&={U}\cdot{\frac{R_{fehler}+R_v+R_{var}}{(R_{fehler})^2}}\\
+ %          I_{fehler}&={230\ V}\cdot{\frac{5\ k\Omega+1\ k\Omega+R_{var}}{(5\ k\Omega)^2}}\\
+ %          I_{fehler}&={230\ V}\cdot{\frac{6\ k\Omega+R_{var}}{25\ (k\Omega)^2}}\\
+ %          R_{var}&=\frac{I_{fehler}\cdot{25\ (k\Omega)^2}}{230\ V}-6\ k\Omega\\
+ %          R_{var}&=\frac{15\ mA\cdot{25\ (k\Omega)^2}}{230\ V}-6\ k\Omega\\
+	% 			\end{align*}
+	% 		}}
+	% % \end{abstract}
+	% }
 	
 	Die Zielsetzung besteht darin, den FI-Schutzschalter auszulösen, sobald ein Differenzstrom von mehr als 30 mA auftritt. Daher müssen wir den variablen Widerstand von 0 Ohm solange verkleinern, bis der FI-Schalter auslöst.
 
