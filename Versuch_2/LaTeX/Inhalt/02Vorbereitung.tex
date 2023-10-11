@@ -97,9 +97,9 @@ Ohne testierte Vorbereitung können Sie den Versuch nicht durchführen.}\\
 		U_{Str} &= \frac{U}{\sqrt{3}} \\
 		U_{Str} &= \frac{380\ V}{\sqrt{3}}\\
 		U_{Str} &= 219,39\ V\\ \ \\
-		U_{12}=220\ Ve^{j0^\circ} \hspace{1cm}
-		U_{23}&=220\ Ve^{j120^\circ} \hspace{1cm}
-		U_{31}=220\ Ve^{-j120^\circ}\\
+		U_{1N}=220\ Ve^{j0^\circ} \hspace{1cm}
+		U_{2N}&=220\ Ve^{j120^\circ} \hspace{1cm}
+		U_{3N}=220\ Ve^{-j120^\circ}\\
 	\end{align*}
 		
 	Die einzelnen komplexen Widerstände werden berechnet, um die Strangstromstärken zu ermitteln.
@@ -113,16 +113,16 @@ Ohne testierte Vorbereitung können Sie den Versuch nicht durchführen.}\\
 	Die zuvor ermittelten Werte werden jetzt genutzt, um die Strangströme zu berechnen.
 	
 	\begin{align*}
-		\underline{I}_{1} &= \frac{\underline{U}_{12}}{\underline{z}_{1}} = 
-    \frac{219,4\ Ve^{j0^\circ}}{1,54\ k\Omega e^{j17,77^\circ}}=0,14\ Ae^{-j17,77^\circ}\\ 
-    \underline{I}_{1} &= \frac{\underline{U}_{23}}{\underline{z}_{2}} = 
-    \frac{219,4\ Ve^{j120^\circ}}{4\ k\Omega e^{j0^\circ}}=0,109\ Ae^{j120^\circ}\\ 
-    \underline{I}_{1} &= \frac{\underline{U}_{31}}{\underline{z}_{3}} = 
-    \frac{219,4\ Ve^{-j120^\circ}}{2,67\ k\Omega e^{-j36,13^\circ}}=0,081\ Ae^{-j87,8^\circ}\\
+		\underline{I}_{1} &= \frac{\underline{U}_{1N}}{\underline{z}_{1}} = 
+    	\frac{219,4\ Ve^{j0^\circ}}{1,54\ k\Omega e^{j17,77^\circ}}=0,14\ Ae^{-j17,77^\circ}\\ 
+ 		\underline{I}_{1} &= \frac{\underline{U}_{2N}}{\underline{z}_{2}} = 
+    	\frac{219,4\ Ve^{j120^\circ}}{4\ k\Omega e^{j0^\circ}}=0,109\ Ae^{j120^\circ}\\ 
+		\underline{I}_{1} &= \frac{\underline{U}_{3N}}{\underline{z}_{3}} = 
+    	\frac{219,4\ Ve^{-j120^\circ}}{2,67\ k\Omega e^{-j36,13^\circ}}=0,081\ Ae^{-j87,8^\circ}\\
 		\sum I &= \underline{I_1}+\underline{I_2}+\underline{I_3}+\underline{I_N}=0\\
 		\Rightarrow \underline{I_N}&=-(\underline{I_1}+\underline{I_2}+\underline{I_3})\\
-    \underline{I_N} &= -(0,14\ Ae^{-j17,77^\circ}+0,109\ Ae^{j120^\circ}+0,081\ Ae^{-j87,8^\circ})\\ 
-    \underline{I_N} &= -(0,087\ Ae^{-19,66^\circ})=0,087\ Ae^{160,34^\circ}
+    	\underline{I_N} &= -(0,14\ Ae^{-j17,77^\circ}+0,109\ Ae^{j120^\circ}+0,081\ Ae^{-j87,8^\circ})\\ 
+    	\underline{I_N} &= -(0,087\ Ae^{-19,66^\circ})=0,087\ Ae^{160,34^\circ}
   \end{align*}
 
   \begin{figure}[h!]
@@ -165,7 +165,7 @@ Ohne testierte Vorbereitung können Sie den Versuch nicht durchführen.}\\
     \underline{I_1} &= 102,5\ mA \cdot e^{-j9,99^\circ}\\
     \underline{I_2} &= \underline{Y_1}\cdot\underline{U_{1K}} = 0,5\ mS\cdot e^{j0}\cdot 272,81\ Ve^{j129,18^\circ}\\
     \underline{I_2} &= 136,41\ mA\cdot e^{j129,18^\circ}\\
-    \underline{I_3} &= \underline{Y_1}\cdot\underline{U_{1K}} = 0,37\ mS\cdot e^{j36,1^\circ}\cdot 241,05\ Ve^{j-135,74^\circ}\\
+    \underline{I_3} &= \underline{Y_1}\cdot\underline{U_{1K}} = 0,37\ mS\cdot e^{j36,1^\circ}\cdot 241,05\ Ve^{-j135,74^\circ}\\
     \underline{I_3} &= 89,19\ mA\cdot e^{-j99,55^\circ}\\
     \underline{I_1} +\underline{I_2} + \underline{I_3} &\approx 0
   \end{align*}
