@@ -1,8 +1,8 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage[ a4paper,left = 22mm, right=22mm,
-             top=1.3cm, bottom=2cm,
-             includehead, includefoot,
-             headheight=2 cm]{geometry}
+top=1.3cm, bottom=2cm,
+includehead, includefoot,
+headheight=2 cm]{geometry}
 
 \usepackage[ngermanb]{babel} 
 \usepackage[T1]{fontenc}    
@@ -21,7 +21,6 @@
 \usepackage{floatrow}
 \usepackage{multirow}
 \usepackage{upgreek}
-
 \usepackage{sectsty}
 \allsectionsfont{\sffamily}
 
@@ -44,37 +43,37 @@
 			\vfill
 }}}
 \begin{document}
-\thispagestyle{empty}\ 
-\AddToShipoutPicture{\Title}
-\newpage
-\ClearShipoutPicture
-\AddToShipoutPicture{\BackgroundWave}
-\pagestyle{fancy}
-\fancyhead[L]{\includegraphics[width = 9.0cm]{img/GELogo.png}}
-\fancyhead[R]{
-  \Large{{
-      \textbf{VERSUCH B-1}\\
-      Drehstromnetz}}}
-\fancyfoot[C]{}
-\fancyfoot[R]{\thepage}
-\fancyfoot[L]{\leftmark}
-
-\pagenumbering{Roman}
-
-\tableofcontents
-\listoffigures 
+	\thispagestyle{empty}\ 
+	\AddToShipoutPicture{\Title}
+	\newpage
+	\ClearShipoutPicture
+	\AddToShipoutPicture{\BackgroundWave}
+	\pagestyle{fancy}
+	\fancyhead[L]{\includegraphics[width = 9.0cm]{img/GELogo.png}}
+	\fancyhead[R]{
+		\Large{{
+				\textbf{VERSUCH B-1}\\
+				Drehstromnetz}}}
+	\fancyfoot[C]{}
+	\fancyfoot[R]{\thepage}
+	\fancyfoot[L]{\leftmark}
+	
+	\pagenumbering{Roman}
+	
+	\tableofcontents
+	\listoffigures 
 	\addcontentsline{toc}{section}{Abbildungsverzeichnis}
-\listoftables
+	\listoftables
 	\addcontentsline{toc}{section}{Tabellenverzeichnis}
-\newpage
-\ClearShipoutPicture
-\pagenumbering{arabic}
-\setcounter{section}{+1}
-\include{Inhalt/02Vorbereitung}
-\newpage
-\include{Inhalt/03Messung}
-\newpage
-\include{Inhalt/04Auswertung}
-\newpage
-
+	\newpage
+	\ClearShipoutPicture
+	\pagenumbering{arabic}
+	\setcounter{section}{+1}
+	\include{Inhalt/02Vorbereitung}
+	\newpage
+	\include{Inhalt/03Messung}
+	\newpage
+	\include{Inhalt/04Auswertung}
+	\newpage
+	
 \end{document}
