@@ -127,10 +127,25 @@
 	 			\underline{I}_{N} &= 52\ mA\ e^{-j50^\circ} \\
  				\Longrightarrow\underline{I}_{N} &\approx 0\ mA
 	 		\end{align*}
+	 		\textbf{!Die 52 mA begründen, warum sie vernachlässigt werden kann.!}
 	 		
 	 		Bei dieser Messung beträgt der Stromfluss im Knotenpunkt zum Neutralleiter $0 mA$, was bedeutet, dass kein Strom durch ihn fließt. Alle drei Phasen haben denselben komplexen Widerstand. Aufgrund dessen, dass in allen Phasen derselbe Strom fließt und zwischen ihnen eine Phasenverschiebung von $120^\circ$ besteht, heben sich die Ströme gegenseitig auf, wodurch kein Strom durch den Sternpunkt-Leiter fließt.
 	 		
-	 		\item Bestimmen Sie aus den Messungen unter (a) die komplexe Impedanz $Z_{K}$ in kartesischen Koordinaten durch Mittelung der Werte $Z_{1K}$, $Z_{2K}$ und $Z_{3K}$. Ermitteln Sie anschließend die nötige Kompensationskapazität in Stern- und Dreieckschaltung. Nehmen Sie dazu an, dass die symmetrische Last aus entsprechenden Bauteilen in Reihenschaltung besteht.
+	 		\item Bestimmen Sie aus den Messungen unter (a) die komplexe Impedanz $\underline{Z}_{K}$ in kartesischen Koordinaten durch Mittelung der Werte $\underline{Z}_{1K}$, $\underline{Z}_{2K}$ und $\underline{Z}_{3K}$. Ermitteln Sie anschließend die nötige Kompensationskapazität in Stern- und Dreieckschaltung. Nehmen Sie dazu an, dass die symmetrische Last aus entsprechenden Bauteilen in Reihenschaltung besteht.
+	 		
+	 		\begin{align*}
+	 			\underline{Z}_{K} &= \frac{\underline{U}_{str}}{\underline{I}_{str}}\\
+	 			\underline{Z}_{K} &= \frac{U\cdot  e^{j\varphi _{U}}}{I\cdot  e^{j\varphi _{I}}}\\
+	 			\underline{Z}_{K} &= \frac{U}{I} \cdot  e^{j\varphi _{U}}\cdot e^{-j\varphi _{I}}\\
+	 			\Longrightarrow\underline{Z}_{K} &= \frac{U}{I} \cdot  e^{j{\varphi _{U} - \varphi _{I}}} \\ \ \\
+	 			\mid Z \mid			= \frac{U}{I} \hspace{1cm}
+	 			\varphi _{Z} 		= {\varphi _{U} - \varphi _{I}}
+	 			&\hspace{0.5cm}
+	 			Re\{Z\} 			= \mid Z \mid \cdot cos(\varphi _{Z}) \hspace{1cm}
+	 			Im\{Z\} 			= \mid Z \mid \cdot sin(\varphi _{Z})\\
+	 		\end{align*}
+	 		
+	 		Um Impedanzen zu bestimmen, wird die Strangspannung durch den Strangstrom geteilt. Die Phase der Strangspannung wird von der Phase des Strangstroms subtrahiert, wodurch die Phasenkomponente der Impedanz ermittelt wird. Impedanzen werden in kartesischer Form ausgedrückt, da aus dieser Form die ohmschen Anteile und die induktiven oder kapazitiven Anteile leicht abgeleitet werden können.
 	 		
 	 		\begin{center}
 	 			\begin{table}[h]
@@ -138,10 +153,10 @@
 	 					\hline
 	 					Art & \( Z\ in\ \Omega\) & \( Phase\ \varphi\ in\ ^\circ\ \ \)  & \( Re{\{z\}} \) & \( Im{\{z\}} \) & \( L\ in\ mH \) & \( C\ in\ \mu H \) \\
 	 					\hline
-	 					$\underline{Z}_{1K}$ & \( 241 \) & \( 70 \)		& \( 153 \) & \( 187 \) & \( 600 \)	& \( 10,19 \)\\
-	 					$\underline{Z}_{2K}$ & \( 260 \) & \( 70 \)		& \( 201 \) & \( 845 \) & \( 640 \)	& \( 9,47 \)\\
-	 					$\underline{Z}_{3K}$ & \( 253 \) & \( 70 \)		& \( 160 \) & \( 196 \) & \( 620 \)	& \( 9,73 \)\\
-	 					$\underline{Z}_{KN}$ & \( 0   \) & \( 0 \)		& \( 0   \) & \( 0 \)	& \( 0 \)	& \( 0 \)\\
+	 					$\underline{Z}_{1K}$ & \( 241 \) & \( 70 \)	& \( 153 \) & \( 187 \) & \( 600 \)	& \( 10,19 \)\\
+	 					$\underline{Z}_{2K}$ & \( 260 \) & \( 70 \)	& \( 201 \) & \( 845 \) & \( 640 \)	& \( 9,47 \)\\
+	 					$\underline{Z}_{3K}$ & \( 253 \) & \( 70 \)	& \( 160 \) & \( 196 \) & \( 620 \)	& \( 9,73 \)\\
+	 					$\underline{Z}_{KN}$ & \( 0   \) & \( 0 \)	& \( 0   \) & \( 0 \)	& \( 0 \)	& \( 0 \)\\
 	 					\hline
 	 				\end{tabular}
 	 				\caption{Messwerte - Komplexe Impedanzen}
@@ -150,10 +165,58 @@
 	 		
 	 		
 	 		
-	 		\item Beobachten Sie die Spannungen $u_{1N}$, $u_{2N}$, $u_{3N}$ und $u_{NK}$ die Ströme $i_{1}$, $i_{2}$, $i_{3}$ und $i_{N}$ bei angeschlossener symmetrischer Drehstromlast und drei Kondensatoren $C = 4 \mu F$ in Dreieckschaltung.  Skizzieren Sie die Schaltung und verwenden Sie zur Messung Oszilloskop, Trennteiler und Stromwandler. Halten Sie in einem Satz Ihre Beobachtungen mit einer entsprechenden Begründung fest (ein Oszillogramm in die Ausarbeitung übernehmen und aufarbeiten; $u_{1}$ mit $i_{1}$).
+	 		\item Beobachten Sie die Spannungen $\underline{u}_{1N}$, $\underline{u}_{2N}$, $\underline{u}_{3N}$ und $\underline{u}_{NK}$ die Ströme $\underline{i}_{1}$, $\underline{i}_{2}$, $\underline{i}_{3}$ und $\underline{i}_{N}$ bei angeschlossener symmetrischer Drehstromlast und drei Kondensatoren $C = 4 \mu F$ in Dreieckschaltung.  Skizzieren Sie die Schaltung und verwenden Sie zur Messung Oszilloskop, Trennteiler und Stromwandler. Halten Sie in einem Satz Ihre Beobachtungen mit einer entsprechenden Begründung fest (ein Oszillogramm in die Ausarbeitung übernehmen und aufarbeiten; $\underline{u}_{1}$ mit $\underline{i}_{1}$).
+	 		
+	 		\begin{figure}[h!]
+	 			\centering
+	 			\begin{subfigure}[b]{0.7\textwidth}
+	 				\includegraphics
+	 				[width=\textwidth]{img/img3.3.5.png}
+	 			\end{subfigure}\hfil
+	 			\caption{Skizze zur Kompensation - Symmetrischen Drehstromlast in Dreieckschaltung}\label{img3.3.5}
+	 		\end{figure}
+	 		
+	 		Durch die Implementierung der Kompensation bei der symmetrischen Drehstromlast konnten wir beobachten, dass die zuvor erfolgte Phasenverschiebung zwischen der Spannung $(U)$ und dem Strom $(I)$ vollständig aufgehoben wurde. Dies ist besonders gut auf Abbildung \ref{img3.3.6} zu erkennen, da der Phasenverlauf identisch ist, obwohl der Strom beträchtliche Ober- und Unterschwingungen aufweist. Diese Schwankungen sind eine natürliche Konsequenz der Herstellung von Bauteilen für die symmetrische Drehstromlast, da eine exakte Fertigung nur bis zu einem gewissen Grad möglich ist.
+	 		
+	 		\begin{figure}[h!]
+	 			\centering
+	 			\begin{subfigure}[b]{0.7\textwidth}
+	 				\includegraphics
+	 				[width=\textwidth]{img/img3.3.6.png}
+	 			\end{subfigure}\hfil
+	 			\caption{Oszillogramm von $u_{N}$ und $i_{N}$  - Symmetrischen Drehstromlast in Dreieckschaltung}\label{img3.3.6}
+	 		\end{figure}
+	 		
+	 		
+	 		
 	 		
 	 		\item Schalten Sie nun die drei Kondensatoren in Stern und schließen Sie diese jetzt parallel zur Last an. Überlegen Sie, welche Auswirkungen das auf den Phasenwinkel hat und begründen Sie Ihre Beobachtungen. 
-	 	\end{enumerate}
+	 		
+	 		\begin{figure}[h!]
+	 			\centering
+	 			\begin{subfigure}[b]{0.7\textwidth}
+	 				\includegraphics
+	 				[width=\textwidth]{img/img3.3.7.png}
+	 			\end{subfigure}\hfil
+	 			\caption{Skizze zur Kompensation - Symmetrischen Drehstromlast in Sternschaltung}\label{img3.3.7}
+	 		\end{figure}
+	 		
+	 		\textbf{Die Aussage muss überarbeite werden, da die nicht unser Case abdeckt.}
+	 		\newline
+	 		Kompensation in Dreieckschaltung: Bei der Kompensation in Dreieckschaltung werden die Kondensatoren in einer Dreieckschaltung parallel zu den Lasten geschaltet. Dies hat den Vorteil, dass sie in Reihe mit den Induktivitäten der Lasten stehen. Diese Konfiguration führt dazu, dass die Kondensatoren die Blindleistung der Lasten direkt kompensieren. Dies ist besonders wirksam, wenn die Lasten in Dreieckschaltung geschaltet sind oder wenn die Verdrahtung so angeordnet ist, dass die Kondensatoren in Reihe mit den Lasten geschaltet werden können.
+	 		\newline
+	 		Kompensation in Sternschaltung: Die Kompensation in Sternschaltung erfolgt, indem die Kondensatoren parallel zu den Lasten, jedoch in Sternschaltung geschaltet werden. Dies hat den Vorteil, dass die Spannung über jedem Kondensator niedriger ist als die Gesamtphasenspannung, was die Lebensdauer der Kondensatoren verlängern kann. Diese Konfiguration ist nützlich, wenn die Lasten in Sternschaltung geschaltet sind oder wenn es keine Möglichkeit gibt, die Kondensatoren in Reihe mit den Lasten zu schalten.
+	 		
+	 		\begin{figure}[h!]
+	 			\centering
+	 			\begin{subfigure}[b]{0.7\textwidth}
+	 				\includegraphics
+	 				[width=\textwidth]{img/img3.3.8.png}
+	 			\end{subfigure}\hfil
+	 			\caption{Oszillogramm von $u_{N}$ und $i_{N}$  - Symmetrischen Drehstromlast in Sternschaltung}\label{img3.3.8}
+	 		\end{figure}
+	 		
+ 		\end{enumerate}
 	 	
  	\subsection{Unsymmetrische Drehstromlast}
 	 	\begin{enumerate}[label=\alph*)]
