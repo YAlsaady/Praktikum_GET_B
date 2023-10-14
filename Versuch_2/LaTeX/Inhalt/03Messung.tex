@@ -127,9 +127,9 @@
 	 			\underline{I}_{N} &= 52\ mA\ e^{-j50^\circ} \\
  				\Longrightarrow\underline{I}_{N} &\approx 0\ mA
 	 		\end{align*}
-	 		\textbf{!Die 52 mA begründen, warum sie vernachlässigt werden kann.!}
 	 		
-	 		Bei dieser Messung beträgt der Stromfluss im Knotenpunkt zum Neutralleiter $0 mA$, was bedeutet, dass kein Strom durch ihn fließt. Alle drei Phasen haben denselben komplexen Widerstand. Aufgrund dessen, dass in allen Phasen derselbe Strom fließt und zwischen ihnen eine Phasenverschiebung von $120^\circ$ besteht, heben sich die Ströme gegenseitig auf, wodurch kein Strom durch den Sternpunkt-Leiter fließt.
+	 		
+	 		Bei dieser Messung beträgt der Stromfluss im Knotenpunkt zum Neutralleiter ca. $52 mA$. Dieser Strom ist so gering, dass er vernachlässigt werden kann. Alle drei Phasen weisen mehrere komplexe Widerstände auf. Da in allen Phasen derselbe Strom fließt und zwischen ihnen eine Phasenverschiebung von $120^\circ$ besteht, heben sich die Ströme gegenseitig auf, wodurch kein Strom durch den Sternpunkt-Leiter fließt.
 	 		
 	 		\item Bestimmen Sie aus den Messungen unter (a) die komplexe Impedanz $\underline{Z}_{K}$ in kartesischen Koordinaten durch Mittelung der Werte $\underline{Z}_{1K}$, $\underline{Z}_{2K}$ und $\underline{Z}_{3K}$. Ermitteln Sie anschließend die nötige Kompensationskapazität in Stern- und Dreieckschaltung. Nehmen Sie dazu an, dass die symmetrische Last aus entsprechenden Bauteilen in Reihenschaltung besteht.
 	 		
@@ -201,11 +201,8 @@
 	 			\caption{Skizze zur Kompensation - Symmetrischen Drehstromlast in Sternschaltung}\label{img3.3.7}
 	 		\end{figure}
 	 		
-	 		\textbf{Die Aussage muss überarbeite werden, da die nicht unser Case abdeckt.}
-	 		\newline
-	 		Kompensation in Dreieckschaltung: Bei der Kompensation in Dreieckschaltung werden die Kondensatoren in einer Dreieckschaltung parallel zu den Lasten geschaltet. Dies hat den Vorteil, dass sie in Reihe mit den Induktivitäten der Lasten stehen. Diese Konfiguration führt dazu, dass die Kondensatoren die Blindleistung der Lasten direkt kompensieren. Dies ist besonders wirksam, wenn die Lasten in Dreieckschaltung geschaltet sind oder wenn die Verdrahtung so angeordnet ist, dass die Kondensatoren in Reihe mit den Lasten geschaltet werden können.
-	 		\newline
-	 		Kompensation in Sternschaltung: Die Kompensation in Sternschaltung erfolgt, indem die Kondensatoren parallel zu den Lasten, jedoch in Sternschaltung geschaltet werden. Dies hat den Vorteil, dass die Spannung über jedem Kondensator niedriger ist als die Gesamtphasenspannung, was die Lebensdauer der Kondensatoren verlängern kann. Diese Konfiguration ist nützlich, wenn die Lasten in Sternschaltung geschaltet sind oder wenn es keine Möglichkeit gibt, die Kondensatoren in Reihe mit den Lasten zu schalten.
+	 		In Bezug auf die Sternkompensation konnten wir keine Kompensation mit den $4 \mu F$ Kondensatoren feststellen, wie in Abbildung \ref{img3.3.8} dargestellt. Dies liegt daran, dass zwischen der Stern- und Dreieckkompensation ein Faktor von 3 besteht. Um eine Kompensation der Phasenverschiebung zu erreichen, müsste daher ein $12 \mu F$ Kondensator verwendet werden.
+	 		
 	 		
 	 		\begin{figure}[h!]
 	 			\centering
@@ -217,7 +214,6 @@
 	 		\end{figure}
 	 		
  		\end{enumerate}
-	 	
  	\subsection{Unsymmetrische Drehstromlast}
 	 	\begin{enumerate}[label=\alph*)]
 	 		\item Bestimmen Sie die komplexen Effektivwerte der Spannungen $U_{1N}$, $U_{2N}$, $U_{3N}$ und $U_{NK}$ und der Ströme $I_{1}$, $I_{2}$, $I_{3}$ und $I_{K}$ bei der unsymmetrischen Drehstromlast nach Bild 13 \textcolor{red}{mit} angeschlossenem Neutralleiter. (Last je nach Gruppennummer)
