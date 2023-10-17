@@ -1,15 +1,15 @@
-\section{Messungen und Auswertung}
+\section{Messungen}
 
 	\subsection{Welche Netzform hat das 400-V-Drehstromnetz?}
 		\begin{itemize}
 			\item Bestimmen Sie durch eine Messung mit einem „Ohmmeter“ und mit einer Strom-Spannungsmessung  $(I\ <\ 100\ mA, R\ = 100\ \Omega)$ die Netzform des im Labortisches eingebauten 400V-Drehstromnetzes. Erläutern Sie Ihre Beobachtungen! 
 			
-			Mit einem Ohmmeter wurde ein Innenwiderstand von $O \Omega$ gemessen. Allerdings reicht die Messspannung des Ohmmeters nicht aus, um den Innenwiderstand $R_{NPE}$ zwischen N und PE zu erfassen. Dies kann durch die Verwendung einer Spannungsfehlerschaltung erreicht werden, bei der die Spannung mithilfe einer externen Quelle entsprechend angepasst werden kann.
+			Mit einem Ohmmeter wurde ein Innenwiderstand von $O \Omega$ gemessen. Allerdings reicht die Messspannung des Ohmmeters nicht aus, um den Innenwiderstand $R_{N-PE}$ zwischen N und PE zu erfassen. Dies kann durch die Verwendung einer Spannungsfehlerschaltung erreicht werden, bei der die Spannung mithilfe einer externen Quelle entsprechend angepasst werden kann.
 			\newline
 			\begin{align*}
-				R_{NPE} &= \frac{U_{M}}{I_{M}}\\
-				R_{NPE} &= \frac{50\ mV}{100\ mA}\\
-				R_{NPE} &= 0,5 \Omega
+				R_{N-PE} &= \frac{U_{M}}{I_{M}}\\
+				R_{N-PE} &= \frac{50\ mV}{100\ mA}\\
+				R_{N-PE} &= 0,5 \Omega
 			\end{align*}
 			Wenn ein Innenwiderstand gemessen wurde, lässt dies darauf schließen, dass es sich um ein \textbf{TN-C-S-Netz} handelt. In diesem Netztyp sind der Neutralleiter und der Schutzleiter (PE) miteinander verbunden, was den Innenwiderstand erklärt.
 		\end{itemize}
@@ -18,8 +18,9 @@
 	\subsection{Fehlerstromschutzschalter zum Personenschutz}
 		\begin{enumerate}[label=\alph*)]
 			\item Ermitteln Sie den tatsächlichen Auslösestrom des FI-Schutzschalters durch Mittelwertbildung aus drei Messungen, benutzen Sie dazu Multimeter und den FI-Tester aus Bild 9. Nutzen Sie dazu die Min/Max-Funktion des Multimeters. Stellen Sie das Potentiometer auf einen großen Wert ein und verkleinern Sie dann langsam den Widerstandswert. Der Auslösestrom kann dann am Multimeter abgelesen werden.
-			\begin{center}
-				\begin{table}[h]
+      \begin{table}[h!]
+			  \begin{center}
+          \caption{Messwerte - Auslösestrom eines FI-Schutzschalters}
 					\begin{tabular}{r l}
 						\hline
 						Anzahl & \( I\ in\ mA \) \\
@@ -31,15 +32,15 @@
 						Mittelwert & \( 20,39\ mA \) \\
 						\hline
 					\end{tabular}
-					\caption{Messwerte - Auslösestrom eines FI-Schutzschalters}
-				\end{table}
 			\end{center}
+    \end{table}
 			
 			
-			\item Bestimmen Sie die Abschaltzeit bei Nennfehlerstrom des FI-Schutzschalters durch Mittelwertbildung aus drei Messungen, benutzen Sie dazu Multimeter, FI-Tester, Oszilloskop und Trennteiler. Ein Oszillogramm ist für die Ausarbeitung aufzubereiten! 
-			3
-			\begin{center}
-				\begin{table}[h]
+    \pagebreak
+			\item Bestimmen Sie die Abschaltzeit bei Nennfehlerstrom des FI-Schutzschalters durch Mittelwertbildung aus drei Messungen, benutzen Sie dazu Multimeter, FI-Tester, Oszilloskop und Trennteiler. Ein Oszillogramm ist für die Ausarbeitung aufzubereiten! \\
+      \begin{table}[h!]
+        \begin{center}
+          \caption{Messwerte - Abschaltzeit eines FI-Schutzschalters}
 					\begin{tabular}{r l}
 						\hline
 						Anzahl & \( t\ in\ ms \) \\
@@ -51,9 +52,8 @@
 						Mittelwert & \( 27,55\ ms \) \\
 						\hline
 					\end{tabular}
-					\caption{Messwerte - Abschaltzeit eines FI-Schutzschalters}
-				\end{table}
 			\end{center}
+    \end{table}
 			
 		\end{enumerate}
  	
@@ -61,8 +61,9 @@
 	 	\begin{enumerate}[label=\alph*)]
 	 		\item Bestimmen Sie die komplexen Effektivwerte der Spannungen $\underline{U}_{1N}$, $\underline{U}_{2N}$, $\underline{U}_{3N}$ und $\underline{U}_{NK}$ und der Ströme $\underline{I}_{1}$, $\underline{I}_{2}$, $\underline{I}_{3}$ und $\underline{I}_{K}$ bei angeschlossener symmetrischer Drehstromlast nach Bild 12. Skizzieren Sie die Messschaltung und verwenden Sie zur Messung Oszilloskop, Trennteiler und Stromwandler. Das Oszillogramm von $\underline{u}_{1}$ mit $\underline{i}_{1}$ ist mit in die Ausarbeitung zu übernehmen und aufzuarbeiten.
 	 		 		
-	 		\begin{center}
-	 			\begin{table}[h]
+        \begin{table}[h!]
+          \begin{center}
+	 				\caption{Messwerte - Komplexen Effektivwerte der Spannungen und Ströme}
 	 				\begin{tabular}{r c c r c c}
 	 					\hline
 	 					Art & \( U_{eff}\ in\ V \) & \( Phase\ \varphi\ in\ ^\circ\ \ \)  & Art & \( I_{eff}\ in\ mA \) & \( Phase\ in\ ^\circ\ \ \) \\
@@ -77,9 +78,8 @@
 	 					$I_{N}$	 & \( 0   \) & \( 0 \) \\
 	 					\hline
 	 				\end{tabular}
-	 				\caption{Messwerte - Komplexen Effektivwerte der Spannungen und Ströme}
-	 			\end{table}
 	 		\end{center}
+    \end{table}
 	 		
  			\begin{figure}[h!]
  				\centering
@@ -145,10 +145,11 @@
 	 			Im\{Z\} 			= \mid Z \mid \cdot sin(\varphi_{Z})\\
 	 		\end{align*}
 	 		
-	 		Um Impedanzen zu bestimmen, wird die Strangspannung durch den Strangstrom geteilt. Die Phase der Strangspannung wird von der Phase des Strangstroms subtrahiert, wodurch die Phasenkomponente der Impedanz ermittelt wird. Impedanzen werden in kartesischer Form ausgedrückt, da aus dieser Form die ohmschen Anteile und die induktiven oder kapazitiven Anteile leicht abgeleitet werden können.
+	 		Um Impedanzen zu bestimmen, wird die Strangspannung durch den Strangstrom geteilt. Die Phase der Strangspannung wird von der Phase des Strangstroms subtrahiert, wodurch die Phasenkomponente der Impedanz ermittelt wird. Impedanzen werden in kartesischer Form ausgedrückt. Der reellen Anteil entspricht den ohmschen Widerstand und der imaginär Anteil entspricht den induktiven bzw. kapazitiven Widerstand.
 	 		
-	 		\begin{center}
 	 			\begin{table}[h]
+          \begin{center}
+            \caption{Messwerte - Komplexe Impedanzen}
 	 				\begin{tabular}{r c c c c c c}
 	 					\hline
 	 					Art & \( Z\ in\ \Omega\) & \( Phase\ \varphi\ in\ ^\circ\ \ \)  & \( Re{\{z\}} \) & \( Im{\{z\}} \) & \( L\ in\ mH \) & \( C\ in\ \mu H \) \\
@@ -159,24 +160,14 @@
 	 					$\underline{Z}_{KN}$ & \( 0   \) & \( 0 \)	& \( 0   \) & \( 0 \)	& \( 0 \)	& \( 0 \)\\
 	 					\hline
 	 				\end{tabular}
-	 				\caption{Messwerte - Komplexe Impedanzen}
+        \end{center}
 	 			\end{table}
-	 		\end{center}
 	 		
 	 		
 	 		
 	 		\item Beobachten Sie die Spannungen $\underline{u}_{1N}$, $\underline{u}_{2N}$, $\underline{u}_{3N}$ und $\underline{u}_{NK}$ die Ströme $\underline{i}_{1}$, $\underline{i}_{2}$, $\underline{i}_{3}$ und $\underline{i}_{N}$ bei angeschlossener symmetrischer Drehstromlast und drei Kondensatoren $C = 4 \mu F$ in Dreieckschaltung.  Skizzieren Sie die Schaltung und verwenden Sie zur Messung Oszilloskop, Trennteiler und Stromwandler. Halten Sie in einem Satz Ihre Beobachtungen mit einer entsprechenden Begründung fest (ein Oszillogramm in die Ausarbeitung übernehmen und aufarbeiten; $\underline{u}_{1}$ mit $\underline{i}_{1}$).
 	 		
-	 		\begin{figure}[h!]
-	 			\centering
-	 			\begin{subfigure}[b]{0.7\textwidth}
-	 				\includegraphics
-	 				[width=\textwidth]{img/img3.3.5.png}
-	 			\end{subfigure}\hfil
-	 			\caption{Skizze zur Kompensation - Symmetrischen Drehstromlast in Dreieckschaltung}\label{img3.3.5}
-	 		\end{figure}
-	 		
-	 		Durch die Implementierung der Kompensation bei der symmetrischen Drehstromlast konnten wir beobachten, dass die zuvor erfolgte Phasenverschiebung zwischen der Spannung $(U)$ und dem Strom $(I)$ vollständig aufgehoben wurde. Dies ist besonders gut auf Abbildung \ref{img3.3.6} zu erkennen, da der Phasenverlauf identisch ist, obwohl der Strom beträchtliche Ober- und Unterschwingungen aufweist. Diese Schwankungen sind eine natürliche Konsequenz der Herstellung von Bauteilen für die symmetrische Drehstromlast, da eine exakte Fertigung nur bis zu einem gewissen Grad möglich ist.
+	 		Durch die Implementierung der Kompensation bei der symmetrischen Drehstromlast konnten wir beobachten, dass die zuvor erfolgte Phasenverschiebung zwischen der Spannung $(U)$ und dem Strom $(I)$ vollständig aufgehoben wurde. Dies ist auf Abbildung \ref{img3.3.6} zu erkennen, da der Phasenverlauf identisch ist, obwohl der Strom beträchtliche Ober- und Unterschwingungen aufweist. Diese Schwankungen sind eine natürliche Konsequenz der Herstellung von Bauteilen für die symmetrische Drehstromlast, da eine exakte Fertigung nur bis zu einem gewissen Grad möglich ist.
 	 		
 	 		\begin{figure}[h!]
 	 			\centering
@@ -187,8 +178,14 @@
 	 			\caption{Oszillogramm von $u_{N}$ und $i_{N}$  - Symmetrischen Drehstromlast in Dreieckschaltung}\label{img3.3.6}
 	 		\end{figure}
 	 		
-	 		
-	 		
+	 		\begin{figure}[h!]
+	 			\centering
+	 			\begin{subfigure}[b]{0.7\textwidth}
+	 				\includegraphics
+	 				[width=\textwidth]{img/img3.3.5.png}
+	 			\end{subfigure}\hfil
+	 			\caption{Skizze zur Kompensation - Symmetrischen Drehstromlast in Dreieckschaltung}\label{img3.3.5}
+	 		\end{figure}
 	 		
       \pagebreak
 	 		\item Schalten Sie nun die drei Kondensatoren in Stern und schließen Sie diese jetzt parallel zur Last an. Überlegen Sie, welche Auswirkungen das auf den Phasenwinkel hat und begründen Sie Ihre Beobachtungen. 
@@ -202,7 +199,7 @@
 	 			\caption{Skizze zur Kompensation - Symmetrischen Drehstromlast in Sternschaltung}\label{img3.3.7}
 	 		\end{figure}
 	 		
-	 		In Bezug auf die Sternkompensation konnten wir keine Kompensation mit den $4 \mu F$ Kondensatoren feststellen, wie in Abbildung \ref{img3.3.8} dargestellt. Dies liegt daran, dass zwischen der Stern- und Dreieckkompensation ein Faktor von 3 besteht. Um eine Kompensation der Phasenverschiebung zu erreichen, müsste daher ein $12 \mu F$ Kondensator verwendet werden.
+	 		In Bezug auf die Sternkompensation konnten wir keine Kompensation mit den $4 \mu F$ Kondensatoren feststellen, wie in Abbildung \ref{img3.3.8} dargestellt ist. Dies liegt daran, dass zwischen der Stern- und Dreieckkompensation ein Faktor von 3 besteht. Um eine Kompensation der Phasenverschiebung zu erreichen, müsste daher ein $12 \mu F$ Kondensator verwendet werden.
 	 		
 	 		
 	 		\begin{figure}[h!]
@@ -220,8 +217,9 @@
 	 	\begin{enumerate}[label=\alph*)]
 	 		\item Bestimmen Sie die komplexen Effektivwerte der Spannungen $U_{1N}$, $U_{2N}$, $U_{3N}$ und $U_{NK}$ und der Ströme $I_{1}$, $I_{2}$, $I_{3}$ und $I_{K}$ bei der unsymmetrischen Drehstromlast nach Bild 13 \textcolor{red}{mit} angeschlossenem Neutralleiter. (Gruppe: A2a).\\
 			Skizzieren Sie die Schaltung und verwenden Sie zur Messung Oszilloskop, Trennteiler und Stromwandler. Zwei Oszillogramme sind mit in die Ausarbeitung zu übernehmen und aufzuarbeiten. ($u_{1}$ mit $u_{KN}$, $u_{1}$ mit $i_{N}$).
-	 		\begin{center}
-	 			\begin{table}[h!]
+      \begin{table}[h!]
+        \begin{center}
+	 				\caption{Komplexen Effektivwerte der Spannungen und Ströme - Unsymmetrische Drehstromlast mit Neutralleiter}
 	 				\begin{tabular}{r c c r c c}
 	 					\hline
 	 					Art & \( U_{eff}\ in\ V \) & \( Phase\ \varphi\ in\ ^\circ\ \ \)  & Art & \( I_{eff}\ in\ mA \) & \( Phase\ in\ ^\circ\ \ \) \\
@@ -236,9 +234,8 @@
 	 					$I_{N}$	 & \( 114 \) & \( 90  \) \\
 	 					\hline
 	 				\end{tabular}
-	 				\caption{Komplexen Effektivwerte der Spannungen und Ströme - Unsymmetrische Drehstromlast mit Neutralleiter}
-	 			\end{table}
 	 		\end{center}
+    \end{table}
 	 		
  			\begin{figure}[h!]
  				\centering
@@ -260,7 +257,7 @@
 	 		
 	 		\begin{figure}[h!]
 	 			\centering
-	 			\begin{subfigure}[b]{0.6\textwidth}
+	 			\begin{subfigure}[b]{0.8\textwidth}
 	 				\includegraphics
 	 				[width=\textwidth]{img/img3.4.3.png}
 	 			\end{subfigure}\hfil
@@ -280,8 +277,9 @@
 			
 			\item Bestimmen Sie die komplexen Effektivwerte der Spannungen $U_{1N}$, $U_{2N}$, $U_{3N}$ und $U_{NK}$ und der Ströme $I_{1}$, $I_{2}$, $I_{3}$ und $I_{K}$ bei der unsymmetrischen  Drehstromlast nach Bild 13 \textcolor{red}{ohne} angeschlossenem Neutralleiter. (Gruppe: A2a)\\
 			Skizzieren Sie die Schaltung und verwenden Sie zur Messung Oszilloskop, Trennteiler und Stromwandler. Zwei Oszillogramme sind mit in die Ausarbeitung zu übernehmen und aufzuarbeiten. ($u_{1}$ mit $u_{KN}$, $u_{1}$ mit $i_{N}$). 
-	 		\begin{center}
-	 			\begin{table}[h!]
+      \begin{table}[h!]
+        \begin{center}
+	 				\caption{Komplexen Effektivwerte der Spannungen und Ströme - Unsymmetrische Drehstromlast Ohne Neutralleiter}
 	 				\begin{tabular}{r c c r c c}
 	 					\hline
 	 					Art & \( U_{eff}\ in\ V \) & \( Phase\ \varphi\ in\ ^\circ\ \ \)  & Art & \( I_{eff}\ in\ mA \) & \( Phase\ in\ ^\circ\ \ \) \\
@@ -296,14 +294,13 @@
 	 					$I_{N}$	 & \( 0   \) & \( 0   \) \\
 	 					\hline
 	 				\end{tabular}
-	 				\caption{Komplexen Effektivwerte der Spannungen und Ströme - Unsymmetrische Drehstromlast Ohne Neutralleiter}
-	 			\end{table}
-	 		\end{center}
+        \end{center}
+      \end{table}
 	 		
       \pagebreak
  			\begin{figure}[h!]
  				\centering
- 					\begin{subfigure}[b]{0.5\textwidth}
+ 					\begin{subfigure}[b]{0.7\textwidth}
  						\includegraphics
  						[width=\textwidth]{img/img3.4.4.png}
  					\end{subfigure}\hfil
@@ -312,7 +309,7 @@
 	 		
  			\begin{figure}[h!]
  				\centering
- 					\begin{subfigure}[b]{0.5\textwidth}
+ 					\begin{subfigure}[b]{0.7\textwidth}
  						\includegraphics
  						[width=\textwidth]{img/img3.4.1.png}
  					\end{subfigure}\hfil
@@ -324,7 +321,7 @@
       \ \\
 	 		\begin{figure}[h!]
 	 			\centering
-	 			\begin{subfigure}[b]{0.6\textwidth}
+	 			\begin{subfigure}[b]{0.9\textwidth}
 	 				\includegraphics
 	 				[width=\textwidth]{img/img3.3.2.1.png}
 	 			\end{subfigure}\hfil
