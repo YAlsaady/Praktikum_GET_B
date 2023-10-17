@@ -101,16 +101,16 @@ Ohne testierte Vorbereitung können Sie den Versuch nicht durchführen.\\}
 		U_{Str} &= \frac{380\ V}{\sqrt{3}}\\
 		U_{Str} &= 219,39\ V\\ \ \\
 		U_{1N}=220\ Ve^{j0^\circ} \hspace{1cm}
-		U_{2N}&=220\ Ve^{j120^\circ} \hspace{1cm}
-		U_{3N}=220\ Ve^{-j120^\circ}\\
+		U_{2N}&=220\ Ve^{-j120^\circ} \hspace{1cm}
+		U_{3N}=220\ Ve^{j120^\circ}\\
 	\end{align*}
 		
 	Die einzelnen komplexen Widerstände werden berechnet, um die Strangstromstärken zu ermitteln.
 	
 	\begin{align*}
-		\underline{z}_{1} &= R_{1} + j\omega L_{1} = 1,47\ k\Omega + j2\pi\cdot 50\ Hz\cdot1,5\ H = 1,54\ k\Omega e^{j17,77^\circ}\\
-		\underline{z}_{2} &= R_{2} = 2\ k\Omega = 2\ k\Omega e^{j0^\circ}\\
-		\underline{z}_{3} &= R_{3} + \frac{1}{j\omega C_{3}} = 2,18\ k\Omega + \frac{1}{j2\pi\cdot 50\ Hz\cdot2\ \mu F} = 2,67\ k\Omega e^{-j36,13^\circ}\\
+		\underline{Z}_{1} &= R_{1} + j\omega L_{1} = 1,47\ k\Omega + j2\pi\cdot 50\ Hz\cdot1,5\ H = 1,54\ k\Omega e^{j17,77^\circ}\\
+		\underline{Z}_{2} &= R_{2} = 2\ k\Omega = 2\ k\Omega e^{j0^\circ}\\
+		\underline{Z}_{3} &= R_{3} + \frac{1}{j\omega C_{3}} = 2,18\ k\Omega + \frac{1}{j2\pi\cdot 50\ Hz\cdot2\ \mu F} = 2,67\ k\Omega e^{-j36,13^\circ}\\
 	\end{align*}
 	
 	Die zuvor ermittelten Werte werden jetzt genutzt, um die Strangströme zu berechnen.
@@ -118,14 +118,14 @@ Ohne testierte Vorbereitung können Sie den Versuch nicht durchführen.\\}
 	\begin{align*}
 		\underline{I}_{1} &= \frac{\underline{U}_{1N}}{\underline{z}_{1}} = 
     	\frac{219,4\ Ve^{j0^\circ}}{1,54\ k\Omega e^{j17,77^\circ}}=0,14\ Ae^{-j17,77^\circ}\\ 
- 		\underline{I}_{1} &= \frac{\underline{U}_{2N}}{\underline{z}_{2}} = 
-    	\frac{219,4\ Ve^{j120^\circ}}{4\ k\Omega e^{j0^\circ}}=0,109\ Ae^{j120^\circ}\\ 
-		\underline{I}_{1} &= \frac{\underline{U}_{3N}}{\underline{z}_{3}} = 
-    	\frac{219,4\ Ve^{-j120^\circ}}{2,67\ k\Omega e^{-j36,13^\circ}}=0,081\ Ae^{-j87,8^\circ}\\
+ 		\underline{I}_{2} &= \frac{\underline{U}_{2N}}{\underline{z}_{2}} = 
+    	\frac{219,4\ Ve^{-j120^\circ}}{4\ k\Omega e^{j0^\circ}}=0,109\ Ae^{-j120^\circ}\\ 
+		\underline{I}_{3} &= \frac{\underline{U}_{3N}}{\underline{z}_{3}} = 
+    	\frac{219,4\ Ve^{j120^\circ}}{2,67\ k\Omega e^{-j36,13^\circ}}=0,081\ Ae^{j156,13^\circ}\\
 		\sum I &= \underline{I_1}+\underline{I_2}+\underline{I_3}+\underline{I_N}=0\\
 		\Rightarrow \underline{I_N}&=-(\underline{I_1}+\underline{I_2}+\underline{I_3})\\
-    	\underline{I_N} &= -(0,14\ Ae^{-j17,77^\circ}+0,109\ Ae^{j120^\circ}+0,081\ Ae^{-j87,8^\circ})\\ 
-    	\underline{I_N} &= -(0,087\ Ae^{-19,66^\circ})=0,087\ Ae^{160,34^\circ}
+    	\underline{I_N} &= -(0,14\ Ae^{-j17,77^\circ}+0,109\ Ae^{-j120^\circ}+0,081\ Ae^{j156,13^\circ})\\ 
+    	\underline{I_N} &= -(0,105\ Ae^{-87,42^\circ})=0,105\ Ae^{92,58^\circ}
   \end{align*}
 
   \begin{figure}[h!]
@@ -148,33 +148,33 @@ Ohne testierte Vorbereitung können Sie den Versuch nicht durchführen.\\}
     $$\underline{U_{KN}}=\frac{\underline{Y_1}\cdot\underline{U_{1N}}+\underline{Y_2}\cdot\underline{U_{2N}}+\underline{Y_3}\cdot\underline{U_{3N}}}{\underline{Y}}$$
       \begin{multline*}
     \underline{U_{KN}}=\left(0,648\ mS\cdot e^{-j17,79^\circ}\cdot 219,39\ V e^{j0} \right .
-                      +0,5\ mS\cdot e^{j0}\cdot 219,39\ V e^{j120^\circ}\\
-                      \left . +0,37\ mS\cdot e^{j36,1^\circ}\cdot 219,39\ V e^{-j120^\circ}\right)
+                      +0,5\ mS\cdot e^{j0}\cdot 219,39\ V e^{-j120^\circ}\\
+                      \left . +0,37\ mS\cdot e^{j36,1^\circ}\cdot 219,39\ V e^{j120^\circ}\right)
                       \cdot\frac{1}{1,416\ mS\cdot e^{j0,81^\circ}}
     \end{multline*}
-    $$\underline{U_{KN}}=62,66\ V-j21,48\ V=66,236\ V e^{-j18,92^\circ}$$
+    $$\underline{U_{KN}}=3,45\ V-j74,71\ V=74,8\ V e^{-j87,36^\circ}$$
   \textbf{Spannungsmaschen:}
   \begin{align*}
-    \underline{U_{1K}} &= \underline{U_{1N}} - \underline{U_{KN}} = 219,39\ Ve^{j0^\circ} - 66,236\ Ve^{-j18,92^\circ}\\
-    \underline{U_{1K}} &= 158,2\ Ve^{j7,8^\circ}\\
-    \underline{U_{2K}} &= \underline{U_{2N}} - \underline{U_{KN}} = 219,39\ Ve^{j120^\circ} - 66,236\ Ve^{-j18,92^\circ}\\
-    \underline{U_{2K}} &= 272,81\ Ve^{j129,18^\circ}\\
-    \underline{U_{3K}} &= \underline{U_{3N}} - \underline{U_{KN}} = 219,39\ Ve^{-j120^\circ} - 66,236\ Ve^{-j18,92^\circ}\\
-    \underline{U_{3K}} &= 241,05\ Ve^{-j135,74^\circ}
+    \underline{U_{1K}} &= \underline{U_{1N}} - \underline{U_{KN}} = 219,39\ Ve^{j0^\circ} - 74,8\ V e^{-j87,36^\circ}\\
+    \underline{U_{1K}} &= 229,1\ Ve^{j19^\circ}\\
+    \underline{U_{2K}} &= \underline{U_{2N}} - \underline{U_{KN}} = 219,39\ Ve^{-j120^\circ} - 74,8\ V e^{-j87,36^\circ}\\
+    \underline{U_{2K}} &= 272,162,1\ Ve^{-j134,4^\circ}\\
+    \underline{U_{3K}} &= \underline{U_{3N}} - \underline{U_{KN}} = 219,39\ Ve^{j120^\circ} - 74,8\ V e^{-j87,36^\circ}\\
+    \underline{U_{3K}} &= 288,5\ Ve^{j133,2^\circ}
   \end{align*}
   \textbf{Ströme:}
   \begin{align*}
-    \underline{I_1} &= \underline{Y_1}\cdot\underline{U_{1K}} = 0,648\ mS\cdot e^{-j17,79^\circ}\cdot 158,2\ Ve^{j7,8^\circ}\\
-    \underline{I_1} &= 102,5\ mA \cdot e^{-j9,99^\circ}\\
-    \underline{I_2} &= \underline{Y_1}\cdot\underline{U_{1K}} = 0,5\ mS\cdot e^{j0}\cdot 272,81\ Ve^{j129,18^\circ}\\
-    \underline{I_2} &= 136,41\ mA\cdot e^{j129,18^\circ}\\
-    \underline{I_3} &= \underline{Y_1}\cdot\underline{U_{1K}} = 0,37\ mS\cdot e^{j36,1^\circ}\cdot 241,05\ Ve^{-j135,74^\circ}\\
-    \underline{I_3} &= 89,19\ mA\cdot e^{-j99,55^\circ}\\
+    \underline{I_1} &= \underline{Y_1}\cdot\underline{U_{1K}} = 0,648\ mS\cdot e^{-j17,79^\circ}\cdot 229,1\ Ve^{j19^\circ}\\
+    \underline{I_1} &= 148,4\ mA \cdot e^{j1,3^\circ}\\
+    \underline{I_2} &= \underline{Y_1}\cdot\underline{U_{1K}} = 0,5\ mS\cdot e^{j0}\cdot 272,162,1\ Ve^{-j134,4^\circ}\\
+    \underline{I_2} &= 81,1\ mA\cdot e^{-j134,5^\circ}\\
+    \underline{I_3} &= \underline{Y_1}\cdot\underline{U_{1K}} = 0,37\ mS\cdot e^{j36,1^\circ}\cdot 288,5\ Ve^{j133,2^\circ}\\
+    \underline{I_3} &= 106,74\ mA\cdot e^{j149,3^\circ}\\
     \underline{I_1} +\underline{I_2} + \underline{I_3} &\approx 0
   \end{align*}
 \begin{figure}[h!]
   \begin{center}
-    \includegraphics[width=0.70\textwidth]{img/img2.6.2.png}
+    \includegraphics[width=0.70\textwidth]{img/img2.6.2.jpg}
   \end{center}
   \caption{Zeigerdiagramm der Spannungen $\underline{U_{1K}},\ \underline{U_{2K}} \text{ und } \underline{U_{3K}}$}
 \end{figure}

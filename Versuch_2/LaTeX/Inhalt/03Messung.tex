@@ -92,21 +92,21 @@
 	 		
 	 		\begin{figure}[h!]
 	 			\centering
-	 			\begin{subfigure}[b]{0.5\textwidth}
+	 			\begin{subfigure}[b]{0.9\textwidth}
 	 				\includegraphics
-	 				[width=\textwidth]{img/img3.3.2.png}
+	 				[width=\textwidth]{img/img3.3.2.1.png}
 	 			\end{subfigure}\hfil
-	 			\caption{Skizze der Spannungen - Symmetrische Drehstromlast ohne Kompensation}\label{img3.3.2}
+	 			\caption{Skizze der Messschaltung - Symmetrische Drehstromlast ohne Kompensation}\label{img3.3.2}
 	 		\end{figure}
 	 			 		
-	 		\begin{figure}[h!]
-	 			\centering
-	 			\begin{subfigure}[b]{0.5\textwidth}
-	 				\includegraphics
-	 				[width=\textwidth]{img/img3.3.3.png}
-	 			\end{subfigure}\hfil
-	 			\caption{Skizze der Ströme - Symmetrische Drehstromlast ohne Kompensation}\label{img3.3.3}
-	 		\end{figure}
+	 		% \begin{figure}[h!]
+	 		% 	\centering
+	 		% 	\begin{subfigure}[b]{0.5\textwidth}
+	 		% 		\includegraphics
+	 		% 		[width=\textwidth]{img/img3.3.3.png}
+	 		% 	\end{subfigure}\hfil
+	 		% 	\caption{Skizze der Ströme - Symmetrische Drehstromlast ohne Kompensation}\label{img3.3.3}
+	 		% \end{figure}
 	 				
 	 		\newpage
 	 		
@@ -120,7 +120,7 @@
 	 			\end{subfigure}\hfil
 	 			\caption{Oszillogramm von $i_{N}$ - Verbindung zwischen Neutralleiter und Sternpunkt}\label{img3.3.4}
 	 		\end{figure}
-	 		
+	 		\pagebreak
 	 		\begin{align*}
 	 			\underline{I}_{N} &= \underline{I}_{1}+\underline{I}_{2}+\underline{I}_{3} \\
 	 			\underline{I}_{N} &= 960\ mA\ e^{-j70^\circ} + 900\ mA\ e^{170^\circ} + 920\ mA\ e^{50^\circ} \\
@@ -135,14 +135,14 @@
 	 		
 	 		\begin{align*}
 	 			\underline{Z}_{K} &= \frac{\underline{U}_{str}}{\underline{I}_{str}}\\
-	 			\underline{Z}_{K} &= \frac{U\cdot  e^{j\varphi _{U}}}{I\cdot  e^{j\varphi _{I}}}\\
-	 			\underline{Z}_{K} &= \frac{U}{I} \cdot  e^{j\varphi _{U}}\cdot e^{-j\varphi _{I}}\\
-	 			\Longrightarrow\underline{Z}_{K} &= \frac{U}{I} \cdot  e^{j{\varphi _{U} - \varphi _{I}}} \\ \ \\
+	 			\underline{Z}_{K} &= \frac{U\cdot  e^{j\varphi_{U}}}{I\cdot  e^{j\varphi_{I}}}\\
+	 			\underline{Z}_{K} &= \frac{U}{I} \cdot  e^{j\varphi_{U}}\cdot e^{-j\varphi_{I}}\\
+	 			\Longrightarrow\underline{Z}_{K} &= \frac{U}{I} \cdot  e^{j{\varphi_{U} - \varphi_{I}}} \\ \ \\
 	 			\mid Z \mid			= \frac{U}{I} \hspace{1cm}
-	 			\varphi _{Z} 		= {\varphi _{U} - \varphi _{I}}
+	 			\varphi _{Z} 		= {\varphi_{U} - \varphi_{I}}
 	 			&\hspace{0.5cm}
-	 			Re\{Z\} 			= \mid Z \mid \cdot cos(\varphi _{Z}) \hspace{1cm}
-	 			Im\{Z\} 			= \mid Z \mid \cdot sin(\varphi _{Z})\\
+	 			Re\{Z\} 			= \mid Z \mid \cdot cos(\varphi_{Z}) \hspace{1cm}
+	 			Im\{Z\} 			= \mid Z \mid \cdot sin(\varphi_{Z})\\
 	 		\end{align*}
 	 		
 	 		Um Impedanzen zu bestimmen, wird die Strangspannung durch den Strangstrom geteilt. Die Phase der Strangspannung wird von der Phase des Strangstroms subtrahiert, wodurch die Phasenkomponente der Impedanz ermittelt wird. Impedanzen werden in kartesischer Form ausgedrückt, da aus dieser Form die ohmschen Anteile und die induktiven oder kapazitiven Anteile leicht abgeleitet werden können.
@@ -190,6 +190,7 @@
 	 		
 	 		
 	 		
+      \pagebreak
 	 		\item Schalten Sie nun die drei Kondensatoren in Stern und schließen Sie diese jetzt parallel zur Last an. Überlegen Sie, welche Auswirkungen das auf den Phasenwinkel hat und begründen Sie Ihre Beobachtungen. 
 	 		
 	 		\begin{figure}[h!]
@@ -214,15 +215,120 @@
 	 		\end{figure}
 	 		
  		\end{enumerate}
+    \pagebreak
  	\subsection{Unsymmetrische Drehstromlast}
 	 	\begin{enumerate}[label=\alph*)]
-	 		\item Bestimmen Sie die komplexen Effektivwerte der Spannungen $U_{1N}$, $U_{2N}$, $U_{3N}$ und $U_{NK}$ und der Ströme $I_{1}$, $I_{2}$, $I_{3}$ und $I_{K}$ bei der unsymmetrischen Drehstromlast nach Bild 13 \textcolor{red}{mit} angeschlossenem Neutralleiter. (Last je nach Gruppennummer)
-	 		\newline
+	 		\item Bestimmen Sie die komplexen Effektivwerte der Spannungen $U_{1N}$, $U_{2N}$, $U_{3N}$ und $U_{NK}$ und der Ströme $I_{1}$, $I_{2}$, $I_{3}$ und $I_{K}$ bei der unsymmetrischen Drehstromlast nach Bild 13 \textcolor{red}{mit} angeschlossenem Neutralleiter. (Gruppe: A2a).\\
 			Skizzieren Sie die Schaltung und verwenden Sie zur Messung Oszilloskop, Trennteiler und Stromwandler. Zwei Oszillogramme sind mit in die Ausarbeitung zu übernehmen und aufzuarbeiten. ($u_{1}$ mit $u_{KN}$, $u_{1}$ mit $i_{N}$).
+	 		\begin{center}
+	 			\begin{table}[h!]
+	 				\begin{tabular}{r c c r c c}
+	 					\hline
+	 					Art & \( U_{eff}\ in\ V \) & \( Phase\ \varphi\ in\ ^\circ\ \ \)  & Art & \( I_{eff}\ in\ mA \) & \( Phase\ in\ ^\circ\ \ \) \\
+	 					\hline
+	 					$U_{1N}$ & \( 234 \) & \( 0   \) &
+	 					$I_{1}$	 & \( 140 \) & \( -22 \) \\
+	 					$U_{2N}$ & \( 233 \) & \( 240 \) &
+	 					$I_{2}$	 & \( 116 \) & \( 240 \) \\
+	 					$U_{3N}$ & \( 233 \) & \( 120 \) &
+	 					$I_{3}$	 & \( 84  \) & \( 156 \) \\
+	 					$U_{KN}$ & \( 0   \) & \( 0   \) &
+	 					$I_{N}$	 & \( 114 \) & \( 90  \) \\
+	 					\hline
+	 				\end{tabular}
+	 				\caption{Komplexen Effektivwerte der Spannungen und Ströme - Unsymmetrische Drehstromlast mit Neutralleiter}
+	 			\end{table}
+	 		\end{center}
+	 		
+ 			\begin{figure}[h!]
+ 				\centering
+ 					\begin{subfigure}[b]{0.5\textwidth}
+ 						\includegraphics
+ 						[width=\textwidth]{img/img3.4.2.png}
+ 					\end{subfigure}\hfil
+ 				\caption{Oszillogramm von $u_{1}$ mit $u_{KN}$ - Unsymmetrische Drehstromlast mit Neutralleiter}\label{img3.4.2}
+	 		\end{figure}
+	 		
+ 			\begin{figure}[h!]
+ 				\centering
+ 					\begin{subfigure}[b]{0.5\textwidth}
+ 						\includegraphics
+ 						[width=\textwidth]{img/img3.4.1.png}
+ 					\end{subfigure}\hfil
+ 				\caption{Oszillogramm von $u_{1}$ mit $i_{N}$ - Unsymmetrische Drehstromlast mit Neutralleiter}\label{img3.4.1}
+	 		\end{figure}
+	 		
+	 		\begin{figure}[h!]
+	 			\centering
+	 			\begin{subfigure}[b]{0.6\textwidth}
+	 				\includegraphics
+	 				[width=\textwidth]{img/img3.4.3.png}
+	 			\end{subfigure}\hfil
+	 			\caption{Skizze der Spannungen - Unsymmetrische Drehstromlast mit Neutralleiter}\label{img3.4.3}
+	 		\end{figure}
+	 		% 	 		
+	 		% \begin{figure}[h!]
+	 		% 	\centering
+	 		% 	\begin{subfigure}[b]{0.5\textwidth}
+	 		% 		\includegraphics
+	 		% 		[width=\textwidth]{img/img3.3.3.png}
+	 		% 	\end{subfigure}\hfil
+	 		% 	\caption{Skizze der Ströme - Symmetrische Drehstromlast ohne Kompensation}\label{img3.3.3}
+	 		% \end{figure}
+      \ \\
+      \pagebreak
 			
-			\item Bestimmen Sie die komplexen Effektivwerte der Spannungen $U_{1N}$, $U_{2N}$, $U_{3N}$ und $U_{NK}$ und der Ströme $I_{1}$, $I_{2}$, $I_{3}$ und $I_{K}$ bei der unsymmetrischen  Drehstromlast nach Bild 13 \textcolor{red}{ohne} angeschlossenem Neutralleiter. (Last je nach Gruppennummer)
-			\newline
+			\item Bestimmen Sie die komplexen Effektivwerte der Spannungen $U_{1N}$, $U_{2N}$, $U_{3N}$ und $U_{NK}$ und der Ströme $I_{1}$, $I_{2}$, $I_{3}$ und $I_{K}$ bei der unsymmetrischen  Drehstromlast nach Bild 13 \textcolor{red}{ohne} angeschlossenem Neutralleiter. (Gruppe: A2a)\\
 			Skizzieren Sie die Schaltung und verwenden Sie zur Messung Oszilloskop, Trennteiler und Stromwandler. Zwei Oszillogramme sind mit in die Ausarbeitung zu übernehmen und aufzuarbeiten. ($u_{1}$ mit $u_{KN}$, $u_{1}$ mit $i_{N}$). 
-			
-			
+	 		\begin{center}
+	 			\begin{table}[h!]
+	 				\begin{tabular}{r c c r c c}
+	 					\hline
+	 					Art & \( U_{eff}\ in\ V \) & \( Phase\ \varphi\ in\ ^\circ\ \ \)  & Art & \( I_{eff}\ in\ mA \) & \( Phase\ in\ ^\circ\ \ \) \\
+	 					\hline
+	 					$U_{1N}$ & \( 234 \) & \( 0   \) &
+	 					$I_{1}$	 & \( 150 \) & \( 3   \) \\
+	 					$U_{2N}$ & \( 231 \) & \( 239 \) &
+	 					$I_{2}$	 & \(  81 \) & \( 228 \) \\
+	 					$U_{3N}$ & \( 233 \) & \( 119 \) &
+	 					$I_{3}$	 & \( 112 \) & \( 148 \) \\
+	 					$U_{KN}$ & \( 82  \) & \( 268 \) &
+	 					$I_{N}$	 & \( 0   \) & \( 0   \) \\
+	 					\hline
+	 				\end{tabular}
+	 				\caption{Komplexen Effektivwerte der Spannungen und Ströme - Unsymmetrische Drehstromlast Ohne Neutralleiter}
+	 			\end{table}
+	 		\end{center}
+	 		
+      \pagebreak
+ 			\begin{figure}[h!]
+ 				\centering
+ 					\begin{subfigure}[b]{0.5\textwidth}
+ 						\includegraphics
+ 						[width=\textwidth]{img/img3.4.4.png}
+ 					\end{subfigure}\hfil
+ 				\caption{Oszillogramm von $u_{1}$ mit $u_{KN}$ - Unsymmetrische Drehstromlast Ohne Neutralleiter}\label{img3.4.4}
+	 		\end{figure}
+	 		
+ 			\begin{figure}[h!]
+ 				\centering
+ 					\begin{subfigure}[b]{0.5\textwidth}
+ 						\includegraphics
+ 						[width=\textwidth]{img/img3.4.1.png}
+ 					\end{subfigure}\hfil
+ 				\caption{Oszillogramm von $u_{1}$ mit $i_{N}$ - Unsymmetrische Drehstromlast Ohne Neutralleiter}\label{img3.4.5}
+	 		\end{figure}
+      \ \\
+      \newpage
+	 		
+      \ \\
+	 		\begin{figure}[h!]
+	 			\centering
+	 			\begin{subfigure}[b]{0.6\textwidth}
+	 				\includegraphics
+	 				[width=\textwidth]{img/img3.3.2.1.png}
+	 			\end{subfigure}\hfil
+	 			\caption{Skizze der Spannungen - Unsymmetrische Drehstromlast Ohne Neutralleiter}\label{img3.4.6}
+	 		\end{figure}
+
 	 	\end{enumerate}
