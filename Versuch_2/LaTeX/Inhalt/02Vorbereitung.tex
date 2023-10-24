@@ -75,13 +75,14 @@ Ohne testierte Vorbereitung können Sie den Versuch nicht durchführen.\\}
   \underline Y &=\frac{1}{(R+j\omega L)}+ {j\omega C}\\
   \underline Y &=\frac{1+ j\omega C(R+j\omega L)}{R+j\omega L}\\
   \underline Y &=\frac{1-\omega^2 LC+ j\omega CR}{R+j\omega L}\\
-  \underline Y &=\frac{(1-\omega^2 LC+ j\omega CR) \cdot(R+j\omega L)}{R^2+(\omega L)^2}\\
-  \underline Y &=\frac{R-\omega^2 RLC - \omega^3 RLC}{R^2+(\omega L)^2} 
-  + j \frac{\omega L - \omega^3CL^2+\omega CR^2}{R^2+(\omega L)^2}\\
-  \underline Y_{komp} &=Re\{\underline Y\}=\frac{R-\omega^2 RLC - \omega^3 RLC}{R^2+(\omega L)^2} \\
+  \underline Y &=\frac{(1-\omega^2 LC+ j\omega CR) \cdot(R-j\omega L)}{R^2+(\omega L)^2}\\
+  \underline Y &=\frac{R-\omega^2 RLC + \omega^2 RLC}{R^2+(\omega L)^2} 
+  + j \frac{-\omega L + \omega^3CL^2+\omega CR^2}{R^2+(\omega L)^2}\\
+  \underline Y_{komp} &=Re\{\underline Y\}=\frac{R-\omega^2 RLC + \omega^2 RLC}{R^2+(\omega L)^2} \\
+  \underline Y_{komp} &=Re\{\underline Y\}=\frac{R}{R^2+(\omega L)^2} \\
   \Rightarrow Im\{\underline Y\}&=0\\
-  \omega L - \omega^3CL^2+\omega CR^2 &= 0\\
-  C\cdot(\omega^3L^2+\omega R^2) - \omega L  &= 0\\
+  -\omega L + \omega^3CL^2+\omega CR^2 &= 0\\
+  C\cdot(\omega^3L^2+\omega R^2)  &= \omega L \\
   C &=\frac{\omega L}{\omega^3 L^2+\omega R^2}\\
   C_{Y} &=\frac{L}{\omega^2 L^2+R^2}
 \end{align*}
