@@ -5,7 +5,7 @@ Elektrische Maschinen (ET3). Praktikum GET B
 ## Aufgabe 2:
 - [x] Alles
 ## Aufgabe 3:
-## TODO: Olli
+### TODO: Olli
 - [ ] Vorbereitung 
     - [ ] 2.1.b
     - [ ] 2.1.c
