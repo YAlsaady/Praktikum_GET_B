@@ -4,12 +4,57 @@ Ohne testierte Vorbereitung können Sie den Versuch nicht durchführen.}
 \subsection{Ersatzschaltbild Transformator}
 \begin{enumerate}[label=\alph*)]
   \item Zeichnen Sie das vollständige einphasige Ersatzschaltbild (Sternschaltung) des Transformators und geben Sie an, wie die einzelnen Werte und das Übersetzungsverhältnis ü aus dem Leerlauf- und dem Kurzschlussversuch berechnet werden können. 
-  \item Machen Sie sich die Bedeutung der einzelnen Bauelemente des vollständigen Ersatzschaltbildes klar (wird abgefragt). Welche Bedeutung haben die „gestrichenen“ Größen? 
-  \item Wie groß darf der Strom im Kurzschlussversuch maximal werden? Begründen Sie Ihre Aussage. 
+  \item Machen Sie sich die Bedeutung der einzelnen Bauelemente des vollständigen Ersatzschaltbildes klar (wird abgefragt). Welche Bedeutung haben die „gestrichenen“ Größen?\\ \ \\
+  \begin{figure}[h!]
+  	\begin{center}
+  		\includegraphics[width=0.8\textwidth]{img/2.1.2.4.png}
+  	\end{center}
+  	\caption{Zeichnung der eines Realentransformators mit Schaltpan }\label{img/2.1.2.4}
+  \end{figure}
+  Das Ersatzschaltbild besteht aus verschiedenen Verlustkomponenten. Der Eisenkern bewirkt Energieverluste aufgrund von Hysterese und Wirbelströmen, die im Kern erzeugt werden. Sowohl an den Primär- als auch an den Sekundäranschlüssen befinden sich Kupferwicklungen, die aufgrund ihrer Länge ohmsche Verluste erzeugen, insbesondere unter Wechselstrombedingungen, wo Stromverdrängungseffekte auftreten. Der magnetische Fluss erstreckt sich nicht nur durch den Eisenkern, sondern breitet sich auch durch die Umgebungsluft aus, was zu einem Streufluss führt. Dieser Streufluss trägt nicht zur Energieübertragung bei.\\ \ \\
+  \begin{figure}[h!]
+  	\begin{center}
+  		\includegraphics[width=0.8\textwidth]{img/2.1.2.2.png}
+  	\end{center}
+  	\caption{Schaltplan von einem realen Transformator mit einem idealen Transformator}\label{img/2.1.2.2}
+  \end{figure}
+  Die Striche an den Bauteilen signalisieren, dass diese bereits transformiert sind. Um die Spannung und den Strom umzuwandeln, muss das Ersatzschaltbild um einen idealen Transformator auf der Sekundärseite erweitert werden, da allein passive Bauelemente keine Transformationsfunktion erfüllen können.\\
+  \begin{figure}[h!]
+  	\begin{center}
+  		\includegraphics[width=0.8\textwidth]{img/2.1.2.3.png}
+  	\end{center}
+  	\caption{Schaltplan von einem realen Transformator mit einem Lastwiderstand}\label{img/2.1.2.3}
+  \end{figure}
+
+  
+  
+  
+  
+  \item Wie groß darf der Strom im Kurzschlussversuch maximal werden? Begründen Sie Ihre Aussage.\\ \ \\
+  
+  Im Kurzschlussversuch bei einem Transformator wird die Eingangsspannung schrittweise erhöht, bis der Strom auf der Primärseite den Nennstrom $(I_{1N})$ erreicht. Dabei muss beachtet werden, dass der Kurzschlussversuch eine Art von Überlasttest ist, und es ist wichtig, die zulässigen Grenzen einzuhalten, um Schäden am Transformator zu vermeiden.
+  \[ I_K = I_{1N} \]
+  Die maximale Strombelastung im Kurzschlussversuch wird durch die thermische Belastung des Transformators begrenzt. Wenn der Strom zu hoch wird, kann dies zu übermäßiger Erwärmung führen, was zu Isolationsversagen oder anderen Schäden führen kann. Daher sollte der Kurzschlusstest so durchgeführt werden, dass der Transformator nicht beschädigt wird.
+  
+  Der Strom im Kurzschlussversuch sollte normalerweise auf einen Wert begrenzt werden, der sicher unterhalb des Kurzschlussspitzenstroms $(I_{k})$ liegt. Der Kurzschlussspitzenstrom tritt aufgrund von Transienten auf, wenn der Transformator plötzlich kurzgeschlossen wird. Er kann ein Vielfaches des Nennstroms betragen und ist kurzzeitig.
+  
+  Die genaue maximale zulässige Strombelastung im Kurzschlussversuch hängt von den spezifischen Eigenschaften des Transformators ab, einschließlich seiner Größe, Bauart und Kühlung. Herstellerangaben und Normen sollten für eine genaue Bestimmung konsultiert werden. Es ist wichtig, den Kurzschlussversuch sorgfältig zu planen und sicherzustellen, dass er den Spezifikationen des Transformators entspricht, um Schäden zu vermeiden und die Sicherheit zu gewährleisten.
+  
   \item Leiten Sie her, wie die Verlustleistung des Transformators in einem beliebigen Betriebspunkt (vorgegeben durch den Strom $I_1$) aus den Verlusten der Leerlauf- und Kurzschlussmessung ermittelt werden kann.  
   \item Leiten Sie anhand des Zeigerdiagramms (Bild 6) die Formeln für den Längs- und Querspannungsabfall her.  
   \item Leiten Sie anhand des Zeigerdiagramms (Bild 6) und den Formeln für den Längs- und Querspannungsabfall die Formel (12) für den relativen Spannungsfall auf der Sekundärseite her. 
   \item Welche Aussagekraft hat die relative Kurzschlussspannung für den Betrieb des Transformators? 
+  
+  Die relative Kurzschlussspannung eines Transformators ist ein entscheidender Parameter, der seine Verhaltensweise unter Belastung widerspiegelt. Dieser Wert ist von großer Bedeutung bei der Auslegung von Niederspannungsverteilungen sowie bei der Dimensionierung von Komponenten wie Sicherungsleisten und Leistungsschaltern.
+  
+  Die relative Kurzschlussspannung gibt an, wie stark die Spannung ansteigt, wenn die Sekundärseite des Transformators kurzgeschlossen wird und der Nennstrom auf der Sekundärseite fließt. Dies ist von Bedeutung, da im Falle eines Kurzschlusses in der Verteilung die Sekundärseite des Transformators weiterhin am Netz angeschlossen ist, bis der vorgeschaltete Schutzmechanismus auslöst.
+  
+  Die Kenntnis der relativen Kurzschlussspannung ermöglicht die Berechnung des maximalen Kurzschlussstroms, der in diesem Szenario auftreten kann. Ein einfacher Dreisatz kann verwendet werden, um dies zu ermitteln. Als Beispiel kann ein Drehstromtransformator mit den Spezifikationen $6\ KV / 400\ V$ und einer relativen Kurzschlussspannung von $6\ \%$ dienen. Der sekundäre Nennstrom beträgt $145\ A$.
+  
+  Die Berechnung des maximalen Kurzschlussstroms erfolgt durch die Division des Nennstroms durch die relative Kurzschlussspannung in Prozent. In diesem Fall ergibt sich ein Wert von $24\ A$. Dieser Strom, hier $2400\ A$, kann kurzzeitig durch die nach dem Transformator geschalteten Schutzschalter fließen. Es ist jedoch zu beachten, dass die dynamischen Kräfte, die bei einem Kurzschluss auftreten, die Schaltelemente mechanisch belasten und sie gegebenenfalls beschädigen können.
+  
+  Es ist daher entscheidend, die Kurzschlussfestigkeit der verwendeten Komponenten zu überprüfen und gegebenenfalls hochwertigere Komponenten auszuwählen. In vielen Fällen sind gängige Niederspannungsschaltgeräte jedoch für Kurzschlussströme von $6\ kA$ ausgelegt und erfüllen die Anforderungen.
+  
 \end{enumerate}
 \subsection{Aronschaltung zur Leistungsmessung }
 \begin{enumerate}[label=\alph*)]
