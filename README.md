@@ -10,8 +10,9 @@ Elektrische Maschinen (ET3). Praktikum GET B
     - [X] 2.1.b
     - [X] 2.1.c
     - [X] 2.1.g
-    - [ ] 2.2.a
-    - [ ] 2.3.1
+    - [X] 2.2.a
+    - [ ] 2.2.c
+    - [ ] 2.3.a
 - [ ] Auswertung 
 ### TODO: Yaman
 - [ ] Vorbereitung 
