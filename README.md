@@ -17,8 +17,8 @@ Elektrische Maschinen (ET3). Praktikum GET B
 - [ ] Vorbereitung 
     - [ ] 2.1.a
     - [ ] 2.1.d
-    - [ ] 2.1.e
-    - [ ] 2.1.f
-    - [ ] 2.2.b
+    - [X] 2.1.e
+    - [X] 2.1.f
+    - [X] 2.2.b
     - [ ] 2.3.b
 - [ ] Auswertung 

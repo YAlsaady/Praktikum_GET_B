@@ -4,13 +4,43 @@ Ohne testierte Vorbereitung können Sie den Versuch nicht durchführen.}
 \subsection{Ersatzschaltbild Transformator}
 \begin{enumerate}[label=\alph*)]
   \item Zeichnen Sie das vollständige einphasige Ersatzschaltbild (Sternschaltung) des Transformators und geben Sie an, wie die einzelnen Werte und das Übersetzungsverhältnis ü aus dem Leerlauf- und dem Kurzschlussversuch berechnet werden können. 
-  \item Machen Sie sich die Bedeutung der einzelnen Bauelemente des vollständigen Ersatzschaltbildes klar (wird abgefragt). Welche Bedeutung haben die „gestrichenen“ Größen?\\ \ \\
+    \begin{figure}[h!]
+      \begin{center}
+        \includegraphics[width=0.95\textwidth]{img/2.1.1.1}
+      \end{center}
+      \caption{Vollständige einphasige Ersatzschaltbild des Transformators}\label{img:2.1.1.1}
+    \end{figure}
+    $$ü=\frac{U_1}{U_2}=\frac{w_1}{w_2}=\frac{I_2}{I_1}$$
+    \begin{minipage}{0.5\textwidth}
+      Leerlauf:
+      \begin{align*}
+        R'_2&=R_2\cdot ü^2\\ 
+        U'_2&=U_2\cdot ü\\ 
+        I'_2 &= \frac{I_2}{ü}\\ 
+        X'_{2\sigma} &= X_{2\sigma} \cdot ü^2\\ 
+        P'_2 &= P_2
+      \end{align*}
+    \end{minipage}\hfill
+    \begin{minipage}{0.5\textwidth}
+      Leerlauf:
+      \begin{align*}
+        R'_2&=R_2\cdot ü^2\\ 
+        U'_2&=U_2\cdot ü\\ 
+        I'_2 &= \frac{I_2}{ü}\\ 
+        X'_{2\sigma} &= X_{2\sigma} \cdot ü^2\\ 
+        P'_2 &= P_2
+      \end{align*}
+    \end{minipage}
+
+  \pagebreak
+  \item Machen Sie sich die Bedeutung der einzelnen Bauelemente des vollständigen Ersatzschaltbildes klar (wird abgefragt). Welche Bedeutung haben die „gestrichenen“ Größen?
   \begin{figure}[h!]
   	\begin{center}
   		\includegraphics[width=0.8\textwidth]{img/2.1.2.4.png}
   	\end{center}
   	\caption{Zeichnung der eines Realentransformators mit Schaltpan }\label{img/2.1.2.4}
   \end{figure}
+  \\
   Das Ersatzschaltbild besteht aus verschiedenen Verlustkomponenten. Der Eisenkern bewirkt Energieverluste aufgrund von Hysterese und Wirbelströmen, die im Kern erzeugt werden. Sowohl an den Primär- als auch an den Sekundäranschlüssen befinden sich Kupferwicklungen, die aufgrund ihrer Länge ohmsche Verluste erzeugen, insbesondere unter Wechselstrombedingungen, wo Stromverdrängungseffekte auftreten. Der magnetische Fluss erstreckt sich nicht nur durch den Eisenkern, sondern breitet sich auch durch die Umgebungsluft aus, was zu einem Streufluss führt. Dieser Streufluss trägt nicht zur Energieübertragung bei.\\ \ \\
   \begin{figure}[h!]
   	\begin{center}
@@ -42,7 +72,30 @@ Ohne testierte Vorbereitung können Sie den Versuch nicht durchführen.}
   
   \item Leiten Sie her, wie die Verlustleistung des Transformators in einem beliebigen Betriebspunkt (vorgegeben durch den Strom $I_1$) aus den Verlusten der Leerlauf- und Kurzschlussmessung ermittelt werden kann.  
   \item Leiten Sie anhand des Zeigerdiagramms (Bild 6) die Formeln für den Längs- und Querspannungsabfall her.  
+    \begin{align*}
+      \underline{\Delta U}&= \underline Z\cdot \underline I_1\\
+      \underline{\Delta U}&= (R_k+ jX_k)\cdot (I_1\cdot e^{-j\varphi_2})\\
+      \underline{\Delta U}&= (R_k+ jX_k)\cdot \left(I_1\cdot\cos(-\varphi_2)+j\cdot I_1\cdot \sin(-\varphi_2)\right)\\
+      \underline{\Delta U}&= (R_k+ jX_k)\cdot \left(I_1\cdot\cos\varphi_2-j\cdot I_1\cdot \sin\varphi_2\right)\\
+      \underline{\Delta U}&= R_K\cdot I_1\cdot \cos\varphi_2 + X_K\cdot I_1 \cdot \sin\varphi_2+J(-R_K\cdot I_1 \cdot \sin\varphi_2+X_K\cdot I_1\cdot \cos\varphi_2)\\
+      \underline{\Delta U}&= U_\ell +jU_q\\
+      \Rightarrow U_\ell &=Re{\underline{\Delta U}}=R_K\cdot I_1 \cdot\cos \varphi_2 + X_K \cdot I_1\cdot \sin \varphi_2\\ 
+      \Rightarrow U_q &=Im{\underline{\Delta U}}= -R_K\cdot I_1 \cdot\sin \varphi_2 + X_K \cdot I_1\cdot \cos \varphi_2\\ 
+    \end{align*}
   \item Leiten Sie anhand des Zeigerdiagramms (Bild 6) und den Formeln für den Längs- und Querspannungsabfall die Formel (12) für den relativen Spannungsfall auf der Sekundärseite her. 
+    \begin{align*}
+      \Delta U'_2 &= \frac{U_1 - U'_2}{U_1}\\ 
+      \Delta U'_2 &= 1-\frac{U'_2}{U_1}\\ 
+      \underline U'_2+\underline U_\ell &= \sqrt{\underline U_1^2-\underline U_q^2}\\
+      \underline U'_2 &= \sqrt{\underline U_1^2-\underline U_q^2}-\underline U_\ell\\
+      \frac{\underline U'_2}{\underline U_1} &= \frac{\sqrt{\underline U_1^2-\underline U_q^2}}{\underline U_1}-\displaystyle\frac{\underline U_\ell}{\underline U_1}\\
+      \frac{\underline U'_2}{\underline U_1} &= {\sqrt{\frac{\underline U_1^2-\underline U_q^2}{\underline U_1^2}}}
+      -\displaystyle\frac{\underline U_\ell}{\underline U_1}\\
+      \frac{\underline U'_2}{\underline U_1} &= {\sqrt{1-\left(\frac{\underline U_q}{\underline U_1}\right)^2}}
+      -\displaystyle\frac{\underline U_\ell}{\underline U_1}\\
+      \Delta U'_2 &= 1-\frac{U'_2}{U_1}\\ 
+      \Delta U'_2 &= 1 + \frac{U_\ell}{U_1}- \sqrt{1-\left(\frac{U_q}{U_1}\right)^2}
+    \end{align*}
   \item Welche Aussagekraft hat die relative Kurzschlussspannung für den Betrieb des Transformators? 
   
   Die relative Kurzschlussspannung eines Transformators ist ein entscheidender Parameter, der seine Verhaltensweise unter Belastung widerspiegelt. Dieser Wert ist von großer Bedeutung bei der Auslegung von Niederspannungsverteilungen sowie bei der Dimensionierung von Komponenten wie Sicherungsleisten und Leistungsschaltern.
@@ -60,6 +113,13 @@ Ohne testierte Vorbereitung können Sie den Versuch nicht durchführen.}
 \begin{enumerate}[label=\alph*)]
   \item Leiten Sie her, warum Sie mit der Aronschaltung (Bild 8) die gesamte Scheinleistung im Dreiphasensystem messen können, sofern der Summenstrom im Knoten K zu Null angenommen werden kann.  
   \item Skizzieren Sie das Ersatzschaltbild für den Transformator im Leerlauffall. Zeichnen Sie das zugehörige qualitative Zeigerdiagramm für den Leerlauffall.
+    \begin{figure}[h!]
+      \begin{center}
+        \includegraphics[width=0.95\textwidth]{img/2.2.2.1}
+      \end{center}
+      \caption{ESP für den Transformator im Leerlauffall}\label{img:2.2.2.1}
+    \end{figure}
+    
   \item Zeigen Sie anhand dieses Zeigerdiagramms, warum Sie im Leerlaufversuch (Bild 9) mit der Aronschaltung eine negative Wirkleistung P1 messen. 
 \end{enumerate}
 \subsection{Symmetrische Drehstromlast }
