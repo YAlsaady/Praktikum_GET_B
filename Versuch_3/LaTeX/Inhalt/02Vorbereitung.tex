@@ -1,6 +1,6 @@
 \section{Vorbereitung}
-{Die Versuchsvorbereitung ist Bestandteil des Versuchs. Sie erhalten dafür ein gesondertes Testat.
-Ohne testierte Vorbereitung können Sie den Versuch nicht durchführen.}
+ {Die Versuchsvorbereitung ist Bestandteil des Versuchs. Sie erhalten dafür ein gesondertes Testat.
+  Ohne testierte Vorbereitung können Sie den Versuch nicht durchführen.}
 \subsection{Ersatzschaltbild Transformator}
 \begin{enumerate}[label=\alph*)]
   \item Zeichnen Sie das vollständige einphasige Ersatzschaltbild (Sternschaltung) des Transformators und geben Sie an, wie die einzelnen Werte und das Übersetzungsverhältnis ü aus dem Leerlauf- und dem Kurzschlussversuch berechnet werden können. 
@@ -107,12 +107,52 @@ Ohne testierte Vorbereitung können Sie den Versuch nicht durchführen.}
   Die Berechnung des maximalen Kurzschlussstroms erfolgt durch die Division des Nennstroms durch die relative Kurzschlussspannung in Prozent. In diesem Fall ergibt sich ein Wert von $24\ A$. Dieser Strom, hier $2400\ A$, kann kurzzeitig durch die nach dem Transformator geschalteten Schutzschalter fließen. Es ist jedoch zu beachten, dass die dynamischen Kräfte, die bei einem Kurzschluss auftreten, die Schaltelemente mechanisch belasten und sie gegebenenfalls beschädigen können.
   
   Es ist daher entscheidend, die Kurzschlussfestigkeit der verwendeten Komponenten zu überprüfen und gegebenenfalls hochwertigere Komponenten auszuwählen. In vielen Fällen sind gängige Niederspannungsschaltgeräte jedoch für Kurzschlussströme von $6\ kA$ ausgelegt und erfüllen die Anforderungen.
-  
 \end{enumerate}
+  
 \subsection{Aronschaltung zur Leistungsmessung }
 \begin{enumerate}[label=\alph*)]
-  \item Leiten Sie her, warum Sie mit der Aronschaltung (Bild 8) die gesamte Scheinleistung im Dreiphasensystem messen können, sofern der Summenstrom im Knoten K zu Null angenommen werden kann.  
-  \item Skizzieren Sie das Ersatzschaltbild für den Transformator im Leerlauffall. Zeichnen Sie das zugehörige qualitative Zeigerdiagramm für den Leerlauffall.
+  \item Leiten Sie her, warum Sie mit der Aronschaltung (Bild 8) die gesamte
+        Scheinleistung im Dreiphasensystem messen können, sofern der Summenstrom im
+        Knoten K zu Null angenommen werden kann.
+
+        \begin{figure}[!h]
+          \begin{minipage}[ct]{.5\linewidth}
+            \begin{center}
+              \includegraphics[width=\linewidth]{img/2.2.1.1.png}
+            \end{center}
+            \caption{Schaltplan von einem realen Transformator mit einem Lastwiderstand}\label{img/2.2.1.1}
+          \end{minipage}
+          \hspace{.1\linewidth}
+          \begin{minipage}[ct]{.4\linewidth}
+            \begin{center}
+              \includegraphics[width=\linewidth]{img/2.2.1.2.png}
+            \end{center}
+            \caption{Zeigerdiagram einer Sternschaltung}\label{img/2.2.1.2}
+          \end{minipage}
+        \end{figure}
+
+        \begin{align*}
+          \text{Kontenregel gilt: ges.:}\  \underline{i}_3                                                                                                                 \\
+          0               & =\ \underline{i}_1 + \underline{i}_2 + \underline{i}_3                                                                                         \\
+          \underline{i}_3 & = - \underline{i}_1 - \underline{i}_2                                                                                                          \\
+          \text{Leistungsgleichung:}                                                                                                                                       \\
+          \underline{S}   & =\ \underline{U} \cdot\ \underline{I}\ =\ \underline{u} \cdot \underline{i}                                                                    \\
+          \underline{S}   & =\ \underline{u}_1 \cdot \underline{i}_1 + \underline{u}_2 \cdot \underline{i}_2 + \underline{u}_3 \cdot \underline{i}_3                       \\
+          \underline{S}   & =\ \underline{u}_1 \cdot \underline{i}_1 + \underline{u}_2 \cdot \underline{i}_2 + \underline{u}_3 \cdot (- \underline{i}_1 - \underline{i}_2) \\
+          %S &= \ \underline{u}_1 \cdot \underline{i}_1 + \underline{u}_2 \cdot \underline{i}_2 - \underline{u}_3 \cdot \underline{i}_1 - \underline{u}_3 \cdot \underline{i}_2)\\
+          \underline{S}   & = \underline{i}_1(\underline{u}_1 - \underline{u}_3) + \underline{i}_2(\underline{u}_2 - \underline{u}_3)                                      \\
+          \underline{S}   & = \underline{i}_1\cdot\underline{u}_{13} + \underline{i}_2\cdot\underline{u}_{23}
+        \end{align*}
+        \begin{align*}
+          \text{Phasenverschiebungswinkel:}                                          \\
+          L_{M}\ =\ \text{Leistungsmessgerät}                                        \\ \ \\
+          +\ L_{M1}   & =\ +\ L_{M2}\ \ \ \ \{ \varphi =\ 0^\circ                    \\
+          +\ L_{M1}   & =\ -\ L_{M2}\ \ \ \ \{ \varphi =\ \pm90^\circ                \\
+          \ L_{M1}    & \neq\ \ L_{M2}\ \ \ \ \{ 0^\circ< \varphi < 60^\circ         \\
+          -\ L_{M1}\  & \text{oder}\ -\ L_{M2}\ \ \ \ \{ 60^\circ< \varphi < 0^\circ \\
+        \end{align*}
+  \item Skizzieren Sie das Ersatzschaltbild für den Transformator im Leerlauffall.
+        Zeichnen Sie das zugehörige qualitative Zeigerdiagramm für den Leerlauffall.
     \begin{figure}[h!]
       \begin{center}
         \includegraphics[width=0.95\textwidth]{img/2.2.2.1}
@@ -120,10 +160,27 @@ Ohne testierte Vorbereitung können Sie den Versuch nicht durchführen.}
       \caption{ESP für den Transformator im Leerlauffall}\label{img:2.2.2.1}
     \end{figure}
     
-  \item Zeigen Sie anhand dieses Zeigerdiagramms, warum Sie im Leerlaufversuch (Bild 9) mit der Aronschaltung eine negative Wirkleistung P1 messen. 
+  \item Zeigen Sie anhand dieses Zeigerdiagramms, warum Sie im Leerlaufversuch (Bild 9)
+        mit der Aronschaltung eine negative Wirkleistung P1 messen.
 \end{enumerate}
+
+
+
 \subsection{Symmetrische Drehstromlast }
 \begin{enumerate}[label=\alph*)]
-  \item Geben Sie an, wie Sie aus den Messwerten nach 3.2 (a) und (b) die gemittelten Größen $U_m,\ I_m$ (siehe Versuch E2-4), den Leistungsfaktor $\lambda=\cos(\varphi)$, die Leistungen $S,\ P\ und\ Q$ jeweils für die Primär- und die Sekundärseite berechnen können. 
+  \item Geben Sie an, wie Sie aus den Messwerten nach 3.2 (a) und (b) die gemittelten
+        Größen $U_m,\ I_m$ (siehe Versuch E2-4), den Leistungsfaktor
+        $\lambda=\cos(\varphi)$, die Leistungen $S,\ P\ und\ Q$ jeweils für die Primär-
+        und die Sekundärseite berechnen können.\\ \ \\
+        Leistungsfaktor $\lambda(\cos (\varphi))$:
+        \[ \lambda = \frac{|P|}{S} \]
+        Der Leistungsfaktor kann zwischen $0$ und $1$ liegen: $0 \leq \lambda \leq 1 $\\
+        Leistungen $S$, $P$ und $Q$:\\
+        \begin{align*}
+        	P &= U_M\cdot I_M\cdot \lambda\\
+        	S &= U_M\cdot I_M\\
+        	Q &= \sqrt{S^2-P^2}
+        \end{align*}
+        
   \item Mit welcher Leistung können Sie den Transformator ($Yy0$) maximal belasten?
 \end{enumerate}
