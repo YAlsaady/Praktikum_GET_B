@@ -1,0 +1,54 @@
+{
+    "InternalPDFViewer": {
+        "Embedded": true,
+        "File": "LaTeX/main.pdf"
+    },
+    "Session": {
+        "Bookmarks": [
+            {
+                "bookmarkNumber": 1,
+                "fileName": "../../Praktikum_Elektrische_Messtechnik/v1/tex/source/1_virtuelle_versuche.tex",
+                "lineNumber": -1,
+                "text": "1_virtuelle_versuche.tex\n\\begin{figure}[h!]"
+            }
+        ],
+        "CurrentFile": "LaTeX/Inhalt/04Auswertung.tex",
+        "FileVersion": 1,
+        "Files": [
+            {
+                "Col": 0,
+                "EditorGroup": 0,
+                "FileName": "LaTeX/main.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 0
+            },
+            {
+                "Col": 0,
+                "EditorGroup": 0,
+                "FileName": "LaTeX/Inhalt/02Vorbereitung.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 0
+            },
+            {
+                "Col": 0,
+                "EditorGroup": 0,
+                "FileName": "LaTeX/Inhalt/03Messung.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 0
+            },
+            {
+                "Col": 0,
+                "EditorGroup": 0,
+                "FileName": "LaTeX/Inhalt/04Auswertung.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 0
+            }
+        ],
+        "MasterFile": "",
+        "VerticalSplit": false
+    }
+}
