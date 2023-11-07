@@ -1,1 +1,48 @@
 \section{Auswertung}
+\subsection{Ersatzschaltbild Transformator}
+\begin{enumerate}[label=\alph*)]
+  \item Zeichnen Sie das vollständige einphasige Ersatzschaltbild (Sternschaltung) des Transformators. 
+    \begin{figure}[h!]
+      \begin{center}
+        \includegraphics[width=0.95\textwidth]{img/4.1.1.1}
+      \end{center}
+      \caption{}\label{img:4.1.1.1}
+    \end{figure}
+    
+
+  \item Bestimmen Sie die Leistung im Leerlauf auf der Primärseite nach Gleichung (16). 
+    \begin{align*}
+      \underline S &= \underline U_{12} \cdot \underline I_1^* + \underline U_{23}\cdot \underline I_3^*\\
+      \underline S &= 395\ V \cdot e^{j0^\circ} \cdot 0.45\ A \cdot e^{-(-j120^\circ)} + 391\ V \cdot e^{j120^\circ}\cdot 0.45\ A \cdot e^{-(j45^\circ)}\\
+      \underline S &= 326\ VA\cdot e^{j97.6^\circ}
+    \end{align*}
+
+  \item Bestimmen Sie die Wirkleistung im Kurzschlussfall auf der Sekundärseite nach Gleichung (16). Gehen Sie dabei von einem symmetrischen System aus. 
+    \begin{align*}
+      \underline S &= \underline U_{12} \cdot \underline I_1^* + \underline U_{12}\cdot \underline I_3^*\\
+      \underline S &= 12.5\ V \cdot e^{j0^\circ} \cdot 0.45\ A \cdot e^{-(-j52^\circ)} + 12.4\ V \cdot e^{j120^\circ}\cdot 0.45\ A \cdot e^{-(j45^\circ)}\\
+      \underline S &= P + jQ = -43.3\ W +j 323.0\ var\\
+      P &= -43.3\ W
+    \end{align*}
+
+  \item Ermitteln Sie die Daten des vollständigen Ersatzschaltbildes des Transformators mit der Annahme $X_{1\sigma} = X'_{2\sigma} \text{ sowie } R_1 = R'_2$.
+
+  \item Berechnen Sie anhand des Kurzschlussversuches die relative Kurzschlussspannung des Transformators. 
+
+\end{enumerate}
+
+
+\subsection{Symmetrische Drehstromlast}
+\begin{enumerate}[label=\alph*)]
+
+  \item Berechnen Sie aus den Messwerten nach 3.2(b) die gemittelten Größen $U_m, I_m \text{ und } \varphi_m$ (siehe Versuch E2-4), den Leistungsfaktor $\lambda = \cos(\varphi_m)$, die Leistungen $S, P \text{ und } Q$ jeweils für die Primär- und die Sekundärseite. 
+  \item Berechnen Sie die Verlustleistung des Transformators sowie den Wirkungsgrad mit den Ergebnissen aus 4.2(a). 
+
+  \item Bestimmen Sie die Verlustleistung für 3.2(b) nach 2.1(d) und vergleichen Sie das Ergebnis mit dem Wert aus 4.2(b). Begründen Sie Ihre Beobachtungen. 
+
+  \item Berechnen Sie aus den Messwerten nach 3.2(b) und dem Übersetzungsverhältnis ü den relativen Spannungsfall $\Delta u'_2$!
+    
+  \item Bestimmen Sie anhand der Formeln (11) - (13) den relativen Spannungsabfall für 3.2(b).
+
+  \item Vergleichen Sie die primär- und sekundärseitigen Spannungen und Ströme aus 3.2(b) und 3.2(c) miteinander. 
+\end{enumerate}
