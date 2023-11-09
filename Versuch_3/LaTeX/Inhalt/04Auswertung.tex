@@ -42,59 +42,36 @@
 	      und die Sekundärseite.\\ \ \\
 
 	      \textbf{Primärseite}\\ \ \\
-	      \begin{minipage}{0.5\textwidth}
-		      \textbf{Spannung}:
-		      \begin{align*}
-			      U_M & = \frac{U_{12} + U_{23} + U_{31}}{3} \\
-			      U_M & = \frac{378\ V + 371\ V + 372\ V}{3} \\
-			      U_M & = 373,67\ V                          \\
-		      \end{align*}
-	      \end{minipage}\hfill
-	      \begin{minipage}{0.5\textwidth}
-		      \textbf{Strom}:
-		      \begin{align*}
-			      I_M & = \frac{I_{12} + I_{23} + I_{31}}{3} \\
-			      I_M & = \frac{7\ A + 7\ A + 7\ A}{3}       \\
-			      I_M & = 7\ A                               \\
-		      \end{align*}
-	      \end{minipage}
 
-	      \begin{minipage}{0.5\textwidth}
-		      \begin{center}
-			      \begin{align*}
-				      \varphi_{\delta} & = \varphi_{U} - \varphi_{I}
-			      \end{align*}
-		      \end{center}
-	      \end{minipage}
-	      \begin{minipage}{0.5\textwidth}
-		      \begin{center}
-			      \begin{align*}
-				      S & = \sqrt{3}\cdot U_M\cdot I_M
-			      \end{align*}
-		      \end{center}
-	      \end{minipage}
-	      \begin{minipage}{0.5\textwidth}
-		      \begin{center}
-			      \begin{align*}
-				      \varphi_{\delta} & = \sqrt{3}\cdot U_M\cdot I_M\cdot\cos(\varphi_{\delta})
-			      \end{align*}
-		      \end{center}
-	      \end{minipage}
-	      \begin{minipage}{0.5\textwidth}
-		      \begin{center}
-			      \begin{align*}
-				      \varphi_{\delta} & = \sqrt{3}\cdot U_M\cdot I_M\cdot\sin(\varphi_{\delta})
-			      \end{align*}
-		      \end{center}
-	      \end{minipage}
-	      \begin{center}
-		      \begin{minipage}{0.5\textwidth}
-			      \begin{center}
+	      \fcolorbox{black}{lightgray}{
+		      \parbox{\textwidth}{
+
+			      \begin{minipage}{0.5\textwidth}
+				      \textbf{Spannung}:
 				      \begin{align*}
-					      \lambda & = \frac{|P|}{S}
+					      U_M & = \frac{U_{12} + U_{23} + U_{31}}{3} \\
+					      U_M & = \frac{378\ V + 371\ V + 372\ V}{3} \\
+					      U_M & = 373,67\ V                          \\
 				      \end{align*}
-			      \end{center}
-		      \end{minipage}
+			      \end{minipage}\hfill
+			      \begin{minipage}{0.5\textwidth}
+				      \textbf{Strom}:
+				      \begin{align*}
+					      I_M & = \frac{I_{12} + I_{23} + I_{31}}{3} \\
+					      I_M & = \frac{7\ A + 7\ A + 7\ A}{3}       \\
+					      I_M & = 7\ A                               \\
+				      \end{align*}
+			      \end{minipage}
+		      }
+	      }
+
+	      \begin{center}
+		      \begin{align*}
+			      \varphi_{\Delta} & = \varphi_{U} - \varphi_{I}                             \\
+			      P                & = \sqrt{3}\cdot U_M\cdot I_M\cdot\cos(\varphi_{\Delta}) \\
+			      Q                & = \sqrt{3}\cdot U_M\cdot I_M\cdot\sin(\varphi_{\Delta}) \\
+			      \lambda          & = \frac{|P|}{S}                                         \\
+		      \end{align*}
 	      \end{center}
 
 	      \begin{table}[h!]
@@ -130,7 +107,7 @@
 	      \begin{minipage}{0.5\textwidth}
 		      \begin{center}
 			      \begin{align*}
-				      \varphi_{\delta} & = \varphi_{U} - \varphi_{I}
+				      \varphi_{\Delta} & = \varphi_{U} - \varphi_{I}
 			      \end{align*}
 		      \end{center}
 	      \end{minipage}
@@ -144,14 +121,14 @@
 	      \begin{minipage}{0.5\textwidth}
 		      \begin{center}
 			      \begin{align*}
-				      \varphi_{\delta} & = \sqrt{3}\cdot U_M\cdot I_M\cdot\cos(\varphi_{\delta})
+				      \varphi_{\Delta} & = \sqrt{3}\cdot U_M\cdot I_M\cdot\cos(\varphi_{\Delta})
 			      \end{align*}
 		      \end{center}
 	      \end{minipage}
 	      \begin{minipage}{0.5\textwidth}
 		      \begin{center}
 			      \begin{align*}
-				      \varphi_{\delta} & = \sqrt{3}\cdot U_M\cdot I_M\cdot\sin(\varphi_{\delta})
+				      \varphi_{\Delta} & = \sqrt{3}\cdot U_M\cdot I_M\cdot\sin(\varphi_{\Delta})
 			      \end{align*}
 		      \end{center}
 	      \end{minipage}
@@ -184,7 +161,7 @@
 	      das Ergebnis mit dem Wert aus 4.2(b). Begründen Sie Ihre Beobachtungen.
 
 	\item Berechnen Sie aus den Messwerten nach 3.2(b) und dem Übersetzungsverhältnis ü
-	      den relativen Spannungsfall $\delta u'_2$!
+	      den relativen Spannungsfall $\Delta u'_2$!
 
 	\item Bestimmen Sie anhand der Formeln (11) - (13) den relativen Spannungsabfall für
 	      3.2(b).
