@@ -40,6 +40,15 @@
 		      \text{ und } \varphi_m$ (siehe Versuch E2-4), den Leistungsfaktor $\lambda =
 		      \cos(\varphi_m)$, die Leistungen $S, P \text{ und } Q$ jeweils für die Primär-
 	      und die Sekundärseite.\\ \ \\
+	      \begin{center}
+		      \begin{align*}
+			      \varphi_{\Delta} & = \varphi_{U} - \varphi_{I}                             \\
+			      S                & = \sqrt{3}\cdot U_M\cdot I_M                            \\
+			      P                & = \sqrt{3}\cdot U_M\cdot I_M\cdot\cos(\varphi_{\Delta}) \\
+			      Q                & = \sqrt{3}\cdot U_M\cdot I_M\cdot\sin(\varphi_{\Delta}) \\
+			      \lambda          & = \frac{|P|}{S}                                         \\
+		      \end{align*}
+	      \end{center}
 
 	      \textbf{Primärseite}\\ \ \\
 
@@ -68,97 +77,61 @@
 		      }
 	      \end{tcolorbox}
 
-	      \begin{center}
-		      \begin{align*}
-			      \varphi_{\Delta} & = \varphi_{U} - \varphi_{I}                             \\
-			      P                & = \sqrt{3}\cdot U_M\cdot I_M\cdot\cos(\varphi_{\Delta}) \\
-			      Q                & = \sqrt{3}\cdot U_M\cdot I_M\cdot\sin(\varphi_{\Delta}) \\
-			      \lambda          & = \frac{|P|}{S}                                         \\
-		      \end{align*}
-	      \end{center}
+	      \textbf{Sekundärseite}\\ \ \\
 
+	      \begin{tcolorbox}[colback=gray!30,
+			      colframe=black,
+			      width=0.9\textwidth,
+		      ]
+		      \parbox{\textwidth}{
+
+			      \begin{minipage}{0.5\textwidth}
+				      \textbf{Spannung}:
+				      \begin{align*}
+					      U_M & = \frac{U_{12} + U_{23} + U_{31}}{3} \\
+					      U_M & = \frac{378\ V + 371\ V + 358\ V}{3} \\
+					      U_M & = 354\ V                             \\
+				      \end{align*}
+			      \end{minipage}\hfill
+			      \begin{minipage}{0.5\textwidth}
+				      \textbf{Strom}:
+				      \begin{align*}
+					      I_M & = \frac{I_{12} + I_{23} + I_{31}}{3} \\
+					      I_M & = \frac{7\ A + 7\ A + 6,7\ A}{3}     \\
+					      I_M & = 6,9\ A                             \\
+				      \end{align*}
+			      \end{minipage}
+		      }
+	      \end{tcolorbox}
 	      \begin{table}[h!]
 		      \caption{Brechnung der Eingangsseite Yy5 Symmetrischelast}
 		      \centering
 		      \begin{tabular}{lrrrrr}
 			      \hline
 			      Impedanzen & $\varphi$    & $S$    & $P$      & $Q$      & $\lambda$ \\ \hline
-			      $Z_1$      & $65  ^\circ$ & $4,53$ & $-2,55$  & $ 3,75 $ & $0,56$    \\
+			      $Z_1$      & $65^\circ$   & $4,53$ & $-2,55$  & $ 3,75 $ & $0,56$    \\
 			      $Z_2$      & $65^\circ$   & $4,53$ & $-2,55 $ & $ 3,75$  & $0,56$    \\
 			      $Z_3$      & $67^\circ  $ & $4,53$ & $-2,35$  & $ -3,88$ & $0,52$    \\ \hline
 		      \end{tabular}
 	      \end{table}
-
-	      \textbf{Sekundärseite}\\ \ \\
-	      \begin{minipage}{0.5\textwidth}
-		      \textbf{Spannung}:
-		      \begin{align*}
-			      U_M & = \frac{U_{12} + U_{23} + U_{31}}{3} \\
-			      U_M & = \frac{378\ V + 371\ V + 372\ V}{3} \\
-			      U_M & = 373,67\ V                          \\
-		      \end{align*}
-	      \end{minipage}\hfill
-	      \begin{minipage}{0.5\textwidth}
-		      \textbf{Strom}:
-		      \begin{align*}
-			      I_M & = \frac{I_{12} + I_{23} + I_{31}}{3} \\
-			      I_M & = \frac{7\ A + 7\ A + 7\ A}{3}       \\
-			      I_M & = 7\ A                               \\
-		      \end{align*}
-	      \end{minipage}
-
-	      \begin{minipage}{0.5\textwidth}
-		      \begin{center}
-			      \begin{align*}
-				      \varphi_{\Delta} & = \varphi_{U} - \varphi_{I}
-			      \end{align*}
-		      \end{center}
-	      \end{minipage}
-	      \begin{minipage}{0.5\textwidth}
-		      \begin{center}
-			      \begin{align*}
-				      S & = \sqrt{3}\cdot U_M\cdot I_M
-			      \end{align*}
-		      \end{center}
-	      \end{minipage}
-	      \begin{minipage}{0.5\textwidth}
-		      \begin{center}
-			      \begin{align*}
-				      \varphi_{\Delta} & = \sqrt{3}\cdot U_M\cdot I_M\cdot\cos(\varphi_{\Delta})
-			      \end{align*}
-		      \end{center}
-	      \end{minipage}
-	      \begin{minipage}{0.5\textwidth}
-		      \begin{center}
-			      \begin{align*}
-				      \varphi_{\Delta} & = \sqrt{3}\cdot U_M\cdot I_M\cdot\sin(\varphi_{\Delta})
-			      \end{align*}
-		      \end{center}
-	      \end{minipage}
-	      \begin{center}
-		      \begin{minipage}{0.5\textwidth}
-			      \begin{center}
-				      \begin{align*}
-					      \lambda & = \frac{|P|}{S}
-				      \end{align*}
-			      \end{center}
-		      \end{minipage}
-	      \end{center}
-
 	      \begin{table}[h!]
 		      \caption{Brechnung der Ausgangsseite Yy5 Symmetrischelast}
 		      \centering
 		      \begin{tabular}{lrrrrr}
 			      \hline
-			      Impedanzen & $\varphi$    & $S$    & $P$      & $Q$      & $\lambda$ \\ \hline
-			      $Z_1$      & $65  ^\circ$ & $4,58$ & $-2,58$  & $ 3,79 $ & $0,56$    \\
-			      $Z_2$      & $65^\circ$   & $4,50$ & $-2,53 $ & $ 3,72$  & $0,56$    \\
-			      $Z_3$      & $67^\circ  $ & $4,51$ & $-2,34$  & $ -3,86$ & $0,52$    \\ \hline
+			      Impedanzen & $\varphi$     & $S$    & $P$      & $Q$     & $\lambda$ \\ \hline
+			      $Z_1$      & $-43^\circ$   & $4,33$ & $-1,83$  & $-3,82$ & $0,43$    \\
+			      $Z_2$      & $-43^\circ$   & $4,33$ & $-1,83 $ & $-3,82$ & $0,43$    \\
+			      $Z_3$      & $-43^\circ  $ & $4,33$ & $-1,83$  & $-3,82$ & $0,43$    \\ \hline
 		      \end{tabular}
 	      \end{table}
 
 	\item Berechnen Sie die Verlustleistung des Transformators sowie den Wirkungsgrad mit
 	      den Ergebnissen aus 4.2(a).
+		  \begin{align*}
+			\eta &= \frac{P_{ab}}{P_{zu}}
+		  \end{align*}
+
 
 	\item Bestimmen Sie die Verlustleistung für 3.2(b) nach 2.1(d) und vergleichen Sie
 	      das Ergebnis mit dem Wert aus 4.2(b). Begründen Sie Ihre Beobachtungen.
