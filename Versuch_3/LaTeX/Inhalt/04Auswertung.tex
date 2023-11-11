@@ -38,18 +38,18 @@
 		      \underline Z_K & = 2R_1 + J2X_{1\sigma}                                                                         \\
 		      \underline Z_K & = \frac{\underline \Delta U}{\underline I_1} = \frac{395\ V\cdot e^{j0} - 12,5\ V\cdot e^{j0}}
 		      {7,3\ A \cdot e^{-j50^\circ}}                                                                                   \\
-		      \underline Z_K & = 33,7 \Omega + j40,1 \Omega                                                                  \\
-		      R_1 = R'2      & = \frac {Re\{\underline Z_K\}}{2} = \frac{33,7\ \Omega}{2} = 16,85\ \Omega                     \\
-		      X_{1\sigma}    & = X'_{2\sigma} = \frac {Im\{\underline Z_K\}}{2} = \frac{40,1\ \Omega}{2} = 20,05\ \Omega       \\
+		      \underline Z_K & = 33,7 \Omega + j40,1 \Omega                                                                   \\
+		      R_1 = R'_2     & = \frac {Re\{\underline Z_K\}}{2} = \frac{33,7\ \Omega}{2} = 16,85\ \Omega                     \\
+		      X_{1\sigma}    & = X'_{2\sigma} = \frac {Im\{\underline Z_K\}}{2} = \frac{40,1\ \Omega}{2} = 20,05\ \Omega      \\
 	      \end{align*}
 
 	\item Berechnen Sie anhand des Kurzschlussversuches die relative Kurzschlussspannung
 	      des Transformators.
-        \begin{align*}
-          u_k &= \frac{U_K}{U_N}\\
-          u_k &= \frac{12\ V}{400\ V}\\
-          u_k &= 3\%
-        \end{align*}
+	      \begin{align*}
+		      u_k & = \frac{U_K}{U_N}      \\
+		      u_k & = \frac{12\ V}{400\ V} \\
+		      u_k & = 3\%
+	      \end{align*}
 
 \end{enumerate}
 \subsection{Symmetrische Drehstromlast}
@@ -80,17 +80,17 @@
 			      \begin{minipage}{0.5\textwidth}
 				      \textbf{Spannung}:
 				      \begin{align*}
-					      U_M & = \frac{U_{12} + U_{23} + U_{31}}{3} \\
-					      U_M & = \frac{378\ V + 371\ V + 372\ V}{3} \\
-					      U_M & = 373,67\ V                          \\
+					      U_{M.pri} & = \frac{U_{12} + U_{23} + U_{31}}{3} \\
+					      U_{M.pri} & = \frac{378\ V + 371\ V + 372\ V}{3} \\
+					      U_{M.pri} & = 373,67\ V                          \\
 				      \end{align*}
 			      \end{minipage}\hfill
 			      \begin{minipage}{0.5\textwidth}
 				      \textbf{Strom}:
 				      \begin{align*}
-					      I_M & = \frac{I_{12} + I_{23} + I_{31}}{3} \\
-					      I_M & = \frac{7\ A + 7\ A + 7\ A}{3}       \\
-					      I_M & = 7\ A                               \\
+					      I_{M.pri} & = \frac{I_{12} + I_{23} + I_{31}}{3} \\
+					      I_{M.pri} & = \frac{7\ A + 7\ A + 7\ A}{3}       \\
+					      I_{M.pri} & = 7\ A                               \\
 				      \end{align*}
 			      \end{minipage}
 		      }
@@ -107,17 +107,17 @@
 			      \begin{minipage}{0.5\textwidth}
 				      \textbf{Spannung}:
 				      \begin{align*}
-					      U_M & = \frac{U_{12} + U_{23} + U_{31}}{3} \\
-					      U_M & = \frac{378\ V + 371\ V + 358\ V}{3} \\
-					      U_M & = 354\ V                             \\
+					      U_{M.sec} & = \frac{U_{12} + U_{23} + U_{31}}{3} \\
+					      U_{M.sec} & = \frac{378\ V + 371\ V + 358\ V}{3} \\
+					      U_{M.sec} & = 354\ V                             \\
 				      \end{align*}
 			      \end{minipage}\hfill
 			      \begin{minipage}{0.5\textwidth}
 				      \textbf{Strom}:
 				      \begin{align*}
-					      I_M & = \frac{I_{12} + I_{23} + I_{31}}{3} \\
-					      I_M & = \frac{7\ A + 7\ A + 6,7\ A}{3}     \\
-					      I_M & = 6,9\ A                             \\
+					      I_{M.sec} & = \frac{I_{12} + I_{23} + I_{31}}{3} \\
+					      I_{M.sec} & = \frac{7\ A + 7\ A + 6,7\ A}{3}     \\
+					      I_{M.sec} & = 6,9\ A                             \\
 				      \end{align*}
 			      \end{minipage}
 		      }
@@ -148,7 +148,26 @@
 	\item Berechnen Sie die Verlustleistung des Transformators sowie den Wirkungsgrad mit
 	      den Ergebnissen aus 4.2(a).
 	      \begin{align*}
-		      \eta & = \frac{P_{ab}}{P_{zu}}
+		      P_{FE} & = P_0\ (\frac{U}{U_N})^2                                                                                                      \\
+		      P_{FE} & = -43,1\ W\ (\frac{373\ V}{400\ V})^2                                                                                         \\
+		      P_{FE} & = -37,477\ W                                                                                                                  \\
+		      \\
+		      P_{Cu} & = P_K\ (\frac{I}{I_N})^2                                                                                                      \\
+		      P_{Cu} & = 113\ W\ (\frac{7\ A}{7,2\ A})^2                                                                                             \\
+		      P_{Cu} & = 106,909\ W                                                                                                                 \\
+		      \\
+		      P_{V}  & = P_{FE} \ +\ P_{Cu}                                                                                                       \\
+		      P_{V}  & = -37,477\ W + 106,909\ W                                                                                              \\
+		      P_{V}  & = 69,33\ W                                                                                                                 \\
+		      \\
+		      \eta   & = \frac{P_{ab}}{P_{zu}}                                                                                                       \\
+		      \eta   & = \frac{\sqrt{3}\cdot U_{M.sec}\cdot I_{M.sec}\cdot \cos(\varphi)}{\sqrt{3}\cdot U_{M.pri}\cdot I_{M.pri}\cdot \cos(\varphi)} \\
+		      \eta   & = \frac{354\ V\cdot 7\ A}{373,6\ V\cdot 6,7\ A}                                                                               \\
+		      \eta   & = 0,989                                                                                                                       \\
+		      \\
+		      \eta   & = 1-\frac{P_{v}}{S}                                                                                                           \\
+		      \eta   & = 1- \frac{69,33\ W}{\sqrt{3}\cdot 354\ V\cdot 7\ A }                                                                         \\
+		      \eta   & = 0,9838
 	      \end{align*}
 
 	      \begin{figure}[h!]
@@ -165,7 +184,9 @@
 		      \caption{Vereinfachtest ESP für den Transformator im Lastbetrieb}\label{img:4.2.2.2}
 	      \end{figure}
 	      \begin{align*}
-		      Z_{K} & = \sqrt{(R_{1}+R^{'}_{2})^2+(X_{1\sigma}+X^{'}_{2\sigma})^2} \\
+		      Z_{K} & = \sqrt{(R_{1}+R^{'}_{2})^2+(X_{1\sigma}+X^{'}_{2\sigma})^2}   \\
+		      Z_{K} & = \sqrt{(2\cdot 16,85\ \Omega)^2\ +\ (2\cdot 20,05\ \Omega)^2} \\
+		      Z_{K} & =52,38\ \Omega                                                 \\
 	      \end{align*}
 	      \begin{align*}
 		      0     & = -\underline{U}_{e}+\underline{U}_{K}+\underline{U}_{a} \\

@@ -13,11 +13,11 @@ Elektrische Maschinen (ET3). Praktikum GET B
     - [X] 2.2.a
     - [ ] 2.2.c
     - [ ] 2.3.a
-- [ ] Messung
-    - [ ] 3.2.a
+- [x] Messung
+    - [x] 3.2.a
 - [ ] Auswertung 
-    - [ ] 4.2.a
-    - [ ] 4.2.b
+    - [x] 4.2.a
+    - [x] 4.2.b
     - [ ] 4.2.c
     - [ ] 4.2.d
     - [ ] 4.2.e
