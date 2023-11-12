@@ -147,35 +147,20 @@
 
 	\item Berechnen Sie die Verlustleistung des Transformators sowie den Wirkungsgrad mit
 	      den Ergebnissen aus 4.2(a).
-	      \begin{align*}
-		      P_{FE} & = P_0\ (\frac{U}{U_N})^2                                                                                                      \\
-		      P_{FE} & = -43,1\ W\ (\frac{373\ V}{400\ V})^2                                                                                         \\
-		      P_{FE} & = -37,477\ W                                                                                                                  \\
-		      \\
-		      P_{Cu} & = P_K\ (\frac{I}{I_N})^2                                                                                                      \\
-		      P_{Cu} & = 113\ W\ (\frac{7\ A}{7,2\ A})^2                                                                                             \\
-		      P_{Cu} & = 106,909\ W                                                                                                                 \\
-		      \\
-		      P_{V}  & = P_{FE} \ +\ P_{Cu}                                                                                                       \\
-		      P_{V}  & = -37,477\ W + 106,909\ W                                                                                              \\
-		      P_{V}  & = 69,33\ W                                                                                                                 \\
-		      \\
-		      \eta   & = \frac{P_{ab}}{P_{zu}}                                                                                                       \\
-		      \eta   & = \frac{\sqrt{3}\cdot U_{M.sec}\cdot I_{M.sec}\cdot \cos(\varphi)}{\sqrt{3}\cdot U_{M.pri}\cdot I_{M.pri}\cdot \cos(\varphi)} \\
-		      \eta   & = \frac{354\ V\cdot 7\ A}{373,6\ V\cdot 6,7\ A}                                                                               \\
-		      \eta   & = 0,989                                                                                                                       \\
-		      \\
-		      \eta   & = 1-\frac{P_{v}}{S}                                                                                                           \\
-		      \eta   & = 1- \frac{69,33\ W}{\sqrt{3}\cdot 354\ V\cdot 7\ A }                                                                         \\
-		      \eta   & = 0,9838
-	      \end{align*}
-
 	      \begin{figure}[h!]
 		      \begin{center}
 			      \includegraphics[width=0.8\textwidth]{img/4.2.2.1}
 		      \end{center}
 		      \caption{ESP für den Transformator im Lastbetrieb}\label{img:4.2.2.1}
 	      \end{figure}
+
+		  
+	      \begin{align*}
+		      \eta & = \frac{P_{ab}}{P_{zu}}                                                                                                       \\
+		      \eta & = \frac{\sqrt{3}\cdot U_{M.sec}\cdot I_{M.sec}\cdot \cos(\varphi)}{\sqrt{3}\cdot U_{M.pri}\cdot I_{M.pri}\cdot \cos(\varphi)} \\
+		      \eta & = \frac{354\ V\cdot 7\ A}{373,6\ V\cdot 6,7\ A}                                                                               \\
+		      \eta & = 0,989
+	      \end{align*}
 
 	      \begin{figure}[h!]
 		      \begin{center}
@@ -184,37 +169,86 @@
 		      \caption{Vereinfachtest ESP für den Transformator im Lastbetrieb}\label{img:4.2.2.2}
 	      \end{figure}
 	      \begin{align*}
-		      Z_{K} & = \sqrt{(R_{1}+R^{'}_{2})^2+(X_{1\sigma}+X^{'}_{2\sigma})^2}   \\
-		      Z_{K} & = \sqrt{(2\cdot 16,85\ \Omega)^2\ +\ (2\cdot 20,05\ \Omega)^2} \\
-		      Z_{K} & =52,38\ \Omega                                                 \\
-	      \end{align*}
-	      \begin{align*}
 		      0     & = -\underline{U}_{e}+\underline{U}_{K}+\underline{U}_{a} \\
 		      U_{K} & = U_{e}-U_{a}                                            \\
 		      U_{K} & = 373\ V - 354\ V                                        \\
 		      U_{K} & = 19\ V
 	      \end{align*}
-	      \begin{align*}
-		      P_{Cu}               & = P_K\cdot \frac{I^2}{I^2_N}\mspace{100mu} |P_K\ =\ 3\cdot R_K\cdot I^2_N \\
-		      P_{Cu}               & = 3\cdot R_K\cdot I^2_N\cdot \frac{I^2}{I^2_N}                            \\
-		      P_{Cu}               & = 3\cdot R_K\cdot I^2                                                     \\
-		      \\
-		      P_{Fe}               & = P_0\cdot \frac{U^2}{U^2_N}\mspace{100mu} |P_0\ =\ \frac{U^2_N}{R_{Fe}}  \\
-		      P_{Fe}               & = \frac{U^2_N}{R_{Fe}}\cdot \frac{U^2}{U^2_N}                             \\
-		      P_{Fe}               & = \frac{U^2}{R_{Fe}}                                                      \\
-		      \\
-		      \Longrightarrow\ P_V & = 3\cdot R_K\cdot I^2\ +\ \frac{U^2}{R_{Fe}}
-	      \end{align*}
+	      
 
 	\item Bestimmen Sie die Verlustleistung für 3.2(b) nach 2.1(d) und vergleichen Sie
 	      das Ergebnis mit dem Wert aus 4.2(b). Begründen Sie Ihre Beobachtungen.
 
+	      \begin{minipage}[r]{0.5\linewidth}
+		      \begin{align*}
+			      P_{FE} & = P_0\ (\frac{U}{U_N})^2              \\
+			      P_{FE} & = -43,1\ W\ (\frac{373\ V}{400\ V})^2 \\
+			      P_{FE} & = -37,477\ W
+			      \\
+			      \\
+			      P_{Cu} & = P_K\ (\frac{I}{I_N})^2              \\
+			      P_{Cu} & = 113\ W\ (\frac{7\ A}{7,2\ A})^2     \\
+			      P_{Cu} & = 106,909\ W
+		      \end{align*}
+	      \end{minipage}
+	      \begin{minipage}[l]{0.5\linewidth}
+		      \begin{align*}
+			      P_{V} & = P_{FE} \ +\ P_{Cu}                                  \\
+			      P_{V} & = -37,477\ W + 106,909\ W                             \\
+			      P_{V} & = 69,33\ W
+			      \\
+			      \\
+			      \eta  & = 1-\frac{P_{v}}{S}                                   \\
+			      \eta  & = 1- \frac{69,33\ W}{\sqrt{3}\cdot 354\ V\cdot 7\ A } \\
+			      \eta  & = 0,9838
+		      \end{align*}
+	      \end{minipage}
+
 	\item Berechnen Sie aus den Messwerten nach 3.2(b) und dem Übersetzungsverhältnis ü
-	      den relativen Spannungsfall $\Delta u'_2$!
+	      den relativen Spannungsfall $\Delta u'_2$!\\ \ \\
+
+	      \begin{minipage}[r]{0.5\linewidth}
+		      \begin{align*}
+			      U_1 & = ü\cdot U_2            \\
+			      ü   & = \frac{U_1}{U_2}       \\
+			      ü   & = \frac{373\ V}{354\ V} \\
+			      ü   & = 1,053                 \\
+			      ü   & \approx 1
+		      \end{align*}
+	      \end{minipage}
+	      \begin{minipage}[l]{0.5\linewidth}
+		      \begin{align*}
+			      I_2 & = ü\cdot I_1          \\
+			      ü   & = \frac{I_2}{I_1}     \\
+			      ü   & = \frac{6,9\ A}{7\ A} \\
+			      ü   & = 0,985               \\
+			      ü   & \approx 1
+		      \end{align*}
+	      \end{minipage}
 
 	\item Bestimmen Sie anhand der Formeln (11) - (13) den relativen Spannungsabfall für
 	      3.2(b).
 
+	      \begin{align*}
+		      \Delta u'_2 & = \frac{U_1\ -\ U'_2}{U_1}                       \\
+		      \Delta u'_2 & = \frac{373\ V -\frac{373\ V}{\sqrt{3}}}{373\ V} \\
+		      \Delta u'_2 & = 0,422                                      \\
+	      \end{align*}
+	      \begin{align*}
+		      U_l         & = I_1(R_K\cos(\varphi_2)+X_K\sin(\varphi_2))                              \\
+		      U_l         & = 7\ A\ (33,7\ \Omega\ \cos(-46^\circ)\ +\ 40,1\ \Omega\ \sin(-46^\circ)) \\
+		      U_l         & = -38,728\ V                                                              \\
+		      \\
+		      U_q         & = I_1(R_K\cos(\varphi_2)+X_K\sin(\varphi_2))                              \\
+		      U_q         & = 7\ A\ (33,7\ \Omega\ \sin(-46^\circ)\ +\ 40,1\ \Omega\ \cos(-46^\circ)) \\
+		      U_q         & = 24,592\ V                                                               \\
+		      \\
+		      \Delta u'_2 & = 1+\frac{U_l}{U_1} - \sqrt{1-\frac{U_q}{U_1}}                            \\
+		      \Delta u'_2 & = 1+\frac{-38,728\ V}{373,67\ V} - \sqrt{1-\frac{24,592\ V}{373,67\ V}}   \\
+		      \Delta u'_2 & = 0,100\ 336
+	      \end{align*}
+
 	\item Vergleichen Sie die primär- und sekundärseitigen Spannungen und Ströme aus
 	      3.2(b) und 3.2(c) miteinander.
+
 \end{enumerate}

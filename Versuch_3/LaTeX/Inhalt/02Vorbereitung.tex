@@ -90,6 +90,19 @@
 	\item Leiten Sie her, wie die Verlustleistung des Transformators in einem beliebigen
 	      Betriebspunkt (vorgegeben durch den Strom $I_1$) aus den Verlusten der
 	      Leerlauf- und Kurzschlussmessung ermittelt werden kann.
+
+		  \begin{align*}
+		      P_{Cu}               & = P_K\cdot \frac{I^2}{I^2_N}\mspace{100mu} |P_K\ =\ 3\cdot R_K\cdot I^2_N \\
+		      P_{Cu}               & = 3\cdot R_K\cdot I^2_N\cdot \frac{I^2}{I^2_N}                            \\
+		      P_{Cu}               & = 3\cdot R_K\cdot I^2                                                     \\
+		      \\
+		      P_{Fe}               & = P_0\cdot \frac{U^2}{U^2_N}\mspace{100mu} |P_0\ =\ \frac{U^2_N}{R_{Fe}}  \\
+		      P_{Fe}               & = \frac{U^2_N}{R_{Fe}}\cdot \frac{U^2}{U^2_N}                             \\
+		      P_{Fe}               & = \frac{U^2}{R_{Fe}}                                                      \\
+		      \\
+		      \Longrightarrow\ P_V & = 3\cdot R_K\cdot I^2\ +\ \frac{U^2}{R_{Fe}}
+	      \end{align*}
+
 	\item Leiten Sie anhand des Zeigerdiagramms (Bild 6) die Formeln für den Längs- und
 	      Querspannungsabfall her.
 	      \begin{align*}
