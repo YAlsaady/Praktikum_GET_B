@@ -57,134 +57,120 @@
 
 	\item Berechnen Sie aus den Messwerten nach 3.2(b) die gemittelten Größen $U_m, I_m
 		      \text{ und } \varphi_m$ (siehe Versuch E2-4), den Leistungsfaktor $\lambda =
-		      \cos(\varphi_m)$, die Leistungen $S, P \text{ und } Q$ jeweils für die Primär-
-	      und die Sekundärseite.\\ \ \\
+		      \cos(\varphi_m)$, die Leistungen $S, P \text{ und } Q$ jeweils für die Primär- und die Sekundärseite. 
+			
+			Beispiel für die Phase 2 der Eingangsseite:
 	      \begin{center}
 		      \begin{align*}
-			      \varphi_{\Delta} & = \varphi_{U} - \varphi_{I}                             \\
-			      S                & = \sqrt{3}\cdot U_M\cdot I_M                            \\
-			      P                & = \sqrt{3}\cdot U_M\cdot I_M\cdot\cos(\varphi_{\Delta}) \\
-			      Q                & = \sqrt{3}\cdot U_M\cdot I_M\cdot\sin(\varphi_{\Delta}) \\
-			      \lambda          & = \frac{|P|}{S}                                         \\
+			      \underline{S}                 & = \sqrt{3}\cdot\underline{U}\cdot\underline{I}^*                                                   \\
+			      \underline{S}                 & = \sqrt{3}\cdot 371\ Ve^{-j120}\ \cdot\ 7\ Ae^{-(-j172)}                                           \\
+			      \underline{S}                 & = \SI{4,583}{\kilo\volt\ampere}e^{j65}                                                             \\
+			      \Longrightarrow \underline{S} & =  P\ +\ jQ                                                                                        \\
+			      \underline{S}                 & = \SI{1,937}{\kilo\watt}\ +\ j\SI{4,154}{\kilo\volt\ampere r}                                      \\
+			      \Longrightarrow\ P            & = \Re{\{S\}}\                                                   =\   \SI{1,937}{\watt}             \\
+			      \Longrightarrow\ Q            & = \Im{\{S\}}\                                                   =\ \SI{4,154}{\kilo\volt\ampere r} \\
+			      \Longrightarrow\ S            & =  \left\lvert {\underline{S}}  \right\rvert\ = \sqrt{P^2+Q^2} = \SI{4,583}{\kilo\volt\ampere}     \\               \\
 		      \end{align*}
 	      \end{center}
 
-	      \textbf{Primärseite}\\ \ \\
+	      \begin{table}[h!]
+		      \caption{Messwerte der Eingangsseite Yy5 Symmetrischelast}
+		      \centering
+		      \begin{tabular}{lllll}
+			      \\ \hline
+			      Phasen     & $\underline{U}$ in $[V]$ & $\varphi_{U}$ in $[^\circ]$ & $\underline{I}$ in $[A]$ & $\varphi_{I}$ in $[^\circ]$ \\ \hline
+			      $L1$       & $378$                    & $0$                         & $7$                      & $-65$                       \\
+			      $L2$       & $371$                    & $-120$                      & $7$                      & $172$                       \\
+			      $L3$       & $372$                    & $120$                       & $7$                      & $53$                        \\ \hline
+			      Mittelwert & $373,667$                & $0$                         & $7$                      & $53,333$                    \\ \hline\hline
+		      \end{tabular}
+	      \end{table}
 
-	      \begin{tcolorbox}[colback=gray!30,
-			      colframe=black,
-			      width=0.9\textwidth,
-		      ]
-		      \parbox{\textwidth}{
-
-			      \begin{minipage}{0.5\textwidth}
-				      \textbf{Spannung}:
-				      \begin{align*}
-					      U_{M.pri} & = \frac{U_{12} + U_{23} + U_{31}}{3} \\
-					      U_{M.pri} & = \frac{378\ V + 371\ V + 372\ V}{3} \\
-					      U_{M.pri} & = 373,67\ V                          \\
-				      \end{align*}
-			      \end{minipage}\hfill
-			      \begin{minipage}{0.5\textwidth}
-				      \textbf{Strom}:
-				      \begin{align*}
-					      I_{M.pri} & = \frac{I_{12} + I_{23} + I_{31}}{3} \\
-					      I_{M.pri} & = \frac{7\ A + 7\ A + 7\ A}{3}       \\
-					      I_{M.pri} & = 7\ A                               \\
-				      \end{align*}
-			      \end{minipage}
-		      }
-	      \end{tcolorbox}
-
-	      \textbf{Sekundärseite}\\ \ \\
-
-	      \begin{tcolorbox}[colback=gray!30,
-			      colframe=black,
-			      width=0.9\textwidth,
-		      ]
-		      \parbox{\textwidth}{
-
-			      \begin{minipage}{0.5\textwidth}
-				      \textbf{Spannung}:
-				      \begin{align*}
-					      U_{M.sec} & = \frac{U_{12} + U_{23} + U_{31}}{3} \\
-					      U_{M.sec} & = \frac{378\ V + 371\ V + 358\ V}{3} \\
-					      U_{M.sec} & = 354\ V                             \\
-				      \end{align*}
-			      \end{minipage}\hfill
-			      \begin{minipage}{0.5\textwidth}
-				      \textbf{Strom}:
-				      \begin{align*}
-					      I_{M.sec} & = \frac{I_{12} + I_{23} + I_{31}}{3} \\
-					      I_{M.sec} & = \frac{7\ A + 7\ A + 6,7\ A}{3}     \\
-					      I_{M.sec} & = 6,9\ A                             \\
-				      \end{align*}
-			      \end{minipage}
-		      }
-	      \end{tcolorbox}
 	      \begin{table}[h!]
 		      \caption{Brechnung der Eingangsseite Yy5 Symmetrischelast}
 		      \centering
-		      \begin{tabular}{lrrrrr}
-			      \hline
-			      Impedanzen & $\varphi$    & $S$    & $P$      & $Q$      & $\lambda$ \\ \hline
-			      $Z_1$      & $65^\circ$   & $4,53$ & $-2,55$  & $ 3,75 $ & $0,56$    \\
-			      $Z_2$      & $65^\circ$   & $4,53$ & $-2,55 $ & $ 3,75$  & $0,56$    \\
-			      $Z_3$      & $67^\circ  $ & $4,53$ & $-2,35$  & $ -3,88$ & $0,52$    \\ \hline
-		      \end{tabular}
-	      \end{table}
-	      \begin{table}[h!]
-		      \caption{Brechnung der Ausgangsseite Yy5 Symmetrischelast}
-		      \centering
-		      \begin{tabular}{lrrrrr}
-			      \hline
-			      Impedanzen & $\varphi$     & $S$    & $P$      & $Q$     & $\lambda$ \\ \hline
-			      $Z_1$      & $-43^\circ$   & $4,33$ & $-1,83$  & $-3,82$ & $0,43$    \\
-			      $Z_2$      & $-43^\circ$   & $4,33$ & $-1,83 $ & $-3,82$ & $0,43$    \\
-			      $Z_3$      & $-43^\circ  $ & $4,33$ & $-1,83$  & $-3,82$ & $0,43$    \\ \hline
+		      \begin{tabular}{llllll}
+			      \\ \hline
+			      Phase      & $\varphi$ in $[^\circ]$ & $S$ in $[\SI{}{\kilo\volt\ampere}]$ & $P$ in $[\SI{}{\kilo\watt}]$ & $Q$ in $[\SI{}{\kilo\volt\ampere r}]$ & $\lambda$ in $[\ ]$ \\ \hline
+			      $L1$       & $65$                    & $4,583$                             & $1,937$                      & $4,154$                               & $0,423$             \\
+			      $L2$       & $68$                    & $4,498$                             & $1,901$                      & $4,077$                               & $0,375$             \\
+			      $L3$       & $67$                    & $4,510$                             & $1,762$                      & $4,152$                               & $0,391$             \\ \hline
+			      Mittelwert & $66,667$                & $4,531$                             & $1,867$                      & $4,128$                               & $0,396$             \\ \hline\hline
 		      \end{tabular}
 	      \end{table}
 
-	\item Berechnen Sie die Verlustleistung des Transformators sowie den Wirkungsgrad mit
-	      den Ergebnissen aus 4.2(a).
+	      Beispiel für die Phase 3 der Ausgangsseite:
+	      \begin{center}
+		      \begin{align*}
+			      \underline{S}                 & = \sqrt{3}\cdot\underline{U}\cdot\underline{I}^*                                                   \\
+			      \underline{S}                 & = \sqrt{3}\cdot 358\ Ve^{-j120^\circ}\ \cdot\ 7\ Ae^{-(-j46^\circ+(-120^\circ))}                   \\
+			      \underline{S}                 & = \SI{4,154}{\kilo\volt\ampere}e^{j46}                                                             \\
+			      \Longrightarrow \underline{S} & =  P\ +\ jQ                                                                                        \\
+			      \underline{S}                 & = \SI{2,886}{\kilo\watt}\ +\ j\SI{2,988}{\kilo\volt\ampere r}                                      \\
+			      \Longrightarrow\ P            & = \Re{\{S\}}\                                                   =\   \SI{1,937}{\watt}             \\
+			      \Longrightarrow\ Q            & = \Im{\{S\}}\                                                   =\ \SI{4,154}{\kilo\volt\ampere r} \\
+			      \Longrightarrow\ S            & =  \left\lvert {\underline{S}}  \right\rvert\ = \sqrt{P^2+Q^2} = \SI{4,583}{\kilo\volt\ampere}     \\               \\
+		      \end{align*}
+	      \end{center}
+
 	      \begin{figure}[h!]
 		      \begin{center}
-			      \includegraphics[width=0.8\textwidth]{img/4.2.2.1}
+			      \includegraphics[width=0.75\textwidth]{img/4.2.1.1}
+		      \end{center}
+		      \caption{Zeigerdiagramm der Eingangsseite}\label{img:4.2.1.1}
+	      \end{figure}
+
+	      \begin{table}[h!]
+		      \centering
+		      \caption{Messwerte der Ausgangsseite Yy5 Symmetrischelast}
+		      \begin{tabular}{lllll}
+			      \\ \hline
+			      Phasen     & $\underline{U}$ in $[V]$ & $\varphi_{U}$ in $[^\circ]$ & $\underline{I}$ in $[A]$ & $\varphi_{I}$ in $[^\circ]$ \\ \hline
+			      $L1$       & $357$                    & $0$                         & $7,0$                    & $-46$                       \\
+			      $L2$       & $347$                    & $120$                       & $7,0$                    & $-46$                       \\
+			      $L3$       & $358$                    & $-120$                      & $6,7$                    & $-46$                       \\ \hline
+			      Mittelwert & $354,000$                & $0,000$                     & $6,900$                  & $-46,000$                   \\ \hline\hline
+		      \end{tabular}
+	      \end{table}
+
+	      \begin{table}[h!]
+		      \centering
+		      \caption{Brechnung der Ausgangsseite Yy5 Symmetrischelast}
+		      \begin{tabular}{llllll}
+			      \\ \hline
+			      Phase      & $\varphi$ in $[^\circ]$ & $S$ in $[\SI{}{\kilo\volt\ampere}]$ & $P$ in $[\SI{}{\kilo\watt}]$ & $Q$ in $[\SI{}{\kilo\volt\ampere r}]$ & $\lambda$ in $[\ ]$ \\ \hline
+			      $L1$       & $46$                    & $4,328$                             & $3,006$                      & $3,114$                               & $0,695$             \\
+			      $L2$       & $46$                    & $4,207$                             & $2,923$                      & $3,026$                               & $0,695$             \\
+			      $L3$       & $46$                    & $4,154$                             & $2,886$                      & $2,988$                               & $0,695$             \\ \hline
+			      Mittelwert & $46$                    & $4,292$                             & $2,938$                      & $3,043$                               & $0,695$             \\ \hline\hline
+		      \end{tabular}
+	      \end{table}
+
+	      \begin{figure}[h!]
+		      \begin{center}
+			      \includegraphics[width=0.75\textwidth]{img/4.2.1.2}
+		      \end{center}
+		      \caption{Zeigerdiagramm der Ausgangsseite}\label{img:4.2.1.2}
+	      \end{figure}
+
+	\item Berechnen Sie die Verlustleistung des Transformators sowie den Wirkungsgrad mit
+	      den Ergebnissen aus 4.2(a).
+
+	      \begin{figure}[!h]
+		      \begin{center}
+			      \includegraphics[width=0.75\textwidth]{img/4.2.2.1}
 		      \end{center}
 		      \caption{ESP für den Transformator im Lastbetrieb}\label{img:4.2.2.1}
 	      \end{figure}
 
-		  
-	      \begin{align*}
-		      \eta & = \frac{P_{ab}}{P_{zu}}                                                                                                       \\
-		      \eta & = \frac{\sqrt{3}\cdot U_{M.sec}\cdot I_{M.sec}\cdot \cos(\varphi)}{\sqrt{3}\cdot U_{M.pri}\cdot I_{M.pri}\cdot \cos(\varphi)} \\
-		      \eta & = \frac{354\ V\cdot 7\ A}{373,6\ V\cdot 6,7\ A}                                                                               \\
-		      \eta & = 0,989
-	      \end{align*}
-
-	      \begin{figure}[h!]
-		      \begin{center}
-			      \includegraphics[width=0.8\textwidth]{img/4.2.2.2}
-		      \end{center}
-		      \caption{Vereinfachtest ESP für den Transformator im Lastbetrieb}\label{img:4.2.2.2}
-	      \end{figure}
-	      \begin{align*}
-		      0     & = -\underline{U}_{e}+\underline{U}_{K}+\underline{U}_{a} \\
-		      U_{K} & = U_{e}-U_{a}                                            \\
-		      U_{K} & = 373\ V - 354\ V                                        \\
-		      U_{K} & = 19\ V
-	      \end{align*}
-	      
-
 	\item Bestimmen Sie die Verlustleistung für 3.2(b) nach 2.1(d) und vergleichen Sie
 	      das Ergebnis mit dem Wert aus 4.2(b). Begründen Sie Ihre Beobachtungen.
-
+	      \newpage
 	      \begin{minipage}[r]{0.5\linewidth}
 		      \begin{align*}
 			      P_{FE} & = P_0\ (\frac{U}{U_N})^2              \\
 			      P_{FE} & = -43,1\ W\ (\frac{373\ V}{400\ V})^2 \\
 			      P_{FE} & = -37,477\ W
-			      \\
 			      \\
 			      P_{Cu} & = P_K\ (\frac{I}{I_N})^2              \\
 			      P_{Cu} & = 113\ W\ (\frac{7\ A}{7,2\ A})^2     \\
@@ -196,7 +182,6 @@
 			      P_{V} & = P_{FE} \ +\ P_{Cu}                                  \\
 			      P_{V} & = -37,477\ W + 106,909\ W                             \\
 			      P_{V} & = 69,33\ W
-			      \\
 			      \\
 			      \eta  & = 1-\frac{P_{v}}{S}                                   \\
 			      \eta  & = 1- \frac{69,33\ W}{\sqrt{3}\cdot 354\ V\cdot 7\ A } \\
@@ -232,7 +217,7 @@
 	      \begin{align*}
 		      \Delta u'_2 & = \frac{U_1\ -\ U'_2}{U_1}                       \\
 		      \Delta u'_2 & = \frac{373\ V -\frac{373\ V}{\sqrt{3}}}{373\ V} \\
-		      \Delta u'_2 & = 0,422                                      \\
+		      \Delta u'_2 & = 0,422                                          \\
 	      \end{align*}
 	      \begin{align*}
 		      U_l         & = I_1(R_K\cos(\varphi_2)+X_K\sin(\varphi_2))                              \\
