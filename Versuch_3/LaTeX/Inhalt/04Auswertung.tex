@@ -7,7 +7,7 @@
 		      \begin{center}
 			      \includegraphics[width=0.95\textwidth]{img/4.1.1.1}
 		      \end{center}
-		      \caption{}\label{img:4.1.1.1}
+		      \caption{ESB Einphasen Transformator}\label{img:4.1.1.1}
 	      \end{figure}
 
 	\item Bestimmen Sie die Leistung im Leerlauf auf der Primärseite nach Gleichung (16).
@@ -61,9 +61,9 @@
 		      \cos(\varphi_m)$, die Leistungen $S, P \text{ und } Q$ jeweils für die Primär-
 	      und die Sekundärseite.
 
-	      Beispiel für die Phase 2 der Eingangsseite:
 	      \begin{center}
 		      \begin{align*}
+			      \text{Bsp. der Phase 2 der Eingangsseite:}                                                                          \\
 			      \underline{S}                 & = \sqrt{3}\cdot\underline{U}\cdot\underline{I}^*                                    \\
 			      \underline{S}                 & = \sqrt{3}\cdot 371\ Ve^{-j120}\ \cdot\ 7\ Ae^{-(-j172)}                            \\
 			      \underline{S}                 & = \SI{4,583}{\kilo\volt\ampere}e^{j65}                                              \\
@@ -76,36 +76,23 @@
 	      \end{center}
 
 	      \begin{table}[h!]
-		      \caption{Messwerte der Eingangsseite Yy5 Symmetrischelast}
-		      \centering
-		      \begin{tabular}{lllll}
-			      \\ \hline
-			      Phasen     & $\underline{U}$ in $[V]$ & $\varphi_{U}$ in $[^\circ]$ & $\underline{I}$ in $[A]$ & $\varphi_{I}$ in $[^\circ]$ \\ \hline
-			      $L1$       & $378$                    & $0$                         & $7$                      & $-65$                       \\
-			      $L2$       & $371$                    & $-120$                      & $7$                      & $172$                       \\
-			      $L3$       & $372$                    & $120$                       & $7$                      & $53$                        \\ \hline
-			      Mittelwert & $373,667$                & $0$                         & $7$                      & $53,333$                    \\ \hline\hline
-		      \end{tabular}
-	      \end{table}
-
-	      \begin{table}[h!]
-		      \caption{Brechnung der Eingangsseite Yy5 Symmetrischelast}
+		      \caption{Brechnung der Eingangsseite Yy0 Symmetrischelast}
 		      \centering
 		      \begin{tabular}{llllll}
 			      \\ \hline
 			      Phase      & $\varphi$ in $[^\circ]$ & $S$ in $[\SI{}{\kilo\volt\ampere}]$ & $P$ in $[\SI{}{\kilo\watt}]$ & $Q$ in $[\SI{}{\kilo\volt\ampere r}]$ & $\lambda$ in $[\ ]$ \\ \hline
-			      $L1$       & $65$                    & $4,583$                             & $1,937$                      & $4,154$                               & $0,423$             \\
-			      $L2$       & $68$                    & $4,498$                             & $1,901$                      & $4,077$                               & $0,375$             \\
-			      $L3$       & $67$                    & $4,510$                             & $1,762$                      & $4,152$                               & $0,391$             \\ \hline
-			      Mittelwert & $66,667$                & $4,531$                             & $1,867$                      & $4,128$                               & $0,396$             \\ \hline\hline
+			      $L1$       & $35$                    & $1,528$                             & $1,251$                      & $0,876$                               & $0,423$             \\
+			      $L2$       & $38$                    & $1,499$                             & $1,182$                      & $0,923$                               & $0,375$             \\
+			      $L3$       & $37$                    & $1,503$                             & $1,201$                      & $0,905$                               & $0,391$             \\ \hline
+			      Mittelwert & $36,667$                & $4,530$                             & $3,634$                      & $2,704$                               & $0,396$             \\ \hline\hline
 		      \end{tabular}
 	      \end{table}
 
-	      Beispiel für die Phase 3 der Ausgangsseite:
 	      \begin{center}
 		      \begin{align*}
-			      \underline{S}                 & = \sqrt{3}\cdot\underline{U}\cdot\underline{I}^*                                                  \\
-			      \underline{S}                 & = \sqrt{3}\cdot 358\ Ve^{-j120^\circ}\ \cdot\ 7\ Ae^{-(-j46^\circ+(-120^\circ))}                  \\
+			      \text{Bsp. der Phase 3 der Ausgangsseite:}                                                                                        \\
+			      \underline{S}                 & = \frac{\underline{U_{23}}}{\sqrt{3}}\ \underline{I_{1}}^*                                                  \\
+			      \underline{S}                 & = \frac{358\ Ve^{-j120^\circ}}{\sqrt{3}}\ 7\ Ae^{-(-j46^\circ+(-120^\circ))}                  \\
 			      \underline{S}                 & = \SI{4,154}{\kilo\volt\ampere}e^{j46}                                                            \\
 			      \Longrightarrow \underline{S} & =  P\ +\ jQ                                                                                       \\
 			      \underline{S}                 & = \SI{2,886}{\kilo\watt}\ +\ j\SI{2,988}{\kilo\volt\ampere r}                                     \\
@@ -115,45 +102,18 @@
 		      \end{align*}
 	      \end{center}
 
-	      \begin{figure}[h!]
-		      \begin{center}
-			      \includegraphics[width=0.75\textwidth]{img/4.2.1.1}
-		      \end{center}
-		      \caption{Zeigerdiagramm der Eingangsseite}\label{img:4.2.1.1}
-	      \end{figure}
-
 	      \begin{table}[h!]
 		      \centering
-		      \caption{Messwerte der Ausgangsseite Yy5 Symmetrischelast}
-		      \begin{tabular}{lllll}
-			      \\ \hline
-			      Phasen     & $\underline{U}$ in $[V]$ & $\varphi_{U}$ in $[^\circ]$ & $\underline{I}$ in $[A]$ & $\varphi_{I}$ in $[^\circ]$ \\ \hline
-			      $L1$       & $357$                    & $0$                         & $7,0$                    & $-46$                       \\
-			      $L2$       & $347$                    & $120$                       & $7,0$                    & $-46$                       \\
-			      $L3$       & $358$                    & $-120$                      & $6,7$                    & $-46$                       \\ \hline
-			      Mittelwert & $354,000$                & $0,000$                     & $6,900$                  & $-46,000$                   \\ \hline\hline
-		      \end{tabular}
-	      \end{table}
-
-	      \begin{table}[h!]
-		      \centering
-		      \caption{Brechnung der Ausgangsseite Yy5 Symmetrischelast}
+		      \caption{Brechnung der Ausgangsseite Yy0 Symmetrischelast}
 		      \begin{tabular}{llllll}
 			      \\ \hline
 			      Phase      & $\varphi$ in $[^\circ]$ & $S$ in $[\SI{}{\kilo\volt\ampere}]$ & $P$ in $[\SI{}{\kilo\watt}]$ & $Q$ in $[\SI{}{\kilo\volt\ampere r}]$ & $\lambda$ in $[\ ]$ \\ \hline
-			      $L1$       & $46$                    & $4,328$                             & $3,006$                      & $3,114$                               & $0,695$             \\
-			      $L2$       & $46$                    & $4,207$                             & $2,923$                      & $3,026$                               & $0,695$             \\
-			      $L3$       & $46$                    & $4,154$                             & $2,886$                      & $2,988$                               & $0,695$             \\ \hline
-			      Mittelwert & $46$                    & $4,292$                             & $2,938$                      & $3,043$                               & $0,695$             \\ \hline\hline
+			      $L1$       & $34$                    & $1,443$                             & $1,196$                      & $0,807$                               & $0,829$             \\
+			      $L2$       & $34$                    & $1,402$                             & $1,163$                      & $0,784$                               & $0,829$             \\
+			      $L3$       & $34$                    & $1,385$                             & $1,148$                      & $0,774$                               & $0,829$             \\ \hline
+			      Mittelwert & $34,000$                & $4,230$                             & $3,507$                      & $2,365$                               & $0,829$             \\ \hline\hline
 		      \end{tabular}
 	      \end{table}
-
-	      \begin{figure}[h!]
-		      \begin{center}
-			      \includegraphics[width=0.75\textwidth]{img/4.2.1.2}
-		      \end{center}
-		      \caption{Zeigerdiagramm der Ausgangsseite}\label{img:4.2.1.2}
-	      \end{figure}
 
 	\item Berechnen Sie die Verlustleistung des Transformators sowie den Wirkungsgrad mit
 	      den Ergebnissen aus 4.2(a).
