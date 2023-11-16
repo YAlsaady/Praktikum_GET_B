@@ -167,17 +167,17 @@
 			      \begin{minipage}{0.5\textwidth}
 				      \textbf{Primärseite:}\\ \ \\
 				      \begin{align*}
-					      S_{pri} & = U_{M.pri}\cdot I_{M.pri} \\
-					      S_{pri} & = 373,67\ V\cdot 7\ A      \\
-					      S_{pri} & = 2,62\ \text{kVA}         \\
+					      S_{pri} & = \sqrt3\cdot U_{M.pri}\cdot I_{M.pri} \\
+					      S_{pri} & = \sqrt3\cdot 373,67\ V\cdot 7\ A      \\
+					      S_{pri} & = 4,53\ \text{kVA}         \\
 				      \end{align*}
 			      \end{minipage}\hfill
 			      \begin{minipage}{0.5\textwidth}
 				      \textbf{Sekundärseite:}\\ \ \\
 				      \begin{align*}
-					      S_{pri} & = U_{M.pri}\cdot I_{M.pri} \\
-					      S_{pri} & = 354\ V\cdot 6,9\ A       \\
-					      S_{pri} & = 2,44\ \text{kVA}         \\
+					      S_{sec} & = \sqrt3\cdot U_{M.sec}\cdot I_{M.sec} \\
+					      S_{sec} & = \sqrt3\cdot 354\ V\cdot 6,9\ A       \\
+					      S_{sec} & = 4,23\ \text{kVA}         \\
 				      \end{align*}
 			      \end{minipage}
 		      }
@@ -196,16 +196,16 @@
 				      \textbf{Primärseite:}\\ \ \\
 				      \begin{align*}
 					      P_{pri} & = S_{pri} \cdot \cos(\varphi_{M.pri})      \\
-					      P_{pri} & = 2,62\ \text{kVA} \cdot \cos(36,67^\circ) \\
-					      P_{pri} & = 2,1\ kW
+					      P_{pri} & = 4,53\ \text{kVA} \cdot \cos(36,67^\circ) \\
+					      P_{pri} & = 3,63\ kW
 				      \end{align*}
 			      \end{minipage}\hfill
 			      \begin{minipage}{0.5\textwidth}
 				      \textbf{Sekundärseite:}\\ \ \\
 				      \begin{align*}
-					      P_{pri} & = S_{pri} \cdot \cos(\varphi_{M.pri})   \\
-					      P_{pri} & = 2,44\ \text{kVA} \cdot \cos(34^\circ) \\
-					      P_{pri} & = 2,03\ kW
+					      P_{sec} & = S_{sec} \cdot \cos(\varphi_{M.sec})   \\
+					      P_{sec} & = 4,23\ \text{kVA} \cdot \cos(34^\circ) \\
+					      P_{sec} & = 3,51\ kW
 				      \end{align*}
 			      \end{minipage}
 		      }
@@ -222,16 +222,16 @@
 				      \textbf{Primärseite:}\\ \ \\
 				      \begin{align*}
 					      Q_{pri} & = S_{pri} \cdot \sin(\varphi_{M.pri})      \\
-					      P_{pri} & = 2,62\ \text{kVA} \cdot \sin(36,67^\circ) \\
-					      Q_{pri} & = 1,56\ \text{var}
+					      P_{pri} & = 4,53\ \text{kVA} \cdot \sin(36,67^\circ) \\
+					      Q_{pri} & = 2,71\ \text{var}
 				      \end{align*}
 			      \end{minipage}\hfill
 			      \begin{minipage}{0.5\textwidth}
 				      \textbf{Sekundärseite:}\\ \ \\
 				      \begin{align*}
-					      Q_{pri} & = S_{pri} \cdot \sin(\varphi_{M.pri})   \\
-					      P_{pri} & = 2,44\ \text{kVA} \cdot \sin(34^\circ) \\
-					      Q_{pri} & = 1,37\ \text{var}
+					      Q_{sec} & = S_{sec} \cdot \sin(\varphi_{M.sec})   \\
+					      P_{sec} & = 4,23\ \text{kVA} \cdot \sin(34^\circ) \\
+					      Q_{sec} & = 2,37\ \text{var}
 				      \end{align*}
 			      \end{minipage}
 		      }
@@ -255,9 +255,9 @@
 			      \begin{minipage}{0.5\textwidth}
 				      \textbf{Sekundärseite:}\\ \ \\
 				      \begin{align*}
-					      \lambda_{pri} & = \cos{(\varphi)} \\
-					      \lambda_{pri} & = \cos (34^\circ) \\
-					      \lambda_{pri} & = 0,83
+					      \lambda_{sec} & = \cos{(\varphi)} \\
+					      \lambda_{sec} & = \cos (34^\circ) \\
+					      \lambda_{sec} & = 0,83
 				      \end{align*}
 			      \end{minipage}
 		      }
@@ -270,14 +270,14 @@
 	      \begin{minipage}[r]{0.5\linewidth}
 		      \begin{align*}
 			      S_{V} & = S_{pri} - S_{sec}       \\
-			      S_{V} & = (2,63-2,44)\ \text{kVA} \\
-			      S_{V} & = 190\ VA                 \\
+			      S_{V} & = (4,53 - 4,23)\ \text{kVA} \\
+			      S_{V} & = 300\ VA                 \\
 			      P_{V} & = P_{pri} - P_{sec}       \\
-			      P_{V} & = (2,1-2,03)\ kW          \\
-			      P_{V} & = 70\ W                   \\
+			      P_{V} & = (3,63 - 3,51)\ kW          \\
+			      P_{V} & = 120\ W                   \\
 			      Q_{V} & = Q_{pri} - Q_{sec}       \\
-			      Q_{V} & = (1,56-1,37)\ \text{var} \\
-			      Q_{V} & = 190\ \text{var}
+			      Q_{V} & = (2,71 - 2,27)\ \text{var} \\
+			      Q_{V} & = 340\ \text{var}
 		      \end{align*}
 	      \end{minipage}
 	      \begin{minipage}[l]{0.5\linewidth}
@@ -296,12 +296,12 @@
 	      das Ergebnis mit dem Wert aus 4.2(b). Begründen Sie Ihre Beobachtungen.\\
 	      \begin{minipage}[r]{0.5\linewidth}
 		      \begin{align*}
-			      P_{FE} & = P_0\ (\frac{U}{U_N})^2              \\
-			      P_{FE} & = -43,1\ W\ (\frac{373\ V}{400\ V})^2 \\
+			      P_{FE} & = P_0\ \left(\frac{U}{U_N}\right)^2              \\
+			      P_{FE} & = -43,1\ W\ \left(\frac{373\ V}{400\ V}\right)^2 \\
 			      P_{FE} & = -37,477\ W
 			      \\
-			      P_{Cu} & = P_K\ (\frac{I}{I_N})^2              \\
-			      P_{Cu} & = 113\ W\ (\frac{7\ A}{7,2\ A})^2     \\
+			      P_{Cu} & = P_K\ \left(\frac{I}{I_N}\right)^2              \\
+			      P_{Cu} & = 113\ W\ \left(\frac{7\ A}{7,2\ A}\right)^2     \\
 			      P_{Cu} & = 106,909\ W
 		      \end{align*}
 	      \end{minipage}
