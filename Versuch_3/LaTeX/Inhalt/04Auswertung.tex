@@ -220,7 +220,6 @@
 
 			      \begin{minipage}{0.5\textwidth}
 				      \textbf{Primärseite:}\\ \ \\
-				      \textbf{Scheinleistung}:
 				      \begin{align*}
 					      Q_{pri} & = S_{pri} \cdot \sin(\varphi_{M.pri})      \\
 					      P_{pri} & = 2,62\ \text{kVA} \cdot \sin(36,67^\circ) \\
@@ -264,23 +263,37 @@
 		      }
 	      \end{tcolorbox}
 
-	      \pagebreak
+	      \ \\
 	\item Berechnen Sie die Verlustleistung des Transformators sowie den Wirkungsgrad mit
 	      den Ergebnissen aus 4.2(a).
 
-	      \begin{align*}
-		      S_{V} & = S_{e} - S_{a} \\
-	      \end{align*}
-	      \begin{figure}[!h]
-		      \begin{center}
-			      \includegraphics[width=0.75\textwidth]{img/4.2.2.1}
-		      \end{center}
-		      \caption{ESP für den Transformator im Lastbetrieb}\label{img:4.2.2.1}
-	      \end{figure}
+	      \begin{minipage}[r]{0.5\linewidth}
+		      \begin{align*}
+			      S_{V} & = S_{pri} - S_{sec}       \\
+			      S_{V} & = (2,63-2,44)\ \text{kVA} \\
+			      S_{V} & = 190\ VA                 \\
+			      P_{V} & = P_{pri} - P_{sec}       \\
+			      P_{V} & = (2,1-2,03)\ kW          \\
+			      P_{V} & = 70\ W                   \\
+			      Q_{V} & = Q_{pri} - Q_{sec}       \\
+			      Q_{V} & = (1,56-1,37)\ \text{var} \\
+			      Q_{V} & = 190\ \text{var}
+		      \end{align*}
+	      \end{minipage}
+	      \begin{minipage}[l]{0.5\linewidth}
+		      \begin{align*}
+			      \eta_S & = \frac{S_{sec}}{S_{pri}} \\
+			      \eta_S & = 0,93\ \widehat{=}\ 93\% \\
+			      \eta_P & = \frac{P_{sec}}{P_{pri}} \\
+			      \eta_P & = 0,97\ \widehat{=}\ 97\% \\
+			      \eta_Q & = \frac{Q_{sec}}{Q_{pri}} \\
+			      \eta_P & = 0,88\ \widehat{=}\ 88\% \\
+		      \end{align*}
+	      \end{minipage}
+	      \pagebreak
 
 	\item Bestimmen Sie die Verlustleistung für 3.2(b) nach 2.1(d) und vergleichen Sie
-	      das Ergebnis mit dem Wert aus 4.2(b). Begründen Sie Ihre Beobachtungen.
-	      \newpage
+	      das Ergebnis mit dem Wert aus 4.2(b). Begründen Sie Ihre Beobachtungen.\\
 	      \begin{minipage}[r]{0.5\linewidth}
 		      \begin{align*}
 			      P_{FE} & = P_0\ (\frac{U}{U_N})^2              \\
