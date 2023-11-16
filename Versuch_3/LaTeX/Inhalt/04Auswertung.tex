@@ -77,100 +77,194 @@
 		      \cos(\varphi_m)$, die Leistungen $S, P \text{ und } Q$ jeweils für die Primär-
 	      und die Sekundärseite.
 
-	      Beispiel für die Phase 2 der Eingangsseite:
-	      \begin{center}
-		      \begin{align*}
-			      \underline{S}                 & = \sqrt{3}\cdot\underline{U}\cdot\underline{I}^*                                    \\
-			      \underline{S}                 & = \sqrt{3}\cdot 371\ Ve^{-j120}\ \cdot\ 7\ Ae^{-(-j172)}                            \\
-			      \underline{S}                 & = \SI{4,583}{\kilo\volt\ampere}e^{j65}                                              \\
-			      \Longrightarrow \underline{S} & =  P\ +\ jQ                                                                         \\
-			      \underline{S}                 & = \SI{1,937}{\kilo\watt}\ +\ j\SI{4,154}{\kilo\volt\ampere r}                       \\
-			      \Longrightarrow\ P            & = Re{\{S\}}\                                                   =\ 1,937\text{ kW}   \\
-			      \Longrightarrow\ Q            & = Im{\{S\}}\                                                   =\ 4,154\text{ kVAr} \\
-			      \Longrightarrow\ S            & =  \left\lvert {\underline{S}}  \right\rvert\ = \sqrt{P^2+Q^2} =\ 4,583\text{ kVA}  \\               \\
-		      \end{align*}
-	      \end{center}
+	      \textbf{Spannung}:\\\ \\
+	      \begin{tcolorbox}[colback=gray!30,
+			      colframe=black,
+			      width=0.9\textwidth,
+		      ]
+		      \parbox{\textwidth}{
 
-	      \begin{table}[h!]
-		      \caption{Messwerte der Eingangsseite Yy5 Symmetrischelast}
-		      \centering
-		      \begin{tabular}{lllll}
-			      \\ \hline
-			      Phasen     & $\underline{U}$ in $[V]$ & $\varphi_{U}$ in $[^\circ]$ & $\underline{I}$ in $[A]$ & $\varphi_{I}$ in $[^\circ]$ \\ \hline
-			      $L1$       & $378$                    & $0$                         & $7$                      & $-65$                       \\
-			      $L2$       & $371$                    & $-120$                      & $7$                      & $172$                       \\
-			      $L3$       & $372$                    & $120$                       & $7$                      & $53$                        \\ \hline
-			      Mittelwert & $373,667$                & $0$                         & $7$                      & $53,333$                    \\ \hline\hline
-		      \end{tabular}
-	      \end{table}
+			      \begin{minipage}{0.5\textwidth}
+				      \textbf{Primärseite:}\\ \ \\
+				      \begin{align*}
+					      U_{M.pri} & = \frac{U_{12} + U_{23} + U_{31}}{3} \\
+					      U_{M.pri} & = \frac{378\ V + 371\ V + 372\ V}{3} \\
+					      U_{M.pri} & = 373,67\ V
+				      \end{align*}
+			      \end{minipage}\hfill
+			      \begin{minipage}{0.5\textwidth}
+				      \textbf{Sekundärseite:}\\ \ \\
+				      \begin{align*}
+					      U_{M.sec} & = \frac{U_{12} + U_{23} + U_{31}}{3} \\
+					      U_{M.sec} & = \frac{378\ V + 371\ V + 358\ V}{3} \\
+					      U_{M.sec} & = 354\ V
+				      \end{align*}
+			      \end{minipage}
+		      }
+	      \end{tcolorbox}
 
-	      \begin{table}[h!]
-		      \caption{Brechnung der Eingangsseite Yy5 Symmetrischelast}
-		      \centering
-		      \begin{tabular}{llllll}
-			      \\ \hline
-			      Phase      & $\varphi$ in $[^\circ]$ & $S$ in $[\SI{}{\kilo\volt\ampere}]$ & $P$ in $[\SI{}{\kilo\watt}]$ & $Q$ in $[\SI{}{\kilo\volt\ampere r}]$ & $\lambda$ in $[\ ]$ \\ \hline
-			      $L1$       & $65$                    & $4,583$                             & $1,937$                      & $4,154$                               & $0,423$             \\
-			      $L2$       & $68$                    & $4,498$                             & $1,901$                      & $4,077$                               & $0,375$             \\
-			      $L3$       & $67$                    & $4,510$                             & $1,762$                      & $4,152$                               & $0,391$             \\ \hline
-			      Mittelwert & $66,667$                & $4,531$                             & $1,867$                      & $4,128$                               & $0,396$             \\ \hline\hline
-		      \end{tabular}
-	      \end{table}
+	      \textbf{Strom}:\\\ \\
+	      \begin{tcolorbox}[colback=gray!30,
+			      colframe=black,
+			      width=0.9\textwidth,
+		      ]
+		      \parbox{\textwidth}{
 
-	      Beispiel für die Phase 3 der Ausgangsseite:
-	      \begin{center}
-		      \begin{align*}
-			      \underline{S}                 & = \sqrt{3}\cdot\underline{U}\cdot\underline{I}^*                                                  \\
-			      \underline{S}                 & = \sqrt{3}\cdot 358\ Ve^{-j120^\circ}\ \cdot\ 7\ Ae^{-(-j46^\circ+(-120^\circ))}                  \\
-			      \underline{S}                 & = \SI{4,154}{\kilo\volt\ampere}e^{j46}                                                            \\
-			      \Longrightarrow \underline{S} & =  P\ +\ jQ                                                                                       \\
-			      \underline{S}                 & = \SI{2,886}{\kilo\watt}\ +\ j\SI{2,988}{\kilo\volt\ampere r}                                     \\
-			      \Longrightarrow\ P            & = Re{\{S\}}\                                                   =\   \SI{1,937}{\watt}             \\
-			      \Longrightarrow\ Q            & = Im{\{S\}}\                                                   =\ \SI{4,154}{\kilo\volt\ampere r} \\
-			      \Longrightarrow\ S            & =  \left\lvert {\underline{S}}  \right\rvert\ = \sqrt{P^2+Q^2} = \SI{4,583}{\kilo\volt\ampere}    \\               \\
-		      \end{align*}
-	      \end{center}
+			      \begin{minipage}{0.5\textwidth}
+				      \textbf{Primärseite:}\\ \ \\
+				      \begin{align*}
+					      I_{M.pri} & = \frac{I_{1} + I_{2} + I_{3}}{3} \\
+					      I_{M.pri} & = \frac{7\ A + 7\ A + 7\ A}{3}    \\
+					      I_{M.pri} & = 7\ A
+				      \end{align*}
+			      \end{minipage}\hfill
+			      \begin{minipage}{0.5\textwidth}
+				      \textbf{Sekundärseite:}\\ \ \\
+				      \begin{align*}
+					      I_{M.sec} & = \frac{I_{12} + I_{23} + I_{31}}{3} \\
+					      I_{M.sec} & = \frac{7\ A + 7\ A + 6,7\ A}{3}     \\
+					      I_{M.sec} & = 6,9\ A
+				      \end{align*}
+			      \end{minipage}
+		      }
+	      \end{tcolorbox}
 
-	      \begin{figure}[h!]
-		      \begin{center}
-			      \includegraphics[width=0.75\textwidth]{img/4.2.1.1}
-		      \end{center}
-		      \caption{Zeigerdiagramm der Eingangsseite}\label{img:4.2.1.1}
-	      \end{figure}
 
-	      \begin{table}[h!]
-		      \centering
-		      \caption{Messwerte der Ausgangsseite Yy5 Symmetrischelast}
-		      \begin{tabular}{lllll}
-			      \\ \hline
-			      Phasen     & $\underline{U}$ in $[V]$ & $\varphi_{U}$ in $[^\circ]$ & $\underline{I}$ in $[A]$ & $\varphi_{I}$ in $[^\circ]$ \\ \hline
-			      $L1$       & $357$                    & $0$                         & $7,0$                    & $-46$                       \\
-			      $L2$       & $347$                    & $120$                       & $7,0$                    & $-46$                       \\
-			      $L3$       & $358$                    & $-120$                      & $6,7$                    & $-46$                       \\ \hline
-			      Mittelwert & $354,000$                & $0,000$                     & $6,900$                  & $-46,000$                   \\ \hline\hline
-		      \end{tabular}
-	      \end{table}
+	      \textbf{Phase}:\\\ \\
+	      \begin{tcolorbox}[colback=gray!30,
+			      colframe=black,
+			      width=0.9\textwidth,
+		      ]
+		      \parbox{\textwidth}{
 
-	      \begin{table}[h!]
-		      \centering
-		      \caption{Brechnung der Ausgangsseite Yy5 Symmetrischelast}
-		      \begin{tabular}{llllll}
-			      \\ \hline
-			      Phase      & $\varphi$ in $[^\circ]$ & $S$ in $[\SI{}{\kilo\volt\ampere}]$ & $P$ in $[\SI{}{\kilo\watt}]$ & $Q$ in $[\SI{}{\kilo\volt\ampere r}]$ & $\lambda$ in $[\ ]$ \\ \hline
-			      $L1$       & $46$                    & $4,328$                             & $3,006$                      & $3,114$                               & $0,695$             \\
-			      $L2$       & $46$                    & $4,207$                             & $2,923$                      & $3,026$                               & $0,695$             \\
-			      $L3$       & $46$                    & $4,154$                             & $2,886$                      & $2,988$                               & $0,695$             \\ \hline
-			      Mittelwert & $46$                    & $4,292$                             & $2,938$                      & $3,043$                               & $0,695$             \\ \hline\hline
-		      \end{tabular}
-	      \end{table}
+			      \begin{minipage}{0.5\textwidth}
+				      \textbf{Primärseite:}\\ \ \\
+				      \begin{align*}
+					      \varphi_{M.pri} & = \frac{(\varphi_{1} + \varphi_{2} + \varphi_{3})-30^\circ}{3} \\
+					      \varphi_{M.pri} & = \frac{65^\circ+68^\circ+67^\circ)-30^\circ}{3}               \\
+					      \varphi_{M.pri} & = 36,7^\circ
+				      \end{align*}
+			      \end{minipage}\hfill
+			      \begin{minipage}{0.5\textwidth}
+				      \textbf{Sekundärseite:}\\ \ \\
+				      \begin{align*}
+					      \varphi_{M.sec} & = \frac{(\varphi_{1} + \varphi_{2} + \varphi_{3})-30^\circ}{3} \\
+					      \varphi_{M.sec} & = \frac{64^\circ+65^\circ+63^\circ)-30^\circ}{3}               \\
+					      \varphi_{M.sec} & = 34^\circ
+				      \end{align*}
+			      \end{minipage}
+		      }
+	      \end{tcolorbox}
 
-	      \begin{figure}[h!]
-		      \begin{center}
-			      \includegraphics[width=0.75\textwidth]{img/4.2.1.2}
-		      \end{center}
-		      \caption{Zeigerdiagramm der Ausgangsseite}\label{img:4.2.1.2}
-	      \end{figure}
 
+	      \textbf{Scheinleistung:}\\ \ \\
+	      \begin{tcolorbox}[colback=gray!30,
+			      colframe=black,
+			      width=0.9\textwidth,
+		      ]
+		      \parbox{\textwidth}{
+
+			      \begin{minipage}{0.5\textwidth}
+				      \textbf{Primärseite:}\\ \ \\
+				      \begin{align*}
+					      S_{pri} & = U_{M.pri}\cdot I_{M.pri} \\
+					      S_{pri} & = 373,67\ V\cdot 7\ A      \\
+					      S_{pri} & = 2,62\ \text{kVA}         \\
+				      \end{align*}
+			      \end{minipage}\hfill
+			      \begin{minipage}{0.5\textwidth}
+				      \textbf{Sekundärseite:}\\ \ \\
+				      \begin{align*}
+					      S_{pri} & = U_{M.pri}\cdot I_{M.pri} \\
+					      S_{pri} & = 354\ V\cdot 6,9\ A       \\
+					      S_{pri} & = 2,44\ \text{kVA}         \\
+				      \end{align*}
+			      \end{minipage}
+		      }
+	      \end{tcolorbox}
+
+
+	      \pagebreak
+	      \textbf{Wirkleistung:}\\ \ \\
+	      \begin{tcolorbox}[colback=gray!30,
+			      colframe=black,
+			      width=0.9\textwidth,
+		      ]
+		      \parbox{\textwidth}{
+
+			      \begin{minipage}{0.5\textwidth}
+				      \textbf{Primärseite:}\\ \ \\
+				      \begin{align*}
+					      P_{pri} & = S_{pri} \cdot \cos(\varphi_{M.pri})      \\
+					      P_{pri} & = 2,62\ \text{kVA} \cdot \cos(36,67^\circ) \\
+					      P_{pri} & = 2,1\ kW
+				      \end{align*}
+			      \end{minipage}\hfill
+			      \begin{minipage}{0.5\textwidth}
+				      \textbf{Sekundärseite:}\\ \ \\
+				      \begin{align*}
+					      P_{pri} & = S_{pri} \cdot \cos(\varphi_{M.pri})   \\
+					      P_{pri} & = 2,44\ \text{kVA} \cdot \cos(34^\circ) \\
+					      P_{pri} & = 2,03\ kW
+				      \end{align*}
+			      \end{minipage}
+		      }
+	      \end{tcolorbox}
+
+	      \textbf{Blindleistung}\\ \ \\
+	      \begin{tcolorbox}[colback=gray!30,
+			      colframe=black,
+			      width=0.9\textwidth,
+		      ]
+		      \parbox{\textwidth}{
+
+			      \begin{minipage}{0.5\textwidth}
+				      \textbf{Primärseite:}\\ \ \\
+				      \textbf{Scheinleistung}:
+				      \begin{align*}
+					      Q_{pri} & = S_{pri} \cdot \sin(\varphi_{M.pri})      \\
+					      P_{pri} & = 2,62\ \text{kVA} \cdot \sin(36,67^\circ) \\
+					      Q_{pri} & = 1,56\ \text{var}
+				      \end{align*}
+			      \end{minipage}\hfill
+			      \begin{minipage}{0.5\textwidth}
+				      \textbf{Sekundärseite:}\\ \ \\
+				      \begin{align*}
+					      Q_{pri} & = S_{pri} \cdot \sin(\varphi_{M.pri})   \\
+					      P_{pri} & = 2,44\ \text{kVA} \cdot \sin(34^\circ) \\
+					      Q_{pri} & = 1,37\ \text{var}
+				      \end{align*}
+			      \end{minipage}
+		      }
+	      \end{tcolorbox}
+
+	      \textbf{Leistungsfaktor}\\ \ \\
+	      \begin{tcolorbox}[colback=gray!30,
+			      colframe=black,
+			      width=0.9\textwidth,
+		      ]
+		      \parbox{\textwidth}{
+
+			      \begin{minipage}{0.5\textwidth}
+				      \textbf{Primärseite:}\\ \ \\
+				      \begin{align*}
+					      \lambda_{pri} & = \cos{(\varphi)}   \\
+					      \lambda_{pri} & = \cos (36,7^\circ) \\
+					      \lambda_{pri} & = 0,8
+				      \end{align*}
+			      \end{minipage}\hfill
+			      \begin{minipage}{0.5\textwidth}
+				      \textbf{Sekundärseite:}\\ \ \\
+				      \begin{align*}
+					      \lambda_{pri} & = \cos{(\varphi)} \\
+					      \lambda_{pri} & = \cos (34^\circ) \\
+					      \lambda_{pri} & = 0,83
+				      \end{align*}
+			      \end{minipage}
+		      }
+	      \end{tcolorbox}
+
+	      \pagebreak
 	\item Berechnen Sie die Verlustleistung des Transformators sowie den Wirkungsgrad mit
 	      den Ergebnissen aus 4.2(a).
 
