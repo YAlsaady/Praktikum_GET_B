@@ -75,11 +75,16 @@
 		      \cos(\varphi_m)$, die Leistungen $S, P \text{ und } Q$ jeweils für die Primär-
 	      und die Sekundärseite.
 
+	      \begin{figure}[h!]
+		      \begin{center}
+			      \includegraphics[width=0.95\textwidth]{img/4.2.1.1}
+		      \end{center}
+		      \caption{ESB mit Messwerten aus der Messung 3.2 b}\label{img:4.2.1.1}
+	      \end{figure}
 	      \textbf{Spannung}:\\\ \\
 	      \begin{tcolorbox}[colback=gray!30,
 			      colframe=black,
-			      width=0.9\textwidth,
-		      ]
+			      width=0.9\textwidth ]
 		      \parbox{\textwidth}{
 
 			      \begin{minipage}{0.5\textwidth}
@@ -138,8 +143,8 @@
 				      \textbf{Primärseite:}\\ \ \\
 				      \begin{align*}
 					      \varphi_{M.pri} & = \frac{(\varphi_{1} + \varphi_{2} + \varphi_{3})-30^\circ}{3} \\
-					      \varphi_{M.pri} & = \frac{65^\circ+68^\circ+67^\circ)-30^\circ}{3}               \\
-					      \varphi_{M.pri} & = 36,7^\circ
+					      \varphi_{M.pri} & = \frac{(65^\circ+68^\circ+67^\circ)-30^\circ}{3}              \\
+					      \varphi_{M.pri} & = 36,7^\circ                                                   \\
 				      \end{align*}
 			      \end{minipage}\hfill
 			      \begin{minipage}{0.5\textwidth}
@@ -147,11 +152,21 @@
 				      \begin{align*}
 					      \varphi_{M.sec} & = \frac{(\varphi_{1} + \varphi_{2} + \varphi_{3})-30^\circ}{3} \\
 					      \varphi_{M.sec} & = \frac{(64^\circ+65^\circ+63^\circ)-30^\circ}{3}              \\
-					      \varphi_{M.sec} & = 34^\circ
+					      \varphi_{M.sec} & = 34^\circ                                                     \\
 				      \end{align*}
 			      \end{minipage}
+			      \\ \ \\
+			      \centering
+			      Minus $30^\circ$ kommen zustande, durch den Phasenwinkel der Außenleiterspannungen zu den Stangspannungen.
 		      }
 	      \end{tcolorbox}
+
+	      \begin{figure}[h!]
+		      \begin{center}
+			      \includegraphics[width=0.95\textwidth]{img/4.2.1.2}
+		      \end{center}
+		      \caption{Zeigerdiagramm der Außenleiterspannungen und Strangspannungen}\label{img:4.2.1.2}
+	      \end{figure}
 
 	      \textbf{Scheinleistung:}\\ \ \\
 	      \begin{tcolorbox}[colback=gray!30,
@@ -178,8 +193,6 @@
 			      \end{minipage}
 		      }
 	      \end{tcolorbox}
-
-	      \pagebreak
 	      \textbf{Wirkleistung:}\\ \ \\
 	      \begin{tcolorbox}[colback=gray!30,
 			      colframe=black,
@@ -238,7 +251,6 @@
 			      width=0.9\textwidth,
 		      ]
 		      \parbox{\textwidth}{
-
 			      \begin{minipage}{0.5\textwidth}
 				      \textbf{Primärseite:}\\ \ \\
 				      \begin{align*}
@@ -257,7 +269,7 @@
 			      \end{minipage}
 		      }
 	      \end{tcolorbox}
-
+	      \pagebreak
 	      \ \\
 	\item Berechnen Sie die Verlustleistung des Transformators sowie den Wirkungsgrad mit
 	      den Ergebnissen aus 4.2(a).
@@ -314,21 +326,30 @@
 			      \end{minipage}
 		      }
 	      \end{tcolorbox}
-		  \begin{center}
-	      \begin{minipage}[c]{0.5\linewidth}
-		      \begin{align*}
-			      \\
-			      P_{V} & = P_{FE} \ +\ P_{Cu}                    \\
-			      P_{V} & = 31,591\ W + 132,330\ W                \\
-			      P_{V} & = 163,921\ W
-			      \\
-			      \\
-			      \eta  & = 1-\frac{P_{V}}{S_{M.pri}}             \\
-			      \eta  & = 1- \frac{132,330\ W }{4,53\text{ VA}} \\
-			      \eta  & = 0,971\ \widehat{=}\ 97,1\ \%          \\
-		      \end{align*}
-	      \end{minipage}
-		\end{center}
+	      \begin{center}
+		      \begin{minipage}[c]{0.5\linewidth}
+			      \begin{align*}
+				      \\
+				      P_{V} & = P_{FE} \ +\ P_{Cu}                    \\
+				      P_{V} & = 31,591\ W + 132,330\ W                \\
+				      P_{V} & = 163,921\ W
+				      \\
+				      \\
+				      \eta  & = 1-\frac{P_{V}}{S_{M.pri}}             \\
+				      \eta  & = 1- \frac{132,330\ W }{4,53\text{ VA}} \\
+				      \eta  & = 0,971\ \widehat{=}\ 97,1\ \%          \\
+			      \end{align*}
+		      \end{minipage}
+	      \end{center}
+
+	      Die Verlustleistung bewegt sich ungefähr in derselben Größenordnung, wobei
+	      $P_{V.Mess}$ bei 120 W liegt und $P_{V.Theo}$ bei 163,921 W liegt. Es ist zu
+	      beachten, dass der theoretische Wert etwas über dem gemessenen Wert liegt.\\
+	      Die Diskrepanz zwischen dem theoretischen Wert ($P_{V.Theo} = 163,921\ W$) und
+	      dem gemessenen Wert ($P_{V.Mess} = 120\ W$) könnte auf verschiedene Faktoren
+	      zurückzuführen sein. Mögliche Gründe für einen höheren theoretischen Wert
+	      könnten beispielsweise unberücksichtigte Verluste in der Messausrüstung, nicht
+	      ideale Bedingungen während der Messung sein.
 
 	\item Berechnen Sie aus den Messwerten nach 3.2(b) und dem Übersetzungsverhältnis ü
 	      den relativen Spannungsfall $\Delta u'_2$!\\ \ \\
@@ -351,26 +372,25 @@
 			      ü   & \approx 1
 		      \end{align*}
 	      \end{minipage}
-
+	      \begin{align*}
+		      \Delta u'_2 & = \frac{U_1\ -\ U'_2}{U_1}          \\
+		      \Delta u'_2 & = \frac{373,67\ V - 354\ V}{373\ V} \\
+		      \Delta u'_2 & = 0,053                             \\
+	      \end{align*}
 	\item Bestimmen Sie anhand der Formeln (11) - (13) den relativen Spannungsabfall für
 	      3.2(b).
 
 	      \begin{align*}
-		      \Delta u'_2 & = \frac{U_1\ -\ U'_2}{U_1}                       \\
-		      \Delta u'_2 & = \frac{373\ V -\frac{373\ V}{\sqrt{3}}}{373\ V} \\
-		      \Delta u'_2 & = 0,422                                          \\
-	      \end{align*}
-	      \begin{align*}
-		      U_l         & = I_1(R_K\cos(\varphi_2)+X_K\sin(\varphi_2))                              \\
+		      U_l         & = I_1(R_K\cos(\varphi_2)+X_K\sin(\varphi_2))                                 \\
 		      U_l         & = 7\ A\ (0,43\ \Omega\ \cos(-46^\circ)\ +\ 559,2 \ k\Omega\ \sin(-46^\circ)) \\
-		      U_l         & = -38,728\ V                                                              \\
+		      U_l         & = -38,728\ V                                                                 \\
 		      \\
-		      U_q         & = I_1(R_K\cos(\varphi_2)+X_K\sin(\varphi_2))                              \\
-		      U_q         & = 7\ A\ (33,7\ \Omega\ \sin(-46^\circ)\ +\ 40,1\ \Omega\ \cos(-46^\circ)) \\
-		      U_q         & = 24,592\ V                                                               \\
+		      U_q         & = I_1(R_K\cos(\varphi_2)+X_K\sin(\varphi_2))                                 \\
+		      U_q         & = 7\ A\ (33,7\ \Omega\ \sin(-46^\circ)\ +\ 40,1\ \Omega\ \cos(-46^\circ))    \\
+		      U_q         & = 24,592\ V                                                                  \\
 		      \\
-		      \Delta u'_2 & = 1+\frac{U_l}{U_1} - \sqrt{1-\frac{U_q}{U_1}}                            \\
-		      \Delta u'_2 & = 1+\frac{-38,728\ V}{373,67\ V} - \sqrt{1-\frac{24,592\ V}{373,67\ V}}   \\
+		      \Delta u'_2 & = 1+\frac{U_l}{U_1} - \sqrt{1-\frac{U_q}{U_1}}                               \\
+		      \Delta u'_2 & = 1+\frac{-38,728\ V}{373,67\ V} - \sqrt{1-\frac{24,592\ V}{373,67\ V}}      \\
 		      \Delta u'_2 & = 0,100\ 336
 	      \end{align*}
 
