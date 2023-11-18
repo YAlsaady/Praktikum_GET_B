@@ -24,18 +24,17 @@ Elektrische Maschinen (ET3). Praktikum GET B
     - [ ] 4.2.f
 ### TODO: Yaman
 - [ ] Vorbereitung 
-    - [ ] 2.1.a
-    - [ ] 2.1.b
-    - [ ] 2.1.d
+    - [X] 2.1.a
+    - [X] 2.1.d
     - [X] 2.1.e
     - [X] 2.1.f
-    - [X] 2.2.b
-    - [ ] 2.3.b
+    - [ ] 2.2.b
+    - [X] 2.3.b
 - [ ] Messung
     - [ ] Excel to LaTeX
-- [ ] Auswertung 
+- [X] Auswertung 
     - [X] 4.1.a
-    - [ ] 4.1.b
-    - [ ] 4.1.c
-    - [ ] 4.1.d
-    - [ ] 4.1.e
+    - [X] 4.1.b
+    - [X] 4.1.c
+    - [X] 4.1.d
+    - [X] 4.1.e
