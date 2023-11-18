@@ -43,6 +43,28 @@ zur Messung des Stromes. \\\ \\ \textbf{Leerlaufversuch: $(U_N \leq U_0 \leq
 \begin{enumerate}[label=\alph*)]
   \setcounter{enumi}{1}
   \item Bestimmen Sie den Nennstrom des Transformators.
+        \begin{figure}[h!]
+          \begin{center}
+            \includegraphics[width=0.75\textwidth]{img/3.1.2.1.png}
+          \end{center}
+          \caption{Nennwerte des Drehstromtransformators}\label{img:3.1.2.1}
+        \end{figure}
+        \begin{align*}
+          \text{Dreieckverschaltung Primärseite}   \\
+          U_N & = 230\ V                           \\
+          I_N & = 12,55\ A                         \\
+          \text{Sternverschaltung Primärseite}     \\
+          U_N & = 400\ V                           \\
+          I_N & = 7,2\ A                           \\
+          \\
+          \text{Dreieckverschaltung Sekundärseite} \\
+          U_N & = 220\ V                           \\
+          I_N & = 13,12\ A                         \\
+          \text{Sternverschaltung Sekundärseite}   \\
+          U_N & = 380\ V                           \\
+          I_N & = 7,6\ A                           \\
+        \end{align*}
+        \pagebreak[2]
   \item Messen Sie bei primärseitigem Nennstrom (Kurzschlussstrom) die
         Kurzschlussspannung $U_K$ und den sekundären Kurzschlussstrom $I_2k$ aller drei
         Phasen sowie die zugehörigen Phasenwinkel. Beziehen Sie die Winkel auf der
@@ -82,11 +104,30 @@ Bitte achten Sie auf den Nennstrom! ($U_{12} = 400\ V$ primärseitig). \\
 Verwenden Sie zur Strommessung analoge und zur Spannungsmessung digitale
 Messgeräte.
 \begin{enumerate}[label=\alph*)]
-  \item Dürfen Sie diese Last mit dem Transformator betreiben? Begründen Sie! $I_N$ des
-        Trafos ist kleiner als der von der Last, somit darf die Last an den Trafo
-        angeschlossen werden. Der Trafo wird im maximalen Betrieb laufen, da die Last
-        den maximalen Strom bezieht.
+  \item Dürfen Sie diese Last mit dem Transformator betreiben? Begründen Sie!\\ \ \\
+        Die Verbindung der Last mit dem Transformator ist grundsätzlich möglich, da der
+        Transformator in der Lage ist, den maximalen Strom, d.h., den Nennstrom von
+        7,6A, zu liefern. Jedoch ist anzumerken, dass die Last möglicherweise nicht im
+        Einklang mit den Nennwerten betrieben wird, denn der Nennbetrieb der Last liegt
+        bei 9 A. Diese Konfiguration ist aus mehreren Gründen nicht empfehlenswert.\\ \
+        \\
+
+        Erstens führt der Betrieb des Transformators nahe der maximalen
+        Belastungsgrenze zu einem erhöhten thermischen Stress und einer potenziellen
+        Reduzierung der Lebensdauer des Transformators.\\ \ \\
+
+        Zweitens ist zu beachten, dass die Last möglicherweise nicht mit den Nennwerten
+        betrieben werden kann, dies könnte zu einer instabilen Betriebssituation
+        führen, die nicht nur die Funktionalität der Last beeinträchtigt, sondern auch
+        zu weiteren Schäden an anderen elektrischen Komponenten führen kann.\\ \ \\
+
+        Insgesamt ist die vorgeschlagene Konfiguration nicht optimal, da sie das
+        Potenzial für eine verkürzte Lebensdauer des Transformators und eine
+        unsachgemäße Betriebsweise der Last birgt. Es wird empfohlen, alternative
+        Konfigurationen zu prüfen, um eine effiziente und sichere elektrische
+        Energieübertragung zu gewährleisten.\\ \ \\
 \end{enumerate}
+\pagebreak
 \textbf{Schaltgruppe $Yy0$}
 \begin{enumerate}[label=\alph*)]
   \setcounter{enumi}{1}
@@ -122,7 +163,7 @@ Messgeräte.
             Mittelwert & $354,000$                & $0,000$                     & $6,900$                  & $-64,000$                   \\ \hline\hline
           \end{tabular}
         \end{table}
-
+        \pagebreak
 \end{enumerate}
 \textbf{Schaltgruppe $Dy5$}
 \begin{enumerate}[label=\alph*)]

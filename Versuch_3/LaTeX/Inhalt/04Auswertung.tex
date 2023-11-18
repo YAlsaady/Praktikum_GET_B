@@ -270,7 +270,7 @@
 		      }
 	      \end{tcolorbox}
 	      \pagebreak
-	      \ \\
+
 	\item Berechnen Sie die Verlustleistung des Transformators sowie den Wirkungsgrad mit
 	      den Ergebnissen aus 4.2(a).
 
@@ -297,7 +297,6 @@
 			      \eta_P & = 0,88\ \widehat{=}\ 88\% \\
 		      \end{align*}
 	      \end{minipage}
-	      \pagebreak
 
 	\item Bestimmen Sie die Verlustleistung für 3.2(b) nach 2.1(d) und vergleichen Sie
 	      das Ergebnis mit dem Wert aus 4.2(b). Begründen Sie Ihre Beobachtungen.\\ \ \\
@@ -373,9 +372,9 @@
 		      \end{align*}
 	      \end{minipage}
 	      \begin{align*}
-		      \Delta u'_2 & = \frac{U_1\ -\ U'_2}{U_1}          \\
+		      \Delta u'_2 & = \frac{U_1\ -\ U'_2}{U_1}             \\
 		      \Delta u'_2 & = \frac{373,67\ V - 354\ V}{373,67\ V} \\
-		      \Delta u'_2 & = 0,053                             \\,67
+		      \Delta u'_2 & = 0,053                                \\
 	      \end{align*}
 	\item Bestimmen Sie anhand der Formeln (11) - (13) den relativen Spannungsabfall für
 	      3.2(b).
@@ -387,14 +386,49 @@
 		      \\
 		      U_q         & = I_1(R_K\cos(\varphi_2)+X_K\sin(\varphi_2))                             \\
 		      U_q         & =  7\ A\ (0,86\ \Omega\ \sin(34^\circ)\ +\ 0,38\ \Omega\ \cos(34^\circ)) \\
-		      U_l         & = 5,572 \ V                                                               \\                                                                \\
+		      U_l         & = 5,572 \ V                                                              \\                                                                \\
 		      \\
 		      \Delta u'_2 & = 1+\frac{U_l}{U_1} - \sqrt{1-\frac{U_q}{U_1}}                           \\
-		      \Delta u'_2 & = 1+\frac{6,478\ V}{373,67\ V} - \sqrt{1-\frac{5,572 \ V}{373,67\ V}}  \\
+		      \Delta u'_2 & = 1+\frac{6,478\ V}{373,67\ V} - \sqrt{1-\frac{5,572 \ V}{373,67\ V}}    \\
 		      \Delta u'_2 & = 0,017
 	      \end{align*}
-
+	      \pagebreak
 	\item Vergleichen Sie die primär- und sekundärseitigen Spannungen und Ströme aus
-	      3.2(b) und 3.2(c) miteinander.
+	      3.2(b) und 3.2(c) miteinander.\\ \ \\
+
+	      \subsection*{Vergleich der Eingangs- und Ausgangswerte:}
+
+	      \textbf{Eingangsseite:}
+
+	      \begin{itemize}
+		      \item \textbf{Yy0-Verschaltung:} Yy0 hat eine höhere Eingangsspannung (\(373,667 \, V\) gegenüber \(197,667 \, V\))
+		      \item \textbf{Dy5-Verschaltung:} Dy5 hat einen höheren Eingangsstrom (\(11,100 \, A\) gegenüber \(7 \, A\)).
+	      \end{itemize}
+
+	      \textbf{Ausgangsseite:}
+
+	      \begin{itemize}
+		      \item \textbf{Yy0-Verschaltung:} Yy0 hat eine höhere Ausgangsspannung (\(354,000 \, V\) gegenüber \(354 \, V\))
+		      \item \textbf{Dy5-Verschaltung:} Dy5 hat einen niedrigeren Ausgangsstrom (\(6,300 \, A\) gegenüber \(6,900 \, A\)).
+
+	      \end{itemize}
+
+	      \begin{table}[h!]
+		      \caption{Vergleich der primär- und sekundärseitigen Spannungen und Ströme}
+		      \centering
+		      \begin{tabular}{lcccc}
+			      \hline
+			                                    & \textbf{Spannung [V]} & \textbf{Strom [A]} & \textbf{Phasenwinkel [$^\circ$]} \\
+			      \hline
+			      \textbf{Yy0 Symmetrischelast} &                       &                    &                                  \\
+			      Eingangsseite                 & $373,667$             & $7,000$            & $53,333$                         \\
+			      Ausgangsseite                 & $354,000$             & $6,900$            & $-64,000$                        \\
+			      \hline
+			      \textbf{Dy5 Symmetrischelast} &                       &                    &                                  \\
+			      Eingangsseite                 & $197,667$             & $11,100$           & $54,333$                         \\
+			      Ausgangsseite                 & $354,000$             & $6,300$            & $-65,000$                        \\
+			      \hline
+		      \end{tabular}
+	      \end{table}
 
 \end{enumerate}
