@@ -17,21 +17,31 @@
 	      \begin{minipage}{0.5\textwidth}
 		      Leerlauf:
 		      \begin{align*}
-			      R'_2         & =R_2\cdot ü^2           \\
-			      U'_2         & =U_2\cdot ü             \\
-			      I'_2         & = \frac{I_2}{ü}         \\
-			      X'_{2\sigma} & = X_{2\sigma} \cdot ü^2 \\
-			      P'_2         & = P_2
+			      P_0    & = U_0 \cdot I_0 \cdot \cos(\varphi) \\
+			      P_0    & = \frac{(U_1)^2}{R_{Fe}}            \\
+			      R_{Fe} & = \frac{(U_1)^2}{P_0}               \\
+			      Q_0    & = U_0 \cdot I_0 \cdot \sin(\varphi) \\
+			      Q_0    & = \frac{(U_1)^2}{X_{h}}             \\
+			      X_h    & = \frac{(U_1)^2}{Q_0}               \\
+			      % R'_2         & =R_2\cdot ü^2           \\
+			      % U'_2         & =U_2\cdot ü             \\
+			      % I'_2         & = \frac{I_2}{ü}         \\
+			      % X'_{2\sigma} & = X_{2\sigma} \cdot ü^2 \\
+			      % P'_2         & = P_2
 		      \end{align*}
 	      \end{minipage}\hfill
 	      \begin{minipage}{0.5\textwidth}
 		      Kurzschluss:
 		      \begin{align*}
-			      R_K     & = R_1 + R'_2                 \\
-			      X_K     & = X_{1\sigma} + X'_{2\sigma} \\
-			      Z_K     & = \sqrt{R_K^2 + X_K^2}       \\
-			      U_{R_K} & = R_K \cdot I_1              \\
-			      U_{X_K} & = X_K \cdot I_1
+			      P_K & = U_K \cdot I_K \cdot \cos(\varphi)                    \\
+			      P_K & ={(I_1K)^2}\cdot  {R_K}                                \\
+			      R_K & = \frac{P_{1K}}{(I_1)^2} = R_1 + R'_2                  \\
+			      Q_0 & = U_0 \cdot I_0 \cdot \sin(\varphi)                    \\
+			      Q_K & = {(I_1K)^2}\cdot{X_K}                                 \\
+			      X_K & = \frac{Q_{1K}}{(I_1)^2} =  X_{1\sigma} + X'_{2\sigma} \\
+			      % Z_K     & = \sqrt{R_K^2 + X_K^2}       \\
+			      % U_{R_K} & = R_K \cdot I_1              \\
+			      % U_{X_K} & = X_K \cdot I_1
 		      \end{align*}
 	      \end{minipage}
 
@@ -215,13 +225,29 @@
 	      Zeichnen Sie das zugehörige qualitative Zeigerdiagramm für den Leerlauffall.
 	      \begin{figure}[h!]
 		      \begin{center}
-			      \includegraphics[width=0.95\textwidth]{img/2.2.2.1}
+			      \begin{minipage}[t]{0.45\linewidth}
+				      \begin{center}
+					      \includegraphics[width=\linewidth]{img/2.2.2.1.png}
+					      \caption{ESP für den Transformator im Leerlauffall}\label{img:2.2.2.1}
+				      \end{center}
+			      \end{minipage}\hfil
+			      \begin{minipage}[t]{0.45\linewidth}
+				      \begin{center}
+					      \includegraphics[width=\linewidth]{img/2.2.2.2.png}
+					      \caption{Zeigerdiagramm für den Transformator im Leerlauffall}\label{img:2.2.2.2}
+				      \end{center}
+			      \end{minipage}
 		      \end{center}
-		      \caption{ESP für den Transformator im Leerlauffall}\label{img:2.2.2.1}
 	      \end{figure}
-
 	\item Zeigen Sie anhand dieses Zeigerdiagramms, warum Sie im Leerlaufversuch (Bild 9)
 	      mit der Aronschaltung eine negative Wirkleistung P1 messen.
+	      \begin{align*}
+		      P_1 & = U_1 \cdot I_1 \cdot \cos(\varphi)                                                    \\
+		      P_1 & = U_1 \cdot I_1 \cdot \cos(\varphi_{U1} - \varphi_{I1})                                \\
+		      P_1 & = \frac{U_{12}}{\sqrt 3} \cdot I_1 \cdot \cos(\varphi_{U1} - \varphi_{I1} - 30 ^\circ) \\
+		      P_1 & = \frac{U_{12}}{\sqrt 3} \cdot I_1 \cdot \cos(-120 ^\circ)                             \\
+		      P_1 & = -\frac{1}{2} \cdot \frac{U_{12}}{\sqrt 3} \cdot I_1
+	      \end{align*}
 \end{enumerate}
 
 \subsection{Symmetrische Drehstromlast }
