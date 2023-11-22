@@ -1,6 +1,0 @@
-\babel@toc {ngerman}{}\relax 
-\contentsline {section}{Abbildungsverzeichnis}{I}{section*.2}%
-\contentsline {section}{Tabellenverzeichnis}{I}{section*.3}%
-\contentsline {section}{\numberline {2}Vorbereitung}{1}{section.2}%
-\contentsline {section}{\numberline {3}Messungen und Auswertung}{2}{section.3}%
-\contentsline {section}{\numberline {4}Auswertung}{3}{section.4}%

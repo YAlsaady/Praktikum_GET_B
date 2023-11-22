@@ -21,6 +21,7 @@
 \usepackage{floatrow}
 \usepackage{multirow}
 \usepackage{upgreek}
+\usepackage{lastpage}
 
 \usepackage{sectsty}
 \allsectionsfont{\sffamily}
@@ -38,22 +39,22 @@
 \begin{document}
 \AddToShipoutPicture{\BackgroundWave}
 \pagestyle{fancy}
-\fancyhead[L]{\includegraphics[width = 6.0cm]{img/GELogo.png}}
+	\fancyhead[L]{\includegraphics[width = 7.5cm]{img/GELogo.png}}
 \fancyhead[R]{
-  \Large{{
-      \textbf{Versuch B-1}\\
-      Nichtlineare Zweipole und Transistoren}}}
-\fancyfoot[L]{Yaman Alsaady}
-\fancyfoot[C]{\thepage}
-\fancyfoot[R]{Oliver Schmidt}
+	\Large{{
+				\textbf{Versuch B-1}\\
+				Nichtlineare Zweipole und Transistoren}}}
+\fancyfoot[R]{Seite \thepage\ von \pageref{LastPage}}
+\fancyfoot[L]{\leftmark}
+\renewcommand{\footrulewidth}{0.4pt}% Default \footrulewidth is 0pt
 
 \pagenumbering{Roman}
 
 \tableofcontents
-\listoffigures 
-	\addcontentsline{toc}{section}{Abbildungsverzeichnis}
+\listoffigures
+\addcontentsline{toc}{section}{Abbildungsverzeichnis}
 \listoftables
-	\addcontentsline{toc}{section}{Tabellenverzeichnis}
+\addcontentsline{toc}{section}{Tabellenverzeichnis}
 \newpage
 \ClearShipoutPicture
 \pagenumbering{arabic}
