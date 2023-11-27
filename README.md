@@ -1,7 +1,19 @@
 # Praktikum_GET_B
 Elektrische Maschinen (ET3). Praktikum GET B
 ## Aufgabe 1:
-- [ ] Alles
+- [X] Vorbereitung 
+- [ ] Auswertung 
+    - [x] 4.1.a
+    - [ ] 4.1.b
+    - [ ] 4.1.c
+    - [ ] 4.1.d
+    - [x] 4.2.a
+    - [x] 4.2.b
+    - [x] 4.2.c
+    - [ ] 4.2.d
+    - [x] 4.3.a
+    - [x] 4.3.b
+    - [ ] 4.3.c
 ## Aufgabe 2:
 - [x] Alles
 ## Aufgabe 3:
